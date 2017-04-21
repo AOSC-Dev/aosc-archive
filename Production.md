@@ -12,6 +12,9 @@ Last updated: 2017-04-21T01:50
 |2017-04-20	|Disc-3	|0	|Success|
 |2017-04-20	|Disc-4	|0	|Success|
 |2017-04-20	|Disc-2	|1	|Success|
+|2017-04-20	|Disc-5	|0	|Success|
+|2017-04-21	|Disc-3	|1	|Not checked|
+|2017-04-21	|Disc 6	|0	|Not checked|
 
 # Serial Number List
 This is the list of the disc serial number of the last disc produced.
@@ -22,8 +25,10 @@ Last updated: 2017-04-21T01:50
 |---	|---	|---	|
 |Disc-1	|2	|2017-04-20|
 |Disc-2	|1	|2017-04-20|
-|Disc-3	|0	|2017-04-20|
+|Disc-3	|1	|2017-04-21|
 |Disc-4	|0	|2017-04-20|
+|Disc-5	|0	|2017-04-20|
+|Disc-6	|0	|2017-04-21|
 
 ## Known bugs and Notes
 
