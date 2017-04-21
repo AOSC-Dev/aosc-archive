@@ -1,7 +1,7 @@
 # Production Record
 Here is the latest production record of each disc.
 
-Last updated: 2017-04-20T18:10
+Last updated: 2017-04-21T01:50
 
 |Date		|Disc	|Serial	|Checksum|
 |---		|---	|---	|---	|
@@ -9,17 +9,19 @@ Last updated: 2017-04-20T18:10
 |2017-04-19	|Disc-1	|1	|/disc-1.md5 Checksum Error (Bug #1)|
 |2017-04-19	|Disc-2	|0	|Success|
 |2017-04-20	|Disc-1	|2	|Success|
-|2017-04-20	|Disc-3	|0	|Not checked|
+|2017-04-20	|Disc-3	|0	|Success|
+|2017-04-20	|Disc-4	|0	|Success|
+|2017-04-20	|Disc-2	|1	|Success|
 
 # Serial Number List
 This is the list of the disc serial number of the last disc produced.
 
-Last updated: 2017-04-20T18:20
+Last updated: 2017-04-21T01:50
 
 |Disc	|Serial	|Date	|
 |---	|---	|---	|
 |Disc-1	|2	|2017-04-20|
-|Disc-2	|0	|2017-04-20|
+|Disc-2	|1	|2017-04-20|
 |Disc-3	|0	|2017-04-20|
 |Disc-4	|0	|2017-04-20|
 
