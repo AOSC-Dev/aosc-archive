@@ -1,7 +1,7 @@
 # Production Record
 Here is the latest production record of each disc.
 
-Last updated: 2017-04-24T07:30
+Last updated: 2017-04-26T00:30
 
 |Date		|Disc	|Serial	|Check|
 |---		|---	|---	|---	|
@@ -25,16 +25,18 @@ Last updated: 2017-04-24T07:30
 |2017-04-22	|Disc-7	|2	|Success|
 |2017-04-22	|Disc-6	|1	|Success|
 |2017-04-22	|Disc-5	|1	|Success|
-|2017-04-22	|Disc-5	|2	|Not checked|
-|2017-04-23	|Disc-4	|2	|Not checked|
+|2017-04-22	|Disc-5	|2	|Success|
+|2017-04-23	|Disc-4	|2	|Success|
 |2017-04-23	|Disc-2	|2	|Wrong volume name (Bug #2)|
 |2017-04-24	|Disc-3	|2	|Success|
 |2017-04-24	|Disc-6	|2	|Not checked|
+|2017-04-25	|Disc-8	|2	|Not checked|
+|2017-04-25	|Disc-9	|2	|Not checked|
 
 # Serial Number List
 This is the list of the disc serial number of the last disc produced.
 
-Last updated: 2017-04-24T07:30
+Last updated: 2017-04-26T00:30
 
 |Disc	|Serial	|Date	|
 |---	|---	|---	|
@@ -45,8 +47,8 @@ Last updated: 2017-04-24T07:30
 |Disc-5	|2	|2017-04-22|
 |Disc-6	|2	|2017-04-24|
 |Disc-7	|2	|2017-04-22|
-|Disc-8	|1	|2017-04-22|
-|Disc-9	|1	|2017-04-22|
+|Disc-8	|2	|2017-04-25|
+|Disc-9	|2	|2017-04-25|
 
 ## Known bugs and Notes
 
