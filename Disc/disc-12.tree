@@ -1,0 +1,32 @@
+.
+├── AnthonOS2
+│   └── os2-releases
+│       └── anthonos
+│           ├── july-2014
+│           │   ├── anthonos_final-doge_kde_pc+mac_en-US.checksums
+│           │   ├── anthonos_final-doge_kde_pc+mac_en-US.iso
+│           │   ├── anthonos_final-doge_kde_pc+mac_zh-CN.checksums
+│           │   ├── anthonos_final-doge_kde_pc+mac_zh-CN.iso
+│           │   ├── anthonos_final-doge_kde_pc+mac_zh-TW.checksums
+│           │   ├── anthonos_final-doge_kde_pc+mac_zh-TW.iso
+│           │   └── patch-1
+│           │       ├── anthonos_final-doge_kde_pc+mac_en-US_patch-1.checksums
+│           │       ├── anthonos_final-doge_kde_pc+mac_en-US_patch-1.iso
+│           │       ├── anthonos_final-doge_kde_pc+mac_en-US_patch-1.iso.torrent
+│           │       ├── anthonos_final-doge_kde_pc+mac_zh-CN_patch-1.checksums
+│           │       ├── anthonos_final-doge_kde_pc+mac_zh-CN_patch-1.iso
+│           │       ├── anthonos_final-doge_kde_pc+mac_zh-CN_patch-1.iso.torrent
+│           │       ├── anthonos_final-doge_kde_pc+mac_zh-TW_patch-1.checksums
+│           │       ├── anthonos_final-doge_kde_pc+mac_zh-TW_patch-1.iso
+│           │       └── anthonos_final-doge_kde_pc+mac_zh-TW_patch-1.iso.torrent
+│           ├── june-2014
+│           │   ├── anthonos_rc0-lycanthropy_kde_pc+mac_en-US.iso
+│           │   ├── anthonos_rc0-lycanthropy_kde_pc+mac_zh-CN.iso
+│           │   └── anthonos_rc0-lycanthropy_kde_pc+mac_zh-TW.iso
+│           └── march-2014
+│               ├── anthonos_beta-2_prussian-blue_kde.iso
+│               └── anthonos_beta-2_prussian-blue_xfce.iso
+├── disc-12.md5
+└── disc-12.tree
+
+7 directories, 22 files
