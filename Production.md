@@ -1,7 +1,7 @@
 # Production Record
 Here is the latest production record of each disc.
 
-Last updated: 2017-05-03T06:40
+Last updated: 2017-09-04T22:40
 
 |Date		|Disc	|Serial	|Check|
 |---		|---	|---	|---	|
@@ -44,40 +44,48 @@ Last updated: 2017-05-03T06:40
 |2017-04-30	|Disc-12|3	|Success|
 |2017-04-30	|Disc-11|3	|Success|
 |2017-04-30	|Disc-10|3	|Success|
-|2017-04-30	|Disc-9|3	|Success|
-|2017-04-30	|Disc-8|3	|Success|
-|2017-04-30	|Disc-7|3	|Success|
-|2017-04-30	|Disc-6|3	|Success|
-|2017-05-02	|Disc-5|3	|Success|
-|2017-05-02	|Disc-5|4	|Success|
-|2017-05-02	|Disc-4|3	|Success|
-|2017-05-02	|Disc-4|4	|Success|
-|2017-05-02	|Disc-3|3	|Success|
-|2017-05-02	|Disc-3|4	|Success|
-|2017-05-03	|Disc-2|3	|Success|
-|2017-05-03	|Disc-2|4	|Success|
-|2017-05-03	|Disc-1|3	|Success|
-|2017-05-03	|Disc-1|4	|Success|
+|2017-04-30	|Disc-9	|3	|Success|
+|2017-04-30	|Disc-8	|3	|Success|
+|2017-04-30	|Disc-7	|3	|Success|
+|2017-04-30	|Disc-6	|3	|Success|
+|2017-05-02	|Disc-5	|3	|Success|
+|2017-05-02	|Disc-5	|4	|Success|
+|2017-05-02	|Disc-4	|3	|Success|
+|2017-05-02	|Disc-4	|4	|Success|
+|2017-05-02	|Disc-3	|3	|Success|
+|2017-05-02	|Disc-3	|4	|Success|
+|2017-05-03	|Disc-2	|3	|Success|
+|2017-05-03	|Disc-2	|4	|Success|
+|2017-05-03	|Disc-1	|3	|Success|
+|2017-05-03	|Disc-1	|4	|Success|
+|2017-09-01	|Disc-1	|5	|Not checked|
+|2017-09-01	|Disc-2	|5	|Not checked|
+|2017-09-02	|Disc-3	|5	|Not checked|
+|2017-09-02	|Disc-4	|5	|Not checked|
+|2017-09-02	|Disc-5	|5	|Not checked|
+|2017-09-03	|Disc-6	|5	|Success|
+|2017-09-04	|Disc-7	|5	|Not checked|
+|2017-09-05	|Disc-8	|5	|Not checked|
 
 # Serial Number List
 This is the list of the disc serial number of the last disc produced.
 
-Last updated: 2017-05-03T06:40
+Last updated: 2017-09-04T22:40
 
 |Disc	|Serial	|Date	|
 |---	|---	|---	|
-|Disc-1	|4	|2017-05-03|
-|Disc-2	|4	|2017-05-03|
-|Disc-3	|4	|2017-05-02|
-|Disc-4	|4	|2017-05-02|
-|Disc-5	|4	|2017-05-02|
-|Disc-6	|3	|2017-04-30|
-|Disc-7	|3	|2017-04-30|
-|Disc-8	|3	|2017-04-30|
-|Disc-9	|3	|2017-04-30|
-|Disc-10|3	|2017-04-30|
-|Disc-11|3	|2017-04-30|
-|Disc-12|3	|2017-04-30|
+|Disc-1	|5	|2017-09-01|
+|Disc-2	|5	|2017-09-01|
+|Disc-3	|5	|2017-09-02|
+|Disc-4	|5	|2017-09-02|
+|Disc-5	|5	|2017-09-02|
+|Disc-6	|5	|2017-09-03|
+|Disc-7	|5	|2017-09-04|
+|Disc-8	|5	|2017-09-04|
+|Disc-9	|4	|2017-04-30|
+|Disc-10|4	|2017-04-30|
+|Disc-11|4	|2017-04-30|
+|Disc-12|4	|2017-04-30|
 
 ## Known bugs and Notes
 
