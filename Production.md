@@ -66,11 +66,16 @@ Last updated: 2017-09-04T22:40
 |2017-09-03	|Disc-6	|5	|Success|
 |2017-09-04	|Disc-7	|5	|Not checked|
 |2017-09-05	|Disc-8	|5	|Not checked|
+|2017-12-08	|Disc-9	|5	|Success|
+|2017-12-08	|Disc-10|5	|Success|
+|2017-12-08	|Disc-11|5	|Success|
+|2017-12-08	|Disc-12|5	|Success|
+|2018-10-14	|Disc-13|0	|Not checked|
 
 # Serial Number List
 This is the list of the disc serial number of the last disc produced.
 
-Last updated: 2017-09-04T22:40
+Last updated: 2018-10-14T06:14
 
 |Disc	|Serial	|Date	|
 |---	|---	|---	|
@@ -82,10 +87,11 @@ Last updated: 2017-09-04T22:40
 |Disc-6	|5	|2017-09-03|
 |Disc-7	|5	|2017-09-04|
 |Disc-8	|5	|2017-09-04|
-|Disc-9	|4	|2017-04-30|
-|Disc-10|4	|2017-04-30|
-|Disc-11|4	|2017-04-30|
-|Disc-12|4	|2017-04-30|
+|Disc-9	|5	|2017-12-08|
+|Disc-10|5	|2017-12-08|
+|Disc-11|5	|2017-12-08|
+|Disc-12|5	|2017-12-08|
+|Disc-13|0	|2018-10-14|
 
 ## Known bugs and Notes
 
