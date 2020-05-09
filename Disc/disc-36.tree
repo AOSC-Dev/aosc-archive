@@ -1,0 +1,2582 @@
+.
+├── Repository
+│   └── testing
+│       └── main
+│           ├── libz
+│           │   ├── libzdb_3.1-1_amd64.deb
+│           │   ├── libzdb_3.1-1_arm64.deb
+│           │   ├── libzdb_3.1-1_armel.deb
+│           │   ├── libzdb_3.1-1_ppc64.deb
+│           │   ├── libzen_0.4.37-1_arm64.deb
+│           │   ├── libzip_1.5.1-0_riscv64.deb
+│           │   ├── libzip_1.5.1-1_amd64.deb
+│           │   ├── libzip_1.5.1-1_arm64.deb
+│           │   ├── libzip_1.5.1-1_armel.deb
+│           │   ├── libzip_1.5.1-1_i586.deb
+│           │   ├── libzip_1.5.1-1_powerpc.deb
+│           │   ├── libzip_1.5.1-1_ppc64.deb
+│           │   ├── libzmf_0.0.2-1_arm64.deb
+│           │   ├── libzypp_17.11.1-0_amd64.deb
+│           │   ├── libzypp_17.11.1-0_arm64.deb
+│           │   ├── libzypp_17.11.1-0_armel.deb
+│           │   ├── libzypp_17.11.1-0_powerpc.deb
+│           │   ├── libzypp_17.11.1-0_ppc64.deb
+│           │   ├── libzypp_17.11.1-1_amd64.deb
+│           │   ├── libzypp_17.11.1-1_arm64.deb
+│           │   ├── libzypp_17.11.1-1_armel.deb
+│           │   ├── libzypp_17.11.1-1_ppc64.deb
+│           │   ├── libzypp_17.11.1-2_amd64.deb
+│           │   ├── libzypp_17.11.1-2_arm64.deb
+│           │   ├── libzypp_17.11.1-2_armel.deb
+│           │   ├── libzypp_17.11.1-2_powerpc.deb
+│           │   ├── libzypp_17.11.1-2_ppc64.deb
+│           │   ├── libzypp_17.8.0-0_amd64.deb
+│           │   ├── libzypp_17.8.0-0_arm64.deb
+│           │   ├── libzypp_17.8.0-0_armel.deb
+│           │   ├── libzypp_17.8.0-0_powerpc.deb
+│           │   └── libzypp_17.8.0-0_ppc64.deb
+│           ├── o
+│           │   ├── oauthlib_3.0.1-0_noarch.deb
+│           │   ├── oauthlib_3.0.1-1_noarch.deb
+│           │   ├── obby_0.4.8-2_arm64.deb
+│           │   ├── obconf-qt_0.14.0-0_amd64.deb
+│           │   ├── obconf-qt_0.14.0-1_amd64.deb
+│           │   ├── obconf-qt_0.14.0-1_arm64.deb
+│           │   ├── obfs4proxy_0.0.10-0_amd64.deb
+│           │   ├── obfs4proxy_0.0.10-0_arm64.deb
+│           │   ├── obfs4proxy_0.0.10-0_armel.deb
+│           │   ├── obfs4proxy_0.0.11-0_amd64.deb
+│           │   ├── obfs4proxy_0.0.11-0_arm64.deb
+│           │   ├── obfs4proxy_0.0.11-0_armel.deb
+│           │   ├── obfs4proxy_0.0.9-0_amd64.deb
+│           │   ├── obfs4proxy_0.0.9-0_arm64.deb
+│           │   ├── obfs4proxy_0.0.9-0_armel.deb
+│           │   ├── obfsproxy_0.2.13-1_amd64.deb
+│           │   ├── obfsproxy_0.2.13-1_arm64.deb
+│           │   ├── obfsproxy_0.2.13-1_armel.deb
+│           │   ├── obfsproxy_0.2.13-1_powerpc.deb
+│           │   ├── obfsproxy_0.2.13-1_ppc64.deb
+│           │   ├── obmenu-generator_0.85-0_noarch.deb
+│           │   ├── obs-studio_23.0.1-0_amd64.deb
+│           │   ├── obs-studio_23.0.1-1_amd64.deb
+│           │   ├── ocaml-ssl_0.5.5-1_amd64.deb
+│           │   ├── ocaml-ssl_0.5.5-1_arm64.deb
+│           │   ├── ocaml-ssl_0.5.5-1_armel.deb
+│           │   ├── ocaml-ssl_0.5.5-1_powerpc.deb
+│           │   ├── ocaml-ssl_0.5.5-1_ppc64.deb
+│           │   ├── ocaml_4.07.1-0_amd64.deb
+│           │   ├── ocaml_4.07.1-0_arm64.deb
+│           │   ├── ocaml_4.07.1-0_armel.deb
+│           │   ├── ocaml_4.07.1-0_powerpc.deb
+│           │   ├── ocaml_4.07.1-0_ppc64.deb
+│           │   ├── ocaml_4.07.1-1_amd64.deb
+│           │   ├── ocaml_4.07.1-1_arm64.deb
+│           │   ├── ocaml_4.07.1-1_armel.deb
+│           │   ├── ocaml_4.07.1-1_i586.deb
+│           │   ├── ocaml_4.07.1-1_powerpc.deb
+│           │   ├── ocaml_4.07.1-1_ppc64.deb
+│           │   ├── ocamlbuild_0.13.1-0_amd64.deb
+│           │   ├── ocamlbuild_0.13.1-0_powerpc.deb
+│           │   ├── ocamlbuild_0.13.1-0_ppc64.deb
+│           │   ├── oce_0.18.3-1_arm64.deb
+│           │   ├── ocrad_0.27-0_amd64.deb
+│           │   ├── ocrad_0.27-0_powerpc.deb
+│           │   ├── ocrad_0.27-0_ppc64.deb
+│           │   ├── ocrad_0.27-1_amd64.deb
+│           │   ├── ocrad_0.27-1_arm64.deb
+│           │   ├── ocrad_0.27-1_powerpc.deb
+│           │   ├── ocrad_0.27-1_ppc64.deb
+│           │   ├── ocrmypdf_7.2.1-0_noarch.deb
+│           │   ├── ocrmypdf_8.1.0-0_noarch.deb
+│           │   ├── ocrmypdf_8.1.0-1_noarch.deb
+│           │   ├── ocserv_0.12.2-0_amd64.deb
+│           │   ├── ocserv_0.12.2-0_armel.deb
+│           │   ├── ocserv_0.12.2-0_powerpc.deb
+│           │   ├── ocserv_0.12.2-0_ppc64.deb
+│           │   ├── octave_5.1.0-0_amd64.deb
+│           │   ├── octave_5.1.0-1_amd64.deb
+│           │   ├── ofono_1.24-0_riscv64.deb
+│           │   ├── ofono_1.28-0_amd64.deb
+│           │   ├── ofono_1.28-0_powerpc.deb
+│           │   ├── ofono_1.28-0_ppc64.deb
+│           │   ├── ofono_1.28-1_amd64.deb
+│           │   ├── ofono_1.28-1_arm64.deb
+│           │   ├── ofono_1.28-1_i586.deb
+│           │   ├── ofono_1.28-1_powerpc.deb
+│           │   ├── ofono_1.28-1_ppc64.deb
+│           │   ├── ogmtools_1.5-4_arm64.deb
+│           │   ├── okular_18.12.2-0_amd64.deb
+│           │   ├── okular_18.12.2-0_armel.deb
+│           │   ├── okular_18.12.3-1_amd64.deb
+│           │   ├── okular_18.12.3-1_arm64.deb
+│           │   ├── okular_18.12.3-1_armel.deb
+│           │   ├── okular_18.12.3-1_powerpc.deb
+│           │   ├── okular_18.12.3-1_ppc64.deb
+│           │   ├── olefile_0.46-0_noarch.deb
+│           │   ├── olefile_0.46-1_noarch.deb
+│           │   ├── onboard_1.4.1-1_amd64.deb
+│           │   ├── onboard_1.4.1-1_arm64.deb
+│           │   ├── onboard_1.4.1-1_armel.deb
+│           │   ├── onboard_1.4.1-1_powerpc.deb
+│           │   ├── onboard_1.4.1-1_ppc64.deb
+│           │   ├── onboard_1.4.1-2_amd64.deb
+│           │   ├── onboard_1.4.1-2_arm64.deb
+│           │   ├── onboard_1.4.1-2_armel.deb
+│           │   ├── onboard_1.4.1-2_powerpc.deb
+│           │   ├── onboard_1.4.1-2_ppc64.deb
+│           │   ├── onig_6.9.0-0_amd64.deb
+│           │   ├── onig_6.9.0-0_arm64.deb
+│           │   ├── onig_6.9.0-0_armel.deb
+│           │   ├── onig_6.9.0-0_powerpc.deb
+│           │   ├── onig_6.9.0-0_ppc64.deb
+│           │   ├── onig_6.9.0-0_riscv64.deb
+│           │   ├── onig_6.9.1-0_amd64.deb
+│           │   ├── onig_6.9.1-0_arm64.deb
+│           │   ├── onig_6.9.1-0_armel.deb
+│           │   ├── onig_6.9.1-0_powerpc.deb
+│           │   ├── onig_6.9.1-0_ppc64.deb
+│           │   ├── onscripter-en_20171218-0_arm64.deb
+│           │   ├── onscripter-gbk_20130528-2_arm64.deb
+│           │   ├── onscripter-jh_20181231-0_arm64.deb
+│           │   ├── opam_2.0.2-0_amd64.deb
+│           │   ├── opam_2.0.2-0_powerpc.deb
+│           │   ├── opam_2.0.2-0_ppc64.deb
+│           │   ├── opam_2.0.3-0_amd64.deb
+│           │   ├── opam_2.0.3-0_powerpc.deb
+│           │   ├── opam_2.0.3-0_ppc64.deb
+│           │   ├── opam_2.0.3-1_amd64.deb
+│           │   ├── opam_2.0.3-1_arm64.deb
+│           │   ├── opam_2.0.3-1_ppc64.deb
+│           │   ├── open-iscsi_2.0.877-0_amd64.deb
+│           │   ├── open-iscsi_2.0.877-0_arm64.deb
+│           │   ├── open-iscsi_2.0.877-0_armel.deb
+│           │   ├── open-iscsi_2.0.877-0_powerpc.deb
+│           │   ├── open-iscsi_2.0.877-0_ppc64.deb
+│           │   ├── open-isns_0.99-0_amd64.deb
+│           │   ├── open-isns_0.99-0_arm64.deb
+│           │   ├── open-isns_0.99-0_armel.deb
+│           │   ├── open-isns_0.99-0_powerpc.deb
+│           │   ├── open-isns_0.99-0_ppc64.deb
+│           │   ├── open-isns_0.99-1_amd64.deb
+│           │   ├── open-isns_0.99-1_arm64.deb
+│           │   ├── open-isns_0.99-1_armel.deb
+│           │   ├── open-isns_0.99-1_powerpc.deb
+│           │   ├── open-isns_0.99-1_ppc64.deb
+│           │   ├── open-vm-tools_10.3.0-1_amd64.deb
+│           │   ├── open-vm-tools_10.3.0-2_amd64.deb
+│           │   ├── openal-soft_1.19.1-0_amd64.deb
+│           │   ├── openal-soft_1.19.1-0_armel.deb
+│           │   ├── openal-soft_1.19.1-0_powerpc.deb
+│           │   ├── openal-soft_1.19.1-0_ppc64.deb
+│           │   ├── openal-soft_1.19.1-1_amd64.deb
+│           │   ├── openal-soft_1.19.1-1_arm64.deb
+│           │   ├── openal-soft_1.19.1-1_armel.deb
+│           │   ├── openal-soft_1.19.1-1_powerpc.deb
+│           │   ├── openal-soft_1.19.1-1_ppc64.deb
+│           │   ├── openbabel_2.3.2-4_amd64.deb
+│           │   ├── openbabel_2.3.2-4_arm64.deb
+│           │   ├── openbabel_2.3.2-4_armel.deb
+│           │   ├── openbabel_2.3.2-4_powerpc.deb
+│           │   ├── openbabel_2.3.2-4_ppc64.deb
+│           │   ├── openbabel_2.3.2-5_amd64.deb
+│           │   ├── openbabel_2.3.2-5_arm64.deb
+│           │   ├── openbabel_2.3.2-5_armel.deb
+│           │   ├── openbabel_2.3.2-5_powerpc.deb
+│           │   ├── openbabel_2.3.2-5_ppc64.deb
+│           │   ├── openblas_0.3.5-0_amd64.deb
+│           │   ├── openblas_0.3.5-1_amd64.deb
+│           │   ├── openblas_0.3.5-1_arm64.deb
+│           │   ├── opencc_1.0.5-2_arm64.deb
+│           │   ├── opencc_1.0.5-2_armel.deb
+│           │   ├── opencc_1.0.5-2_powerpc.deb
+│           │   ├── opencc_1.0.5-2_ppc64.deb
+│           │   ├── opencc_1.0.5-3_amd64.deb
+│           │   ├── opencc_1.0.5-3_arm64.deb
+│           │   ├── opencc_1.0.5-3_armel.deb
+│           │   ├── opencc_1.0.5-3_powerpc.deb
+│           │   ├── opencc_1.0.5-3_ppc64.deb
+│           │   ├── opencollada_1.6.68-0_amd64.deb
+│           │   ├── opencollada_1.6.68-0_armel.deb
+│           │   ├── opencollada_1.6.68-0_powerpc.deb
+│           │   ├── opencollada_1.6.68-0_ppc64.deb
+│           │   ├── opencollada_1.6.68-2_amd64.deb
+│           │   ├── opencollada_1.6.68-2_arm64.deb
+│           │   ├── opencollada_1.6.68-2_armel.deb
+│           │   ├── opencollada_1.6.68-2_powerpc.deb
+│           │   ├── opencollada_1.6.68-2_ppc64.deb
+│           │   ├── opencolorio_1.1.0-1_amd64.deb
+│           │   ├── opencolorio_1.1.0-1_arm64.deb
+│           │   ├── opencolorio_1.1.0-1_powerpc.deb
+│           │   ├── opencolorio_1.1.0-1_ppc64.deb
+│           │   ├── openconnect_8.02-0_amd64.deb
+│           │   ├── openconnect_8.02-0_powerpc.deb
+│           │   ├── openconnect_8.02-0_ppc64.deb
+│           │   ├── opencryptoki_3.10.0-1_amd64.deb
+│           │   ├── opencryptoki_3.10.0-1_arm64.deb
+│           │   ├── opencryptoki_3.10.0-1_armel.deb
+│           │   ├── opencryptoki_3.10.0-1_powerpc.deb
+│           │   ├── opencryptoki_3.10.0-1_ppc64.deb
+│           │   ├── opencryptoki_3.10.0-2_amd64.deb
+│           │   ├── opencryptoki_3.10.0-2_arm64.deb
+│           │   ├── opencryptoki_3.10.0-2_armel.deb
+│           │   ├── opencryptoki_3.10.0-2_ppc64.deb
+│           │   ├── opencv_4.0.1-0_amd64.deb
+│           │   ├── opencv_4.0.1-0_armel.deb
+│           │   ├── opencv_4.0.1-0_powerpc.deb
+│           │   ├── opencv_4.0.1-1_amd64.deb
+│           │   ├── opencv_4.0.1-1_arm64.deb
+│           │   ├── opencv_4.0.1-1_armel.deb
+│           │   ├── opencv_4.0.1-1_powerpc.deb
+│           │   ├── opencv_4.0.1-2_amd64.deb
+│           │   ├── opencv_4.0.1-2_arm64.deb
+│           │   ├── opencv_4.0.1-2_armel.deb
+│           │   ├── opencv_4.0.1-2_powerpc.deb
+│           │   ├── opencv_4.0.1-2_ppc64.deb
+│           │   ├── opencv_4.0.1-3_amd64.deb
+│           │   ├── opencv_4.0.1-3_arm64.deb
+│           │   ├── opencv_4.0.1-3_armel.deb
+│           │   ├── opencv_4.0.1-3_powerpc.deb
+│           │   ├── opencv_4.0.1-3_ppc64.deb
+│           │   ├── opencv_4.0.1-4_amd64.deb
+│           │   ├── opencv_4.0.1-4_arm64.deb
+│           │   ├── opencv_4.0.1-4_armel.deb
+│           │   ├── opencv_4.0.1-4_ppc64.deb
+│           │   ├── openexr-viewers_2.3.0-1_amd64.deb
+│           │   ├── openexr-viewers_2.3.0-2_amd64.deb
+│           │   ├── openexr-viewers_2.3.0-2_arm64.deb
+│           │   ├── openexr_2.3.0-2_amd64.deb
+│           │   ├── openexr_2.3.0-2_arm64.deb
+│           │   ├── openexr_2.3.0-2_armel.deb
+│           │   ├── openexr_2.3.0-2_i586.deb
+│           │   ├── openexr_2.3.0-2_powerpc.deb
+│           │   ├── openexr_2.3.0-2_ppc64.deb
+│           │   ├── openh264_1.8.0-1_arm64.deb
+│           │   ├── openimageio_1.8.17-1_amd64.deb
+│           │   ├── openimageio_1.8.17-1_arm64.deb
+│           │   ├── openimageio_1.8.17-1_armel.deb
+│           │   ├── openimageio_1.8.17-1_powerpc.deb
+│           │   ├── openimageio_1.8.17-1_ppc64.deb
+│           │   ├── openimageio_1.8.17-2_amd64.deb
+│           │   ├── openimageio_1.8.17-2_arm64.deb
+│           │   ├── openimageio_1.8.17-2_armel.deb
+│           │   ├── openimageio_1.8.17-2_powerpc.deb
+│           │   ├── openimageio_1.8.17-2_ppc64.deb
+│           │   ├── openimageio_1.8.17-3_amd64.deb
+│           │   ├── openimageio_1.8.17-3_arm64.deb
+│           │   ├── openimageio_1.8.17-3_armel.deb
+│           │   ├── openimageio_1.8.17-3_powerpc.deb
+│           │   ├── openimageio_1.8.17-5_amd64.deb
+│           │   ├── openimageio_1.8.17-5_arm64.deb
+│           │   ├── openimageio_1.8.17-5_armel.deb
+│           │   ├── openimageio_1.8.17-5_powerpc.deb
+│           │   ├── openimageio_1.8.17-5_ppc64.deb
+│           │   ├── openjdk_8u202-ga-0_amd64.deb
+│           │   ├── openjdk_8u202-ga-0_powerpc.deb
+│           │   ├── openjdk_8u202-ga-0_ppc64.deb
+│           │   ├── openjdk_8u212+ga-1_amd64.deb
+│           │   ├── openjdk_8u212+ga-1_arm64.deb
+│           │   ├── openjdk_8u212+ga-1_powerpc.deb
+│           │   ├── openjdk_8u212+ga-1_ppc64.deb
+│           │   ├── openjfx_8u191b10-0_amd64.deb
+│           │   ├── openjfx_8u202+ga-1_amd64.deb
+│           │   ├── openjfx_8u202+ga-1_arm64.deb
+│           │   ├── openjpeg_2.3.0-1_amd64.deb
+│           │   ├── openjpeg_2.3.0-1_arm64.deb
+│           │   ├── openjpeg_2.3.0-1_armel.deb
+│           │   ├── openjpeg_2.3.0-1_powerpc.deb
+│           │   ├── openjpeg_2.3.0-1_ppc64.deb
+│           │   ├── openjpeg_2.3.0-1_riscv64.deb
+│           │   ├── openjpeg_2.3.0-2_i586.deb
+│           │   ├── openjpeg_2.3.0-2_ppc64.deb
+│           │   ├── openldap_2.4.46-0_riscv64.deb
+│           │   ├── openldap_2.4.47-0_riscv64.deb
+│           │   ├── openldap_2.4.47-1_amd64.deb
+│           │   ├── openldap_2.4.47-1_arm64.deb
+│           │   ├── openldap_2.4.47-1_armel.deb
+│           │   ├── openldap_2.4.47-1_i586.deb
+│           │   ├── openldap_2.4.47-1_powerpc.deb
+│           │   ├── openldap_2.4.47-1_ppc64.deb
+│           │   ├── openldap_2.4.47-1_riscv64.deb
+│           │   ├── openmpi_2.1.3-1_amd64.deb
+│           │   ├── openmpi_2.1.3-1_arm64.deb
+│           │   ├── openmpi_2.1.3-1_armel.deb
+│           │   ├── openmpi_2.1.3-2_amd64.deb
+│           │   ├── openmpi_2.1.3-2_arm64.deb
+│           │   ├── openmpi_2.1.3-2_armel.deb
+│           │   ├── openocd_0.10.0+git20190130-0_amd64.deb
+│           │   ├── openocd_0.10.0+git20190130-0_arm64.deb
+│           │   ├── openocd_0.10.0+git20190130-0_armel.deb
+│           │   ├── openocd_0.10.0+git20190130-0_powerpc.deb
+│           │   ├── openocd_0.10.0+git20190130-0_ppc64.deb
+│           │   ├── openocd_0.10.0+git20190130-1_arm64.deb
+│           │   ├── openocd_0.10.0+git20190130-1_armel.deb
+│           │   ├── openocd_0.10.0+git20190130-1_powerpc.deb
+│           │   ├── openocd_0.10.0+git20190130-1_ppc64.deb
+│           │   ├── openpyxl_2.6.0-0_noarch.deb
+│           │   ├── openpyxl_2.6.0-1_noarch.deb
+│           │   ├── openra_20181215-0_noarch.deb
+│           │   ├── openresolv_3.9.0-0_riscv64.deb
+│           │   ├── openresty_1.13.6.2-1_amd64.deb
+│           │   ├── openresty_1.13.6.2-1_arm64.deb
+│           │   ├── openresty_1.13.6.2-1_armel.deb
+│           │   ├── openresty_1.13.6.2-1_powerpc.deb
+│           │   ├── openresty_1.13.6.2-3_amd64.deb
+│           │   ├── openresty_1.13.6.2-3_arm64.deb
+│           │   ├── openresty_1.13.6.2-3_armel.deb
+│           │   ├── openresty_1.13.6.2-3_powerpc.deb
+│           │   ├── opensc_0.19.0-1_arm64.deb
+│           │   ├── opensc_0.19.0-1_armel.deb
+│           │   ├── opensc_0.19.0-1_powerpc.deb
+│           │   ├── opensc_0.19.0-2_amd64.deb
+│           │   ├── opensc_0.19.0-2_arm64.deb
+│           │   ├── opensc_0.19.0-2_armel.deb
+│           │   ├── opensc_0.19.0-2_powerpc.deb
+│           │   ├── opensc_0.19.0-2_ppc64.deb
+│           │   ├── openscenegraph_3.4.1-0_amd64.deb
+│           │   ├── openscenegraph_3.4.1-0_arm64.deb
+│           │   ├── openscenegraph_3.4.1-0_armel.deb
+│           │   ├── openscenegraph_3.4.1-0_powerpc.deb
+│           │   ├── openscenegraph_3.4.1-0_ppc64.deb
+│           │   ├── openscenegraph_3.6.3-0_amd64.deb
+│           │   ├── openscenegraph_3.6.3-0_arm64.deb
+│           │   ├── openscenegraph_3.6.3-0_armel.deb
+│           │   ├── openscenegraph_3.6.3-0_powerpc.deb
+│           │   ├── openscenegraph_3.6.3-0_ppc64.deb
+│           │   ├── openscenegraph_3.6.3-1_amd64.deb
+│           │   ├── openslp_2.0.0-4_amd64.deb
+│           │   ├── openslp_2.0.0-4_arm64.deb
+│           │   ├── openslp_2.0.0-4_armel.deb
+│           │   ├── openslp_2.0.0-4_powerpc.deb
+│           │   ├── openslp_2.0.0-4_ppc64.deb
+│           │   ├── opensmtpd_6.0.3p1-1_amd64.deb
+│           │   ├── opensmtpd_6.0.3p1-1_arm64.deb
+│           │   ├── opensmtpd_6.0.3p1-1_armel.deb
+│           │   ├── opensmtpd_6.0.3p1-1_powerpc.deb
+│           │   ├── opensp_1.5.2-1_riscv64.deb
+│           │   ├── opensp_1.5.2-2_arm64.deb
+│           │   ├── opensp_1.5.2-2_i586.deb
+│           │   ├── openssh-hpn_7.8p1-0_amd64.deb
+│           │   ├── openssh-hpn_7.8p1-0_arm64.deb
+│           │   ├── openssh-hpn_7.8p1-0_armel.deb
+│           │   ├── openssh-hpn_7.8p1-0_powerpc.deb
+│           │   ├── openssh-hpn_7.9p1-1_armel.deb
+│           │   ├── openssh-hpn_7.9p1-1_powerpc.deb
+│           │   ├── openssh_7.7p1-1_riscv64.deb
+│           │   ├── openssh_7.7p1-3_amd64.deb
+│           │   ├── openssh_7.7p1-3_arm64.deb
+│           │   ├── openssh_7.7p1-3_armel.deb
+│           │   ├── openssh_7.7p1-3_powerpc.deb
+│           │   ├── openssh_7.7p1-3_ppc64.deb
+│           │   ├── openssh_7.7p1-3_riscv64.deb
+│           │   ├── openssh_7.9p1-0_amd64.deb
+│           │   ├── openssh_7.9p1-0_arm64.deb
+│           │   ├── openssh_7.9p1-0_armel.deb
+│           │   ├── openssh_7.9p1-0_powerpc.deb
+│           │   ├── openssh_7.9p1-0_ppc64.deb
+│           │   ├── openssh_7.9p1-1_amd64.deb
+│           │   ├── openssh_7.9p1-1_arm64.deb
+│           │   ├── openssh_7.9p1-1_armel.deb
+│           │   ├── openssh_7.9p1-1_i586.deb
+│           │   ├── openssh_7.9p1-1_powerpc.deb
+│           │   ├── openssh_7.9p1-1_ppc64.deb
+│           │   ├── openssh_7.9p1-1_riscv64.deb
+│           │   ├── openssl+1.0_1.0.2r-0_amd64.deb
+│           │   ├── openssl+1.0_1.0.2r-0_arm64.deb
+│           │   ├── openssl_1.0.2q-0_arm64.deb
+│           │   ├── openssl_1.0.2q-0_armel.deb
+│           │   ├── openssl_1.0.2q-0_powerpc.deb
+│           │   ├── openssl_1.0.2q-0_ppc64.deb
+│           │   ├── openssl_1.0.2q-0_riscv64.deb
+│           │   ├── openssl_1.0.2r-0_amd64.deb
+│           │   ├── openssl_1.0.2r-0_arm64.deb
+│           │   ├── openssl_1.0.2r-0_armel.deb
+│           │   ├── openssl_1.0.2r-0_powerpc.deb
+│           │   ├── openssl_1.0.2r-0_ppc64.deb
+│           │   ├── openssl_1.1.1b-5_amd64.deb
+│           │   ├── openssl_1.1.1b-6_amd64.deb
+│           │   ├── openssl_1.1.1b-6_arm64.deb
+│           │   ├── openssl_1.1.1b-6_armel.deb
+│           │   ├── openssl_1.1.1b-6_i586.deb
+│           │   ├── openssl_1.1.1b-6_powerpc.deb
+│           │   ├── openssl_1.1.1b-6_ppc64.deb
+│           │   ├── openssl_1.1.1b-6_riscv64.deb
+│           │   ├── opensubdiv_3.3.3-4_arm64.deb
+│           │   ├── openswan_2.6.51.2-0_amd64.deb
+│           │   ├── openswan_2.6.51.2-0_arm64.deb
+│           │   ├── openswan_2.6.51.2-0_armel.deb
+│           │   ├── openswan_2.6.51.2-0_powerpc.deb
+│           │   ├── openswan_2.6.51.2-0_ppc64.deb
+│           │   ├── openswan_2.6.51.3-0_amd64.deb
+│           │   ├── openswan_2.6.51.3-0_arm64.deb
+│           │   ├── openswan_2.6.51.3-0_armel.deb
+│           │   ├── openswan_2.6.51.3-0_powerpc.deb
+│           │   ├── openswan_2.6.51.4-0_amd64.deb
+│           │   ├── openswan_2.6.51.4-0_arm64.deb
+│           │   ├── openswan_2.6.51.4-0_armel.deb
+│           │   ├── openswan_2.6.51.4-0_powerpc.deb
+│           │   ├── openswan_2.6.51.4-0_ppc64.deb
+│           │   ├── openvpn_2.4.7-1_amd64.deb
+│           │   ├── openvpn_2.4.7-1_arm64.deb
+│           │   ├── openvpn_2.4.7-1_armel.deb
+│           │   ├── openvpn_2.4.7-1_powerpc.deb
+│           │   ├── openvpn_2.4.7-1_ppc64.deb
+│           │   ├── openvswitch_2.10.1-0_amd64.deb
+│           │   ├── openvswitch_2.10.1-0_arm64.deb
+│           │   ├── openvswitch_2.10.1-0_armel.deb
+│           │   ├── openvswitch_2.10.1-0_powerpc.deb
+│           │   ├── openvswitch_2.10.1-0_ppc64.deb
+│           │   ├── openvswitch_2.10.1-1_amd64.deb
+│           │   ├── openvswitch_2.10.1-1_arm64.deb
+│           │   ├── openvswitch_2.10.1-1_armel.deb
+│           │   ├── openvswitch_2.10.1-1_powerpc.deb
+│           │   ├── openvswitch_2.10.1-2_amd64.deb
+│           │   ├── openvswitch_2.10.1-2_arm64.deb
+│           │   ├── openvswitch_2.10.1-2_armel.deb
+│           │   ├── openvswitch_2.10.1-2_i586.deb
+│           │   ├── openvswitch_2.10.1-2_powerpc.deb
+│           │   ├── openvswitch_2.10.1-2_ppc64.deb
+│           │   ├── openvswitch_2.9.2-1_amd64.deb
+│           │   ├── openvswitch_2.9.2-1_armel.deb
+│           │   ├── openvswitch_2.9.2-1_powerpc.deb
+│           │   ├── openvswitch_2.9.2-1_ppc64.deb
+│           │   ├── opera_57.0.3098.106-0_amd64.deb
+│           │   ├── opera_58.0.3135.47-0_amd64.deb
+│           │   ├── opera_58.0.3135.53-0_amd64.deb
+│           │   ├── opera_58.0.3135.90-0_amd64.deb
+│           │   ├── opera_60.0.3255.59-1_amd64.deb
+│           │   ├── opera_60.0.3255.70-1_amd64.deb
+│           │   ├── opera_60.0.3255.95-1_amd64.deb
+│           │   ├── opusfile_0.11-1_amd64.deb
+│           │   ├── opusfile_0.11-1_arm64.deb
+│           │   ├── opusfile_0.11-1_armel.deb
+│           │   ├── opusfile_0.11-1_powerpc.deb
+│           │   ├── opusfile_0.11-1_ppc64.deb
+│           │   ├── orafce_3.7.2-0_amd64.deb
+│           │   ├── orafce_3.7.2-0_arm64.deb
+│           │   ├── orafce_3.7.2-0_armel.deb
+│           │   ├── orafce_3.7.2-0_powerpc.deb
+│           │   ├── orafce_3.7.2-0_ppc64.deb
+│           │   ├── orc_0.4.28-0_riscv64.deb
+│           │   ├── orca_3.28.2-1_noarch.deb
+│           │   ├── orca_3.28.2-2_noarch.deb
+│           │   ├── oregano_0.84.41-0_amd64.deb
+│           │   ├── oregano_0.84.41-0_arm64.deb
+│           │   ├── oregano_0.84.41-0_armel.deb
+│           │   ├── oregano_0.84.41-0_powerpc.deb
+│           │   ├── oregano_0.84.41-0_ppc64.deb
+│           │   ├── oregano_0.84.41-1_amd64.deb
+│           │   ├── oregano_0.84.41-1_arm64.deb
+│           │   ├── oregano_0.84.41-1_armel.deb
+│           │   ├── oregano_0.84.41-1_powerpc.deb
+│           │   ├── oregano_0.84.41-1_ppc64.deb
+│           │   ├── os-prober_1.77-0_amd64.deb
+│           │   ├── os-prober_1.77-0_i586.deb
+│           │   ├── os-prober_1.77-0_powerpc.deb
+│           │   ├── os-prober_1.77-0_ppc64.deb
+│           │   ├── osdlyrics_0.4.3-4_arm64.deb
+│           │   ├── osi_0.108.2-0_amd64.deb
+│           │   ├── osi_0.108.2-0_powerpc.deb
+│           │   ├── osi_0.108.2-0_ppc64.deb
+│           │   ├── osi_0.108.2-1_amd64.deb
+│           │   ├── osi_0.108.2-1_arm64.deb
+│           │   ├── osi_0.108.2-1_powerpc.deb
+│           │   ├── osi_0.108.2-1_ppc64.deb
+│           │   ├── osm2pgrouting_2.3.6-0_amd64.deb
+│           │   ├── osm2pgrouting_2.3.6-1_amd64.deb
+│           │   ├── osm2pgrouting_2.3.6-2_amd64.deb
+│           │   ├── osm2pgrouting_2.3.6-2_arm64.deb
+│           │   ├── osm2pgsql_0.96.0-1_arm64.deb
+│           │   ├── ostree_2018.9-0_amd64.deb
+│           │   ├── ostree_2018.9-0_arm64.deb
+│           │   ├── ostree_2018.9-0_armel.deb
+│           │   ├── ostree_2018.9-0_powerpc.deb
+│           │   ├── ostree_2018.9-0_ppc64.deb
+│           │   ├── ostree_2019.1-0_amd64.deb
+│           │   ├── ostree_2019.1-0_arm64.deb
+│           │   ├── ostree_2019.1-0_armel.deb
+│           │   ├── ostree_2019.1-0_powerpc.deb
+│           │   ├── ostree_2019.1-0_ppc64.deb
+│           │   ├── osu-lazer_2019.216.0-0_amd64.deb
+│           │   ├── osu-lazer_2019.226.0-0_amd64.deb
+│           │   ├── osu-lazer_2019.305.0-0_amd64.deb
+│           │   ├── osu-lazer_2019.406.0-0_amd64.deb
+│           │   ├── osu-lazer_2019.418.0-0_amd64.deb
+│           │   ├── osu-lazer_2019.504.0-0_amd64.deb
+│           │   ├── osu-lazer_2019.514.0-0_amd64.deb
+│           │   ├── osu-lazer_2019.518.0-0_amd64.deb
+│           │   ├── osu-lazer_2019.621.0-0_amd64.deb
+│           │   ├── otter-browser_0.9.99.3-3_arm64.deb
+│           │   ├── owncloud-client_2.5.3.11470-0_amd64.deb
+│           │   ├── owncloud-client_2.5.4.11654-0_amd64.deb
+│           │   ├── owncloud-client_2.5.4.11654-0_arm64.deb
+│           │   ├── owslib_0.17.1-0_noarch.deb
+│           │   ├── owslib_0.17.1-1_noarch.deb
+│           │   ├── oxygen-icons_5.55.0-0_noarch.deb
+│           │   ├── oxygen-icons_5.56.0-0_noarch.deb
+│           │   ├── oxygen_5.14.0-1_amd64.deb
+│           │   ├── oxygen_5.14.0-1_arm64.deb
+│           │   ├── oxygen_5.14.0-1_armel.deb
+│           │   ├── oxygen_5.14.0-1_powerpc.deb
+│           │   ├── oxygen_5.14.0-1_ppc64.deb
+│           │   ├── oxygen_5.15.0-0_amd64.deb
+│           │   ├── oxygen_5.15.2-0_amd64.deb
+│           │   ├── oxygen_5.15.2-0_arm64.deb
+│           │   ├── oxygen_5.15.2-0_armel.deb
+│           │   ├── oxygen_5.15.2-0_powerpc.deb
+│           │   ├── oxygen_5.15.2-0_ppc64.deb
+│           │   ├── oxygen_5.15.3-2_amd64.deb
+│           │   ├── oxygen_5.15.3-2_arm64.deb
+│           │   ├── oxygen_5.15.3-2_armel.deb
+│           │   ├── oxygen_5.15.3-2_powerpc.deb
+│           │   └── oxygen_5.15.3-2_ppc64.deb
+│           ├── q
+│           │   ├── qca_2.1.3-1_amd64.deb
+│           │   ├── qca_2.1.3-1_armel.deb
+│           │   ├── qca_2.1.3-1_powerpc.deb
+│           │   ├── qca_2.1.3-1_ppc64.deb
+│           │   ├── qca_2.1.3-3_amd64.deb
+│           │   ├── qca_2.1.3-3_arm64.deb
+│           │   ├── qca_2.1.3-3_armel.deb
+│           │   ├── qca_2.1.3-3_powerpc.deb
+│           │   ├── qca_2.1.3-3_ppc64.deb
+│           │   ├── qd_2.3.22-0_amd64.deb
+│           │   ├── qd_2.3.22-0_armel.deb
+│           │   ├── qd_2.3.22-0_powerpc.deb
+│           │   ├── qd_2.3.22-0_ppc64.deb
+│           │   ├── qd_2.3.22-1_amd64.deb
+│           │   ├── qd_2.3.22-1_arm64.deb
+│           │   ├── qd_2.3.22-1_armel.deb
+│           │   ├── qd_2.3.22-1_powerpc.deb
+│           │   ├── qd_2.3.22-1_ppc64.deb
+│           │   ├── qdjango_20180307-1_arm64.deb
+│           │   ├── qemu-aarch64-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-aarch64-static_3.1.0-0_armel.deb
+│           │   ├── qemu-aarch64-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-aarch64-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-aarch64-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-aarch64-static_3.1.0-1_armel.deb
+│           │   ├── qemu-aarch64-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-aarch64-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-alpha-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-alpha-static_3.1.0-0_armel.deb
+│           │   ├── qemu-alpha-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-alpha-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-alpha-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-alpha-static_3.1.0-1_armel.deb
+│           │   ├── qemu-alpha-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-alpha-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-arm-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-arm-static_3.1.0-0_armel.deb
+│           │   ├── qemu-arm-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-arm-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-arm-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-arm-static_3.1.0-1_armel.deb
+│           │   ├── qemu-arm-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-arm-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-armeb-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-armeb-static_3.1.0-0_armel.deb
+│           │   ├── qemu-armeb-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-armeb-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-armeb-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-armeb-static_3.1.0-1_armel.deb
+│           │   ├── qemu-armeb-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-armeb-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-cris-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-cris-static_3.1.0-0_armel.deb
+│           │   ├── qemu-cris-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-cris-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-cris-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-cris-static_3.1.0-1_armel.deb
+│           │   ├── qemu-cris-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-cris-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-i386-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-i386-static_3.1.0-0_armel.deb
+│           │   ├── qemu-i386-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-i386-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-i386-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-i386-static_3.1.0-1_armel.deb
+│           │   ├── qemu-i386-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-i386-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-m68k-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-m68k-static_3.1.0-0_armel.deb
+│           │   ├── qemu-m68k-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-m68k-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-m68k-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-m68k-static_3.1.0-1_armel.deb
+│           │   ├── qemu-m68k-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-m68k-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-microblaze-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-microblaze-static_3.1.0-0_armel.deb
+│           │   ├── qemu-microblaze-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-microblaze-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-microblaze-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-microblaze-static_3.1.0-1_armel.deb
+│           │   ├── qemu-microblaze-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-microblaze-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-microblazeel-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-microblazeel-static_3.1.0-0_armel.deb
+│           │   ├── qemu-microblazeel-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-microblazeel-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-microblazeel-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-microblazeel-static_3.1.0-1_armel.deb
+│           │   ├── qemu-microblazeel-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-microblazeel-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-mips-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-mips-static_3.1.0-0_armel.deb
+│           │   ├── qemu-mips-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-mips-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-mips-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-mips-static_3.1.0-1_armel.deb
+│           │   ├── qemu-mips-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-mips-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-mips64-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-mips64-static_3.1.0-0_armel.deb
+│           │   ├── qemu-mips64-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-mips64-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-mips64-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-mips64-static_3.1.0-1_armel.deb
+│           │   ├── qemu-mips64-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-mips64-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-mips64el-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-mips64el-static_3.1.0-0_armel.deb
+│           │   ├── qemu-mips64el-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-mips64el-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-mips64el-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-mips64el-static_3.1.0-1_armel.deb
+│           │   ├── qemu-mips64el-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-mips64el-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-mipsel-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-mipsel-static_3.1.0-0_armel.deb
+│           │   ├── qemu-mipsel-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-mipsel-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-mipsel-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-mipsel-static_3.1.0-1_armel.deb
+│           │   ├── qemu-mipsel-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-mipsel-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-mipsn32-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-mipsn32-static_3.1.0-0_armel.deb
+│           │   ├── qemu-mipsn32-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-mipsn32-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-mipsn32-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-mipsn32-static_3.1.0-1_armel.deb
+│           │   ├── qemu-mipsn32-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-mipsn32-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-mipsn32el-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-mipsn32el-static_3.1.0-0_armel.deb
+│           │   ├── qemu-mipsn32el-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-mipsn32el-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-mipsn32el-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-mipsn32el-static_3.1.0-1_armel.deb
+│           │   ├── qemu-mipsn32el-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-mipsn32el-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-or32-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-or32-static_3.1.0-0_armel.deb
+│           │   ├── qemu-or32-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-or32-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-or32-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-or32-static_3.1.0-1_armel.deb
+│           │   ├── qemu-or32-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-or32-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-ppc-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-ppc-static_3.1.0-0_armel.deb
+│           │   ├── qemu-ppc-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-ppc-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-ppc-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-ppc-static_3.1.0-1_armel.deb
+│           │   ├── qemu-ppc-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-ppc-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-ppc64-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-ppc64-static_3.1.0-0_armel.deb
+│           │   ├── qemu-ppc64-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-ppc64-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-ppc64-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-ppc64-static_3.1.0-1_armel.deb
+│           │   ├── qemu-ppc64-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-ppc64-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-ppc64abi32-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-ppc64abi32-static_3.1.0-0_armel.deb
+│           │   ├── qemu-ppc64abi32-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-ppc64abi32-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-ppc64abi32-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-ppc64abi32-static_3.1.0-1_armel.deb
+│           │   ├── qemu-ppc64abi32-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-ppc64abi32-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-ppc64le-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-ppc64le-static_3.1.0-0_armel.deb
+│           │   ├── qemu-ppc64le-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-ppc64le-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-ppc64le-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-ppc64le-static_3.1.0-1_armel.deb
+│           │   ├── qemu-ppc64le-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-ppc64le-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-riscv32-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-riscv32-static_3.1.0-1_armel.deb
+│           │   ├── qemu-riscv32-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-riscv32-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-riscv64-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-riscv64-static_3.1.0-1_armel.deb
+│           │   ├── qemu-riscv64-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-riscv64-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-s390x-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-s390x-static_3.1.0-0_armel.deb
+│           │   ├── qemu-s390x-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-s390x-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-s390x-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-s390x-static_3.1.0-1_armel.deb
+│           │   ├── qemu-s390x-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-s390x-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-sh4-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-sh4-static_3.1.0-0_armel.deb
+│           │   ├── qemu-sh4-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-sh4-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-sh4-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-sh4-static_3.1.0-1_armel.deb
+│           │   ├── qemu-sh4-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-sh4-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-sh4eb-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-sh4eb-static_3.1.0-0_armel.deb
+│           │   ├── qemu-sh4eb-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-sh4eb-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-sh4eb-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-sh4eb-static_3.1.0-1_armel.deb
+│           │   ├── qemu-sh4eb-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-sh4eb-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-sparc-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-sparc-static_3.1.0-0_armel.deb
+│           │   ├── qemu-sparc-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-sparc-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-sparc-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-sparc-static_3.1.0-1_armel.deb
+│           │   ├── qemu-sparc-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-sparc-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-sparc32plus-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-sparc32plus-static_3.1.0-0_armel.deb
+│           │   ├── qemu-sparc32plus-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-sparc32plus-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-sparc32plus-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-sparc32plus-static_3.1.0-1_armel.deb
+│           │   ├── qemu-sparc32plus-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-sparc32plus-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-sparc64-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-sparc64-static_3.1.0-0_armel.deb
+│           │   ├── qemu-sparc64-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-sparc64-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-sparc64-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-sparc64-static_3.1.0-1_armel.deb
+│           │   ├── qemu-sparc64-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-sparc64-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-tilegx-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-tilegx-static_3.1.0-0_armel.deb
+│           │   ├── qemu-tilegx-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-tilegx-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-tilegx-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-tilegx-static_3.1.0-1_armel.deb
+│           │   ├── qemu-tilegx-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-tilegx-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu-user-static_3.1.0-0_noarch.deb
+│           │   ├── qemu-user-static_3.1.0-1_noarch.deb
+│           │   ├── qemu-x86-64-static_3.1.0-0_amd64.deb
+│           │   ├── qemu-x86-64-static_3.1.0-0_armel.deb
+│           │   ├── qemu-x86-64-static_3.1.0-0_powerpc.deb
+│           │   ├── qemu-x86-64-static_3.1.0-0_ppc64.deb
+│           │   ├── qemu-x86-64-static_3.1.0-1_amd64.deb
+│           │   ├── qemu-x86-64-static_3.1.0-1_armel.deb
+│           │   ├── qemu-x86-64-static_3.1.0-1_powerpc.deb
+│           │   ├── qemu-x86-64-static_3.1.0-1_ppc64.deb
+│           │   ├── qemu_3.1.0-0_amd64.deb
+│           │   ├── qemu_3.1.0-0_arm64.deb
+│           │   ├── qemu_3.1.0-0_armel.deb
+│           │   ├── qemu_3.1.0-0_powerpc.deb
+│           │   ├── qemu_3.1.0-0_ppc64.deb
+│           │   ├── qemu_3.1.0-1_amd64.deb
+│           │   ├── qemu_3.1.0-1_powerpc.deb
+│           │   ├── qemu_3.1.0-1_ppc64.deb
+│           │   ├── qemu_3.1.0-2_amd64.deb
+│           │   ├── qemu_3.1.0-2_arm64.deb
+│           │   ├── qemu_3.1.0-2_armel.deb
+│           │   ├── qemu_3.1.0-2_powerpc.deb
+│           │   ├── qemu_3.1.0-2_ppc64.deb
+│           │   ├── qemu_3.1.0-3_amd64.deb
+│           │   ├── qemu_3.1.0-4_arm64.deb
+│           │   ├── qemu_3.1.0-5_amd64.deb
+│           │   ├── qemu_3.1.0-5_arm64.deb
+│           │   ├── qemu_3.1.0-6_amd64.deb
+│           │   ├── qemu_3.1.0-6_arm64.deb
+│           │   ├── qemu_3.1.0-6_armel.deb
+│           │   ├── qemu_3.1.0-6_powerpc.deb
+│           │   ├── qemu_3.1.0-6_ppc64.deb
+│           │   ├── qgis_3.4.4-0_amd64.deb
+│           │   ├── qgis_3.6.0-0_amd64.deb
+│           │   ├── qgis_3.6.0-2_amd64.deb
+│           │   ├── qgis_3.6.0-2_arm64.deb
+│           │   ├── qgnomeplatform_0.5-0_amd64.deb
+│           │   ├── qgnomeplatform_0.5-0_powerpc.deb
+│           │   ├── qgnomeplatform_0.5-0_ppc64.deb
+│           │   ├── qgnomeplatform_0.5-2_amd64.deb
+│           │   ├── qgnomeplatform_0.5-2_armel.deb
+│           │   ├── qgnomeplatform_0.5-2_powerpc.deb
+│           │   ├── qgnomeplatform_0.5-2_ppc64.deb
+│           │   ├── qgnomeplatform_0.5-3_amd64.deb
+│           │   ├── qgnomeplatform_0.5-3_arm64.deb
+│           │   ├── qgnomeplatform_0.5-3_armel.deb
+│           │   ├── qgnomeplatform_0.5-3_powerpc.deb
+│           │   ├── qgnomeplatform_0.5-3_ppc64.deb
+│           │   ├── qjackctl_0.5.5-0_amd64.deb
+│           │   ├── qjackctl_0.5.5-0_armel.deb
+│           │   ├── qjackctl_0.5.5-0_powerpc.deb
+│           │   ├── qjackctl_0.5.5-0_ppc64.deb
+│           │   ├── qjackctl_0.5.5-1_amd64.deb
+│           │   ├── qjackctl_0.5.5-2_amd64.deb
+│           │   ├── qjackctl_0.5.5-2_arm64.deb
+│           │   ├── qjackctl_0.5.5-2_armel.deb
+│           │   ├── qjackctl_0.5.5-2_powerpc.deb
+│           │   ├── qjackctl_0.5.5-2_ppc64.deb
+│           │   ├── qjson_0.9.0-3_arm64.deb
+│           │   ├── qmmp_1.2.6-0_amd64.deb
+│           │   ├── qmmp_1.2.6-0_armel.deb
+│           │   ├── qmmp_1.2.6-0_powerpc.deb
+│           │   ├── qmmp_1.2.6-0_ppc64.deb
+│           │   ├── qmmp_1.3.0-0_amd64.deb
+│           │   ├── qmmp_1.3.0-0_powerpc.deb
+│           │   ├── qmmp_1.3.0-0_ppc64.deb
+│           │   ├── qmmp_1.3.0-1_amd64.deb
+│           │   ├── qmmp_1.3.0-1_arm64.deb
+│           │   ├── qmmp_1.3.0-1_armel.deb
+│           │   ├── qmmp_1.3.0-1_powerpc.deb
+│           │   ├── qmmp_1.3.0-1_ppc64.deb
+│           │   ├── qmpdclient_1.2.2-2_arm64.deb
+│           │   ├── qoauth_2.0.0-2_arm64.deb
+│           │   ├── qownnotes_18.11.6-0_amd64.deb
+│           │   ├── qownnotes_18.11.6-0_arm64.deb
+│           │   ├── qownnotes_18.11.6-0_armel.deb
+│           │   ├── qownnotes_18.11.6-0_powerpc.deb
+│           │   ├── qownnotes_18.11.6-0_ppc64.deb
+│           │   ├── qownnotes_19.2.5-0_amd64.deb
+│           │   ├── qownnotes_19.2.5-0_arm64.deb
+│           │   ├── qownnotes_19.2.5-0_armel.deb
+│           │   ├── qownnotes_19.2.5-0_powerpc.deb
+│           │   ├── qownnotes_19.2.5-0_ppc64.deb
+│           │   ├── qownnotes_19.3.0-0_amd64.deb
+│           │   ├── qownnotes_19.3.0-2_amd64.deb
+│           │   ├── qownnotes_19.3.0-2_arm64.deb
+│           │   ├── qownnotes_19.3.0-2_armel.deb
+│           │   ├── qownnotes_19.3.0-2_powerpc.deb
+│           │   ├── qownnotes_19.3.0-2_ppc64.deb
+│           │   ├── qpdf_8.4.0-0_amd64.deb
+│           │   ├── qpdf_8.4.0-0_armel.deb
+│           │   ├── qpdf_8.4.0-0_powerpc.deb
+│           │   ├── qpdf_8.4.0-0_ppc64.deb
+│           │   ├── qpdf_8.4.0-1_amd64.deb
+│           │   ├── qpdf_8.4.0-1_arm64.deb
+│           │   ├── qpdf_8.4.0-1_armel.deb
+│           │   ├── qpdf_8.4.0-1_powerpc.deb
+│           │   ├── qpdf_8.4.0-1_ppc64.deb
+│           │   ├── qqc2-desktop-style_5.55.0-0_amd64.deb
+│           │   ├── qqc2-desktop-style_5.55.0-0_armel.deb
+│           │   ├── qqc2-desktop-style_5.55.0-0_powerpc.deb
+│           │   ├── qqc2-desktop-style_5.55.0-0_ppc64.deb
+│           │   ├── qqc2-desktop-style_5.56.0-0_amd64.deb
+│           │   ├── qqc2-desktop-style_5.56.0-0_armel.deb
+│           │   ├── qqc2-desktop-style_5.56.0-0_powerpc.deb
+│           │   ├── qqc2-desktop-style_5.56.0-0_ppc64.deb
+│           │   ├── qqc2-desktop-style_5.56.0-1_amd64.deb
+│           │   ├── qqc2-desktop-style_5.56.0-1_arm64.deb
+│           │   ├── qqc2-desktop-style_5.56.0-1_armel.deb
+│           │   ├── qqc2-desktop-style_5.56.0-1_powerpc.deb
+│           │   ├── qqc2-desktop-style_5.56.0-1_ppc64.deb
+│           │   ├── qqwing_1.3.4-1_arm64.deb
+│           │   ├── qrencode_4.0.2-0_i586.deb
+│           │   ├── qrencode_4.0.2-0_riscv64.deb
+│           │   ├── qscintilla_2.10.8-0_amd64.deb
+│           │   ├── qscintilla_2.10.8-0_armel.deb
+│           │   ├── qscintilla_2.10.8-0_powerpc.deb
+│           │   ├── qscintilla_2.10.8-0_ppc64.deb
+│           │   ├── qscintilla_2.10.8-1_amd64.deb
+│           │   ├── qscintilla_2.10.8-1_arm64.deb
+│           │   ├── qscintilla_2.10.8-1_armel.deb
+│           │   ├── qscintilla_2.10.8-1_powerpc.deb
+│           │   ├── qscintilla_2.10.8-1_ppc64.deb
+│           │   ├── qscintilla_2.11.1-0_amd64.deb
+│           │   ├── qscintilla_2.11.1-0_armel.deb
+│           │   ├── qscintilla_2.11.1-0_powerpc.deb
+│           │   ├── qscintilla_2.11.1-0_ppc64.deb
+│           │   ├── qscintilla_2.11.1-1_amd64.deb
+│           │   ├── qscintilla_2.11.1-1_arm64.deb
+│           │   ├── qscintilla_2.11.1-1_armel.deb
+│           │   ├── qscintilla_2.11.1-1_powerpc.deb
+│           │   ├── qscintilla_2.11.1-1_ppc64.deb
+│           │   ├── qsstv_9.2.6-0_armel.deb
+│           │   ├── qsstv_9.2.6-0_powerpc.deb
+│           │   ├── qsstv_9.2.6-0_ppc64.deb
+│           │   ├── qsstv_9.2.6-2_arm64.deb
+│           │   ├── qsstv_9.2.6-2_armel.deb
+│           │   ├── qsstv_9.2.6-2_powerpc.deb
+│           │   ├── qsstv_9.2.6-2_ppc64.deb
+│           │   ├── qsynth_0.5.3-0_amd64.deb
+│           │   ├── qsynth_0.5.3-0_arm64.deb
+│           │   ├── qsynth_0.5.3-0_armel.deb
+│           │   ├── qsynth_0.5.3-0_powerpc.deb
+│           │   ├── qsynth_0.5.3-0_ppc64.deb
+│           │   ├── qsynth_0.5.4-0_amd64.deb
+│           │   ├── qsynth_0.5.4-0_arm64.deb
+│           │   ├── qsynth_0.5.4-0_armel.deb
+│           │   ├── qsynth_0.5.4-0_powerpc.deb
+│           │   ├── qsynth_0.5.4-0_ppc64.deb
+│           │   ├── qsynth_0.5.4-1_amd64.deb
+│           │   ├── qsynth_0.5.6-0_amd64.deb
+│           │   ├── qsynth_0.5.6-0_arm64.deb
+│           │   ├── qsynth_0.5.6-0_armel.deb
+│           │   ├── qsynth_0.5.6-0_powerpc.deb
+│           │   ├── qsynth_0.5.6-0_ppc64.deb
+│           │   ├── qt-4_4.8.7-6_amd64.deb
+│           │   ├── qt-4_4.8.7-6_arm64.deb
+│           │   ├── qt-4_4.8.7-6_armel.deb
+│           │   ├── qt-4_4.8.7-6_powerpc.deb
+│           │   ├── qt-4_4.8.7-6_ppc64.deb
+│           │   ├── qt-4_4.8.7-7_amd64.deb
+│           │   ├── qt-4_4.8.7-7_arm64.deb
+│           │   ├── qt-4_4.8.7-7_armel.deb
+│           │   ├── qt-4_4.8.7-7_powerpc.deb
+│           │   ├── qt-4_4.8.7-7_ppc64.deb
+│           │   ├── qt-5-doc_5.11.3+wk5.212.0-0_noarch.deb
+│           │   ├── qt-5_5.11.3+wk5.212.0-0_amd64.deb
+│           │   ├── qt-5_5.11.3+wk5.212.0-0_arm64.deb
+│           │   ├── qt-5_5.11.3+wk5.212.0-0_armel.deb
+│           │   ├── qt-5_5.11.3+wk5.212.0-0_powerpc.deb
+│           │   ├── qt-5_5.11.3+wk5.212.0-0_ppc64.deb
+│           │   ├── qt-5_5.12.2+wk5.212.0-0_amd64.deb
+│           │   ├── qt-5_5.12.2+wk5.212.0-0_arm64.deb
+│           │   ├── qt-5_5.12.2+wk5.212.0-0_armel.deb
+│           │   ├── qt-5_5.12.2+wk5.212.0-0_powerpc.deb
+│           │   ├── qt-5_5.12.2+wk5.212.0-0_ppc64.deb
+│           │   ├── qt-5_5.12.2+wk5.212.0-1_amd64.deb
+│           │   ├── qt-5_5.12.2+wk5.212.0-1_arm64.deb
+│           │   ├── qt-5_5.12.2+wk5.212.0-1_armel.deb
+│           │   ├── qt-gstreamer_1.2.0-8_arm64.deb
+│           │   ├── qt5ct_0.37-0_amd64.deb
+│           │   ├── qt5ct_0.37-0_powerpc.deb
+│           │   ├── qt5ct_0.37-0_ppc64.deb
+│           │   ├── qt5ct_0.37-2_amd64.deb
+│           │   ├── qt5ct_0.37-2_armel.deb
+│           │   ├── qt5ct_0.37-2_ppc64.deb
+│           │   ├── qt5ct_0.37-3_amd64.deb
+│           │   ├── qt5ct_0.37-3_arm64.deb
+│           │   ├── qt5ct_0.37-3_armel.deb
+│           │   ├── qt5ct_0.37-3_powerpc.deb
+│           │   ├── qt5ct_0.37-3_ppc64.deb
+│           │   ├── qt5dxcb-plugin_1.1.23-0_amd64.deb
+│           │   ├── qt5dxcb-plugin_1.1.24-1_amd64.deb
+│           │   ├── qt5dxcb-plugin_1.1.24-2_amd64.deb
+│           │   ├── qt5dxcb-plugin_1.1.24-2_arm64.deb
+│           │   ├── qtaccountsservice_0.6.0-2_arm64.deb
+│           │   ├── qtav_1.12.0-3_arm64.deb
+│           │   ├── qtcreator_4.7.0-0_amd64.deb
+│           │   ├── qtcreator_4.7.0-0_arm64.deb
+│           │   ├── qtcreator_4.7.0-0_armel.deb
+│           │   ├── qtcreator_4.7.0-0_powerpc.deb
+│           │   ├── qtcreator_4.7.0-0_ppc64.deb
+│           │   ├── qtcreator_4.7.0-2_amd64.deb
+│           │   ├── qtcreator_4.7.0-3_amd64.deb
+│           │   ├── qtcreator_4.7.0-3_arm64.deb
+│           │   ├── qtcreator_4.7.0-3_armel.deb
+│           │   ├── qtcreator_4.7.0-3_powerpc.deb
+│           │   ├── qtcreator_4.7.0-3_ppc64.deb
+│           │   ├── qterminal_0.14.0-0_amd64.deb
+│           │   ├── qterminal_0.14.0-1_amd64.deb
+│           │   ├── qterminal_0.14.0-1_arm64.deb
+│           │   ├── qtermwidget_0.14.0-0_amd64.deb
+│           │   ├── qtermwidget_0.14.0-1_amd64.deb
+│           │   ├── qtermwidget_0.14.0-1_arm64.deb
+│           │   ├── qtkeychain_0.9.1-0_amd64.deb
+│           │   ├── qtkeychain_0.9.1-0_arm64.deb
+│           │   ├── qtkeychain_0.9.1-0_armel.deb
+│           │   ├── qtkeychain_0.9.1-0_powerpc.deb
+│           │   ├── qtkeychain_0.9.1-0_ppc64.deb
+│           │   ├── qtkeychain_0.9.1-2_amd64.deb
+│           │   ├── qtkeychain_0.9.1-2_arm64.deb
+│           │   ├── qtkeychain_0.9.1-2_armel.deb
+│           │   ├── qtkeychain_0.9.1-2_powerpc.deb
+│           │   ├── qtkeychain_0.9.1-2_ppc64.deb
+│           │   ├── qtox_1.16.3-2_arm64.deb
+│           │   ├── qtractor_0.9.4-0_amd64.deb
+│           │   ├── qtractor_0.9.4-0_armel.deb
+│           │   ├── qtractor_0.9.4-0_powerpc.deb
+│           │   ├── qtractor_0.9.4-0_ppc64.deb
+│           │   ├── qtractor_0.9.4-1_amd64.deb
+│           │   ├── qtractor_0.9.4-1_arm64.deb
+│           │   ├── qtractor_0.9.4-1_armel.deb
+│           │   ├── qtractor_0.9.4-1_powerpc.deb
+│           │   ├── qtractor_0.9.4-1_ppc64.deb
+│           │   ├── quagga_1.2.4-1_amd64.deb
+│           │   ├── quagga_1.2.4-1_arm64.deb
+│           │   ├── quagga_1.2.4-1_armel.deb
+│           │   ├── quagga_1.2.4-1_powerpc.deb
+│           │   ├── quagga_1.2.4-1_ppc64.deb
+│           │   ├── quamash_0.6.1-2_noarch.deb
+│           │   ├── quassel_0.13.0-0_amd64.deb
+│           │   ├── quassel_0.13.0-0_arm64.deb
+│           │   ├── quassel_0.13.0-0_armel.deb
+│           │   ├── quassel_0.13.0-0_powerpc.deb
+│           │   ├── quassel_0.13.0-0_ppc64.deb
+│           │   ├── quassel_0.13.1-0_amd64.deb
+│           │   ├── quassel_0.13.1-0_arm64.deb
+│           │   ├── quassel_0.13.1-0_armel.deb
+│           │   ├── quassel_0.13.1-0_powerpc.deb
+│           │   ├── quassel_0.13.1-0_ppc64.deb
+│           │   ├── quassel_0.13.1-1_amd64.deb
+│           │   ├── quassel_0.13.1-1_arm64.deb
+│           │   ├── quassel_0.13.1-1_armel.deb
+│           │   ├── quassel_0.13.1-1_powerpc.deb
+│           │   ├── quassel_0.13.1-1_ppc64.deb
+│           │   ├── quaternion_0.0.9.3-0_amd64.deb
+│           │   ├── quaternion_0.0.9.3-0_arm64.deb
+│           │   ├── quaternion_0.0.9.3-0_armel.deb
+│           │   ├── quaternion_0.0.9.3-0_powerpc.deb
+│           │   ├── quaternion_0.0.9.3-0_ppc64.deb
+│           │   ├── quaternion_0.0.9.3-1_amd64.deb
+│           │   ├── quaternion_0.0.9.3-1_arm64.deb
+│           │   ├── quaternion_0.0.9.3-1_armel.deb
+│           │   ├── quaternion_0.0.9.3-1_powerpc.deb
+│           │   ├── quaternion_0.0.9.3-1_ppc64.deb
+│           │   ├── quazip_0.7.6-3_arm64.deb
+│           │   ├── qucs_0.0.19-2_arm64.deb
+│           │   ├── quiterss_0.18.12-2_arm64.deb
+│           │   ├── quodlibet_4.2.0-0_noarch.deb
+│           │   ├── quodlibet_4.2.1-0_noarch.deb
+│           │   ├── quodlibet_4.2.1-1_noarch.deb
+│           │   ├── quota-tools_4.04-0_i586.deb
+│           │   ├── quota-tools_4.04-0_riscv64.deb
+│           │   ├── qutebrowser_1.5.2-0_noarch.deb
+│           │   ├── qutebrowser_1.6.0-0_noarch.deb
+│           │   ├── qutebrowser_1.6.0-1_noarch.deb
+│           │   ├── qwt5_6.1.4-0_amd64.deb
+│           │   ├── qwt5_6.1.4-0_armel.deb
+│           │   ├── qwt5_6.1.4-0_powerpc.deb
+│           │   ├── qwt5_6.1.4-0_ppc64.deb
+│           │   ├── qwt5_6.1.4-2_amd64.deb
+│           │   ├── qwt5_6.1.4-2_arm64.deb
+│           │   ├── qwt5_6.1.4-2_armel.deb
+│           │   ├── qwt5_6.1.4-2_powerpc.deb
+│           │   ├── qwt5_6.1.4-2_ppc64.deb
+│           │   ├── qwt_5.2.3-3_arm64.deb
+│           │   ├── qwtplot3d_0.2.7-2_arm64.deb
+│           │   └── qwtpolar_1.1.1-3_arm64.deb
+│           ├── r
+│           │   ├── r_3.5.2-0_amd64.deb
+│           │   ├── r_3.5.2-0_armel.deb
+│           │   ├── r_3.5.2-0_powerpc.deb
+│           │   ├── r_3.5.2-0_ppc64.deb
+│           │   ├── r_3.5.2-1_amd64.deb
+│           │   ├── r_3.5.2-1_arm64.deb
+│           │   ├── r_3.5.2-1_armel.deb
+│           │   ├── r_3.5.2-1_powerpc.deb
+│           │   ├── r_3.5.2-1_ppc64.deb
+│           │   ├── racer_2.0.14-1_arm64.deb
+│           │   ├── racket_7.1-0_amd64.deb
+│           │   ├── racket_7.2-0_amd64.deb
+│           │   ├── radare2_3.2.0-0_amd64.deb
+│           │   ├── radare2_3.2.0-0_arm64.deb
+│           │   ├── radare2_3.2.0-0_armel.deb
+│           │   ├── radare2_3.2.0-0_powerpc.deb
+│           │   ├── radare2_3.2.0-0_ppc64.deb
+│           │   ├── radare2_3.2.1-0_amd64.deb
+│           │   ├── radare2_3.2.1-0_arm64.deb
+│           │   ├── radare2_3.2.1-0_armel.deb
+│           │   ├── radare2_3.2.1-0_powerpc.deb
+│           │   ├── radare2_3.2.1-0_ppc64.deb
+│           │   ├── radare2_3.2.1-1_amd64.deb
+│           │   ├── radare2_3.2.1-1_arm64.deb
+│           │   ├── radare2_3.2.1-1_armel.deb
+│           │   ├── radare2_3.2.1-1_powerpc.deb
+│           │   ├── radare2_3.2.1-1_ppc64.deb
+│           │   ├── radvd_2.18-0_arm64.deb
+│           │   ├── radvd_2.18-0_armel.deb
+│           │   ├── radvd_2.18-0_ppc64.deb
+│           │   ├── ragel_6.10-0_riscv64.deb
+│           │   ├── ragel_6.10-1_arm64.deb
+│           │   ├── ragel_6.10-1_i586.deb
+│           │   ├── rambox_0.6.3-0_amd64.deb
+│           │   ├── rambox_0.6.3-1_amd64.deb
+│           │   ├── random2_1.0.1-1_noarch.deb
+│           │   ├── range-v3_0.4.0-0_noarch.deb
+│           │   ├── ranger_1.9.2-2_noarch.deb
+│           │   ├── rarian_0.8.1-3_riscv64.deb
+│           │   ├── rarian_0.8.1-4_arm64.deb
+│           │   ├── rarian_0.8.1-4_i586.deb
+│           │   ├── rb-inotify_0.10.0-0_noarch.deb
+│           │   ├── rclone_1.46.0-0_amd64.deb
+│           │   ├── rcm_1.3.3-0_noarch.deb
+│           │   ├── rdesktop_1.8.4-0_amd64.deb
+│           │   ├── rdesktop_1.8.4-0_arm64.deb
+│           │   ├── rdesktop_1.8.4-0_armel.deb
+│           │   ├── rdesktop_1.8.4-0_powerpc.deb
+│           │   ├── rdesktop_1.8.4-0_ppc64.deb
+│           │   ├── rdesktop_1.8.4-1_amd64.deb
+│           │   ├── rdesktop_1.8.4-1_arm64.deb
+│           │   ├── rdesktop_1.8.4-1_armel.deb
+│           │   ├── rdesktop_1.8.4-1_powerpc.deb
+│           │   ├── rdesktop_1.8.4-1_ppc64.deb
+│           │   ├── rdfind_1.3.5-1_arm64.deb
+│           │   ├── rdflib_4.2.2-1_noarch.deb
+│           │   ├── re2_20140304-1_arm64.deb
+│           │   ├── re2c_1.1.1-0_amd64.deb
+│           │   ├── re2c_1.1.1-0_arm64.deb
+│           │   ├── re2c_1.1.1-0_armel.deb
+│           │   ├── re2c_1.1.1-0_powerpc.deb
+│           │   ├── re2c_1.1.1-0_ppc64.deb
+│           │   ├── re2c_1.1.1-0_riscv64.deb
+│           │   ├── re2c_1.1.1-1_amd64.deb
+│           │   ├── re2c_1.1.1-1_arm64.deb
+│           │   ├── re2c_1.1.1-1_armel.deb
+│           │   ├── re2c_1.1.1-1_i586.deb
+│           │   ├── re2c_1.1.1-1_powerpc.deb
+│           │   ├── re2c_1.1.1-1_ppc64.deb
+│           │   ├── readline_8.0-0_amd64.deb
+│           │   ├── readline_8.0-0_arm64.deb
+│           │   ├── readline_8.0-0_armel.deb
+│           │   ├── readline_8.0-0_i586.deb
+│           │   ├── readline_8.0-0_powerpc.deb
+│           │   ├── readline_8.0-0_ppc64.deb
+│           │   ├── rebar_3.7.5-0_amd64.deb
+│           │   ├── rebar_3.9.0-0_amd64.deb
+│           │   ├── recommonmark_20180907-1_noarch.deb
+│           │   ├── redis_5.0.0-0_amd64.deb
+│           │   ├── redis_5.0.0-0_arm64.deb
+│           │   ├── redis_5.0.0-0_armel.deb
+│           │   ├── redis_5.0.0-0_powerpc.deb
+│           │   ├── redis_5.0.0-0_ppc64.deb
+│           │   ├── redis_5.0.3-0_amd64.deb
+│           │   ├── redis_5.0.3-0_arm64.deb
+│           │   ├── redis_5.0.3-0_armel.deb
+│           │   ├── redis_5.0.3-0_powerpc.deb
+│           │   ├── redis_5.0.3-0_ppc64.deb
+│           │   ├── redis_5.0.3-1_amd64.deb
+│           │   ├── redis_5.0.3-1_arm64.deb
+│           │   ├── redis_5.0.3-1_armel.deb
+│           │   ├── redis_5.0.3-1_powerpc.deb
+│           │   ├── redis_5.0.3-1_ppc64.deb
+│           │   ├── redland_1.0.17-4_amd64.deb
+│           │   ├── redland_1.0.17-4_arm64.deb
+│           │   ├── redland_1.0.17-4_armel.deb
+│           │   ├── redland_1.0.17-4_powerpc.deb
+│           │   ├── redland_1.0.17-4_ppc64.deb
+│           │   ├── redshift_1.12-1_amd64.deb
+│           │   ├── redshift_1.12-1_arm64.deb
+│           │   ├── redshift_1.12-1_armel.deb
+│           │   ├── redshift_1.12-1_powerpc.deb
+│           │   ├── redshift_1.12-1_ppc64.deb
+│           │   ├── regex_2019.02.21-0_amd64.deb
+│           │   ├── regex_2019.02.21-0_powerpc.deb
+│           │   ├── regex_2019.02.21-0_ppc64.deb
+│           │   ├── regex_2019.02.21-1_amd64.deb
+│           │   ├── regex_2019.02.21-1_arm64.deb
+│           │   ├── regex_2019.02.21-1_armel.deb
+│           │   ├── regex_2019.02.21-1_powerpc.deb
+│           │   ├── regex_2019.02.21-1_ppc64.deb
+│           │   ├── reglookup_1.0.1-2_amd64.deb
+│           │   ├── reglookup_1.0.1-2_arm64.deb
+│           │   ├── reglookup_1.0.1-2_armel.deb
+│           │   ├── reglookup_1.0.1-2_powerpc.deb
+│           │   ├── reglookup_1.0.1-2_ppc64.deb
+│           │   ├── reiserfsprogs_3.6.27-0_riscv64.deb
+│           │   ├── reiserfsprogs_3.6.27-1_i586.deb
+│           │   ├── remarkable_1.87-1_amd64.deb
+│           │   ├── remarkable_1.87-1_arm64.deb
+│           │   ├── remarkable_1.87-1_armel.deb
+│           │   ├── remarkable_1.87-1_powerpc.deb
+│           │   ├── remarkable_1.87-1_ppc64.deb
+│           │   ├── remmina_1.2.32-0_amd64.deb
+│           │   ├── remmina_1.2.32-0_arm64.deb
+│           │   ├── remmina_1.2.32-0_armel.deb
+│           │   ├── remmina_1.2.32-0_powerpc.deb
+│           │   ├── remmina_1.2.32-0_ppc64.deb
+│           │   ├── remmina_1.3.1-0_amd64.deb
+│           │   ├── remmina_1.3.1-0_armel.deb
+│           │   ├── remmina_1.3.1-0_powerpc.deb
+│           │   ├── remmina_1.3.1-0_ppc64.deb
+│           │   ├── remmina_1.3.2-0_amd64.deb
+│           │   ├── remmina_1.3.2-0_arm64.deb
+│           │   ├── remmina_1.3.2-0_armel.deb
+│           │   ├── remmina_1.3.2-0_powerpc.deb
+│           │   ├── remmina_1.3.2-0_ppc64.deb
+│           │   ├── remmina_1.3.2-1_amd64.deb
+│           │   ├── remmina_1.3.2-1_arm64.deb
+│           │   ├── remmina_1.3.2-1_armel.deb
+│           │   ├── remmina_1.3.2-1_powerpc.deb
+│           │   ├── remmina_1.3.2-1_ppc64.deb
+│           │   ├── remmina_1.3.2-2_amd64.deb
+│           │   ├── remmina_1.3.2-2_arm64.deb
+│           │   ├── remmina_1.3.2-2_armel.deb
+│           │   ├── remmina_1.3.2-2_powerpc.deb
+│           │   ├── remmina_1.3.2-2_ppc64.deb
+│           │   ├── renaissance_0.9.0-5_amd64.deb
+│           │   ├── renaissance_0.9.0-5_armel.deb
+│           │   ├── renaissance_0.9.0-5_powerpc.deb
+│           │   ├── renaissance_0.9.0-5_ppc64.deb
+│           │   ├── renaissance_0.9.0-6_amd64.deb
+│           │   ├── renaissance_0.9.0-6_armel.deb
+│           │   ├── renaissance_0.9.0-6_powerpc.deb
+│           │   ├── renaissance_0.9.0-6_ppc64.deb
+│           │   ├── rencode_1.0.6-0_amd64.deb
+│           │   ├── rencode_1.0.6-0_armel.deb
+│           │   ├── rencode_1.0.6-0_powerpc.deb
+│           │   ├── rencode_1.0.6-0_ppc64.deb
+│           │   ├── reportlab_3.5.13-0_amd64.deb
+│           │   ├── reportlab_3.5.13-0_armel.deb
+│           │   ├── reportlab_3.5.13-0_powerpc.deb
+│           │   ├── reportlab_3.5.13-0_ppc64.deb
+│           │   ├── reportlab_3.5.13-1_amd64.deb
+│           │   ├── reportlab_3.5.13-1_arm64.deb
+│           │   ├── reportlab_3.5.13-1_armel.deb
+│           │   ├── reportlab_3.5.13-1_powerpc.deb
+│           │   ├── reportlab_3.5.13-1_ppc64.deb
+│           │   ├── reptyr_0.7.0-0_amd64.deb
+│           │   ├── reptyr_0.7.0-0_powerpc.deb
+│           │   ├── reptyr_0.7.0-0_ppc64.deb
+│           │   ├── requests_2.20.1-0_noarch.deb
+│           │   ├── requests_2.21.0-0_noarch.deb
+│           │   ├── requests_2.21.0-1_noarch.deb
+│           │   ├── rest_0.8.1-0_i586.deb
+│           │   ├── rest_0.8.1-0_riscv64.deb
+│           │   ├── restic_0.9.3-0_amd64.deb
+│           │   ├── restic_0.9.3-0_arm64.deb
+│           │   ├── restic_0.9.3-0_armel.deb
+│           │   ├── restic_0.9.3-0_powerpc.deb
+│           │   ├── restic_0.9.3-0_ppc64.deb
+│           │   ├── restic_0.9.4-0_amd64.deb
+│           │   ├── restic_0.9.4-0_arm64.deb
+│           │   ├── restic_0.9.4-0_armel.deb
+│           │   ├── restic_0.9.4-0_powerpc.deb
+│           │   ├── restic_0.9.4-0_ppc64.deb
+│           │   ├── retdec_3.3-0_arm64.deb
+│           │   ├── retext_7.0.4-2_noarch.deb
+│           │   ├── rethinkdb_2.3.6-1_amd64.deb
+│           │   ├── rethinkdb_2.3.6-1_armel.deb
+│           │   ├── rethinkdb_2.3.6-2_amd64.deb
+│           │   ├── rethinkdb_2.3.6-2_armel.deb
+│           │   ├── retroarch_1.7.6-0_amd64.deb
+│           │   ├── retroarch_1.7.6-0_armel.deb
+│           │   ├── retroarch_1.7.6-0_powerpc.deb
+│           │   ├── retroarch_1.7.6-0_ppc64.deb
+│           │   ├── retroarch_1.7.6-1_amd64.deb
+│           │   ├── retroarch_1.7.6-1_arm64.deb
+│           │   ├── retroarch_1.7.6-1_armel.deb
+│           │   ├── retroarch_1.7.6-1_powerpc.deb
+│           │   ├── retroarch_1.7.6-1_ppc64.deb
+│           │   ├── retroarch_1.7.6-2_amd64.deb
+│           │   ├── retroarch_1.7.6-2_arm64.deb
+│           │   ├── retroarch_1.7.6-2_armel.deb
+│           │   ├── retroarch_1.7.6-2_powerpc.deb
+│           │   ├── retroarch_1.7.6-2_ppc64.deb
+│           │   ├── retroshare_0.6.4-2_amd64.deb
+│           │   ├── retroshare_0.6.4-2_arm64.deb
+│           │   ├── retroshare_0.6.4-2_armel.deb
+│           │   ├── retroshare_0.6.5-0_amd64.deb
+│           │   ├── retroshare_0.6.5-0_arm64.deb
+│           │   ├── retroshare_0.6.5-0_armel.deb
+│           │   ├── retroshare_0.6.5-2_amd64.deb
+│           │   ├── retroshare_0.6.5-2_arm64.deb
+│           │   ├── retroshare_0.6.5-2_armel.deb
+│           │   ├── retroshare_0.6.5-2_powerpc.deb
+│           │   ├── retroshare_0.6.5-2_ppc64.deb
+│           │   ├── retroshare_0.6.5-3_amd64.deb
+│           │   ├── retroshare_0.6.5-3_arm64.deb
+│           │   ├── retroshare_0.6.5-3_armel.deb
+│           │   ├── retroshare_0.6.5-3_powerpc.deb
+│           │   ├── retroshare_0.6.5-3_ppc64.deb
+│           │   ├── rfkill_0.5-1_i586.deb
+│           │   ├── rfkill_0.5-1_riscv64.deb
+│           │   ├── rhash_1.3.6-0_riscv64.deb
+│           │   ├── rhash_1.3.8-0_amd64.deb
+│           │   ├── rhash_1.3.8-0_armel.deb
+│           │   ├── rhash_1.3.8-0_i586.deb
+│           │   ├── rhash_1.3.8-0_powerpc.deb
+│           │   ├── rhash_1.3.8-0_ppc64.deb
+│           │   ├── rhash_1.3.8-0_riscv64.deb
+│           │   ├── rhythmbox_3.4.3-0_amd64.deb
+│           │   ├── rhythmbox_3.4.3-0_armel.deb
+│           │   ├── rhythmbox_3.4.3-0_powerpc.deb
+│           │   ├── rhythmbox_3.4.3-0_ppc64.deb
+│           │   ├── rhythmbox_3.4.3-1_amd64.deb
+│           │   ├── rhythmbox_3.4.3-1_armel.deb
+│           │   ├── rhythmbox_3.4.3-1_powerpc.deb
+│           │   ├── rhythmbox_3.4.3-1_ppc64.deb
+│           │   ├── ripgrep_0.10.0-1_arm64.deb
+│           │   ├── rlvm_0.14.67-2_arm64.deb
+│           │   ├── rm-protection_0.1.3-1_noarch.deb
+│           │   ├── rmlint_2.8.0-0_amd64.deb
+│           │   ├── rmlint_2.8.0-0_powerpc.deb
+│           │   ├── rmlint_2.8.0-0_ppc64.deb
+│           │   ├── rmlint_2.8.0-1_amd64.deb
+│           │   ├── rmlint_2.8.0-1_arm64.deb
+│           │   ├── rmlint_2.8.0-1_armel.deb
+│           │   ├── rmlint_2.8.0-1_powerpc.deb
+│           │   ├── rmlint_2.8.0-1_ppc64.deb
+│           │   ├── rmlint_2.8.0-2_amd64.deb
+│           │   ├── rmlint_2.8.0-2_arm64.deb
+│           │   ├── rmlint_2.8.0-2_armel.deb
+│           │   ├── rmlint_2.8.0-2_powerpc.deb
+│           │   ├── rmlint_2.8.0-2_ppc64.deb
+│           │   ├── rng-tools_6.6-0_amd64.deb
+│           │   ├── rng-tools_6.6-0_arm64.deb
+│           │   ├── rng-tools_6.6-0_armel.deb
+│           │   ├── rng-tools_6.6-0_powerpc.deb
+│           │   ├── rng-tools_6.6-0_ppc64.deb
+│           │   ├── rng-tools_6.7-0_amd64.deb
+│           │   ├── rng-tools_6.7-0_arm64.deb
+│           │   ├── rng-tools_6.7-0_armel.deb
+│           │   ├── rng-tools_6.7-0_powerpc.deb
+│           │   ├── rng-tools_6.7-0_ppc64.deb
+│           │   ├── rng-tools_6.7-1_amd64.deb
+│           │   ├── rng-tools_6.7-1_arm64.deb
+│           │   ├── rng-tools_6.7-1_armel.deb
+│           │   ├── rng-tools_6.7-1_powerpc.deb
+│           │   ├── rng-tools_6.7-1_ppc64.deb
+│           │   ├── rng-tools_6.7-2_amd64.deb
+│           │   ├── rng-tools_6.7-2_arm64.deb
+│           │   ├── rng-tools_6.7-2_armel.deb
+│           │   ├── rng-tools_6.7-2_powerpc.deb
+│           │   ├── rng-tools_6.7-2_ppc64.deb
+│           │   ├── rocs_18.12.2-0_amd64.deb
+│           │   ├── rocs_18.12.2-0_armel.deb
+│           │   ├── rocs_18.12.3-1_amd64.deb
+│           │   ├── rocs_18.12.3-1_arm64.deb
+│           │   ├── rocs_18.12.3-1_armel.deb
+│           │   ├── rocs_18.12.3-1_powerpc.deb
+│           │   ├── rocs_18.12.3-1_ppc64.deb
+│           │   ├── rofi_1.5.2-0_amd64.deb
+│           │   ├── rofi_1.5.2-0_armel.deb
+│           │   ├── rofi_1.5.2-0_powerpc.deb
+│           │   ├── rofi_1.5.2-0_ppc64.deb
+│           │   ├── rosegarden_18.06-1_arm64.deb
+│           │   ├── roxterm_3.7.3-0_amd64.deb
+│           │   ├── roxterm_3.7.3-0_armel.deb
+│           │   ├── roxterm_3.7.3-0_powerpc.deb
+│           │   ├── roxterm_3.7.3-0_ppc64.deb
+│           │   ├── rpcbind_1.2.5-0_i586.deb
+│           │   ├── rpcbind_1.2.5-0_riscv64.deb
+│           │   ├── rpm_4.14.2.1-0_arm64.deb
+│           │   ├── rpm_4.14.2.1-0_armel.deb
+│           │   ├── rpm_4.14.2.1-0_powerpc.deb
+│           │   ├── rpm_4.14.2.1-0_ppc64.deb
+│           │   ├── rpm_4.14.2.1-1_amd64.deb
+│           │   ├── rpm_4.14.2.1-1_arm64.deb
+│           │   ├── rpm_4.14.2.1-1_armel.deb
+│           │   ├── rpm_4.14.2.1-1_i586.deb
+│           │   ├── rpm_4.14.2.1-1_powerpc.deb
+│           │   ├── rpm_4.14.2.1-1_ppc64.deb
+│           │   ├── rrdtool_1.7.0-0_riscv64.deb
+│           │   ├── rrdtool_1.7.1-0_amd64.deb
+│           │   ├── rrdtool_1.7.1-0_i586.deb
+│           │   ├── rrdtool_1.7.1-0_powerpc.deb
+│           │   ├── rrdtool_1.7.1-0_ppc64.deb
+│           │   ├── rsa_4.0-0_noarch.deb
+│           │   ├── rsa_4.0-1_noarch.deb
+│           │   ├── rsakeyfind_1.0-1_arm64.deb
+│           │   ├── rspamd_1.8.1-0_amd64.deb
+│           │   ├── rspamd_1.8.1-0_arm64.deb
+│           │   ├── rspamd_1.8.1-0_armel.deb
+│           │   ├── rspamd_1.8.1-0_powerpc.deb
+│           │   ├── rspamd_1.8.1-0_ppc64.deb
+│           │   ├── rspamd_1.8.3-0_amd64.deb
+│           │   ├── rspamd_1.8.3-0_arm64.deb
+│           │   ├── rspamd_1.8.3-0_armel.deb
+│           │   ├── rspamd_1.8.3-0_powerpc.deb
+│           │   ├── rspamd_1.8.3-0_ppc64.deb
+│           │   ├── rspamd_1.8.3-1_amd64.deb
+│           │   ├── rspamd_1.8.3-1_arm64.deb
+│           │   ├── rspamd_1.8.3-1_armel.deb
+│           │   ├── rspamd_1.8.3-1_powerpc.deb
+│           │   ├── rspamd_1.8.3-1_ppc64.deb
+│           │   ├── rsync_3.1.3-0_i586.deb
+│           │   ├── rsync_3.1.3-0_riscv64.deb
+│           │   ├── rtl8821ce_20181024-0_amd64.deb
+│           │   ├── rtl8821ce_20181024-0_arm64.deb
+│           │   ├── rtl8821ce_20181024-0_armel.deb
+│           │   ├── rtl8821ce_20181024-0_powerpc.deb
+│           │   ├── rtl8821ce_20181024-0_ppc64.deb
+│           │   ├── rtmidi_3.0.0-1_arm64.deb
+│           │   ├── rtmpdump_20151223-0_riscv64.deb
+│           │   ├── rtmpdump_20151223-1_amd64.deb
+│           │   ├── rtmpdump_20151223-1_arm64.deb
+│           │   ├── rtmpdump_20151223-1_armel.deb
+│           │   ├── rtmpdump_20151223-1_i586.deb
+│           │   ├── rtmpdump_20151223-1_powerpc.deb
+│           │   ├── rtmpdump_20151223-1_ppc64.deb
+│           │   ├── rtmpdump_20151223-1_riscv64.deb
+│           │   ├── rtv_1.25.1-0_amd64.deb
+│           │   ├── rtv_1.25.1-1_amd64.deb
+│           │   ├── rtv_1.26.0-0_amd64.deb
+│           │   ├── ruamel-ordereddict_0.4.13-0_amd64.deb
+│           │   ├── ruamel-ordereddict_0.4.13-0_arm64.deb
+│           │   ├── ruamel-ordereddict_0.4.13-0_armel.deb
+│           │   ├── ruamel-ordereddict_0.4.13-0_powerpc.deb
+│           │   ├── ruamel-ordereddict_0.4.13-0_ppc64.deb
+│           │   ├── ruamel-yaml_0.15.78-0_amd64.deb
+│           │   ├── ruamel-yaml_0.15.78-0_arm64.deb
+│           │   ├── ruamel-yaml_0.15.78-0_armel.deb
+│           │   ├── ruamel-yaml_0.15.78-0_powerpc.deb
+│           │   ├── ruamel-yaml_0.15.78-0_ppc64.deb
+│           │   ├── ruamel-yaml_0.15.78-1_amd64.deb
+│           │   ├── ruamel-yaml_0.15.78-1_arm64.deb
+│           │   ├── ruamel-yaml_0.15.78-1_armel.deb
+│           │   ├── ruamel-yaml_0.15.78-1_powerpc.deb
+│           │   ├── ruamel-yaml_0.15.78-1_ppc64.deb
+│           │   ├── rubberband_1.8.2-1_arm64.deb
+│           │   ├── rubiks_20070912-1_arm64.deb
+│           │   ├── ruby-atk_3.3.2-0_amd64.deb
+│           │   ├── ruby-atk_3.3.2-0_powerpc.deb
+│           │   ├── ruby-atk_3.3.2-0_ppc64.deb
+│           │   ├── ruby-bundler_1.17.1-0_noarch.deb
+│           │   ├── ruby-bundler_2.0.1-0_noarch.deb
+│           │   ├── ruby-cairo-gobject_3.3.2-0_amd64.deb
+│           │   ├── ruby-cairo-gobject_3.3.2-0_powerpc.deb
+│           │   ├── ruby-cairo-gobject_3.3.2-0_ppc64.deb
+│           │   ├── ruby-cairo_1.16.0-0_amd64.deb
+│           │   ├── ruby-cairo_1.16.2-0_amd64.deb
+│           │   ├── ruby-cairo_1.16.2-0_powerpc.deb
+│           │   ├── ruby-cairo_1.16.2-0_ppc64.deb
+│           │   ├── ruby-ffi_1.10.0-0_amd64.deb
+│           │   ├── ruby-ffi_1.10.0-0_powerpc.deb
+│           │   ├── ruby-ffi_1.10.0-0_ppc64.deb
+│           │   ├── ruby-gdk-pixbuf2_3.3.2-0_amd64.deb
+│           │   ├── ruby-gdk-pixbuf2_3.3.2-0_powerpc.deb
+│           │   ├── ruby-gdk-pixbuf2_3.3.2-0_ppc64.deb
+│           │   ├── ruby-gio2_3.3.2-0_amd64.deb
+│           │   ├── ruby-gio2_3.3.2-0_powerpc.deb
+│           │   ├── ruby-gio2_3.3.2-0_ppc64.deb
+│           │   ├── ruby-glib2_3.3.2-0_amd64.deb
+│           │   ├── ruby-glib2_3.3.2-0_powerpc.deb
+│           │   ├── ruby-glib2_3.3.2-0_ppc64.deb
+│           │   ├── ruby-gobject-introspection_3.3.2-0_amd64.deb
+│           │   ├── ruby-gobject-introspection_3.3.2-0_powerpc.deb
+│           │   ├── ruby-gobject-introspection_3.3.2-0_ppc64.deb
+│           │   ├── ruby-gtk2_3.3.2-0_amd64.deb
+│           │   ├── ruby-gtk2_3.3.2-0_powerpc.deb
+│           │   ├── ruby-gtk2_3.3.2-0_ppc64.deb
+│           │   ├── ruby-pango_3.3.2-0_amd64.deb
+│           │   ├── ruby-pango_3.3.2-0_powerpc.deb
+│           │   ├── ruby-pango_3.3.2-0_ppc64.deb
+│           │   ├── ruby-pg_1.1.4-0_amd64.deb
+│           │   ├── ruby-pg_1.1.4-0_powerpc.deb
+│           │   ├── ruby-pg_1.1.4-0_ppc64.deb
+│           │   ├── ruby_2.5.3-0_arm64.deb
+│           │   ├── ruby_2.5.3-0_armel.deb
+│           │   ├── ruby_2.5.3-0_powerpc.deb
+│           │   ├── ruby_2.5.3-0_ppc64.deb
+│           │   ├── ruby_2.5.3-0_riscv64.deb
+│           │   ├── ruby_2.5.3-1_amd64.deb
+│           │   ├── ruby_2.5.3-1_arm64.deb
+│           │   ├── ruby_2.5.3-1_armel.deb
+│           │   ├── ruby_2.5.3-1_powerpc.deb
+│           │   ├── ruby_2.5.3-1_ppc64.deb
+│           │   ├── ruby_2.5.3-2_i586.deb
+│           │   ├── ruby_2.5.5-0_amd64.deb
+│           │   ├── ruby_2.5.5-1_amd64.deb
+│           │   ├── ruby_2.5.5-1_arm64.deb
+│           │   ├── ruby_2.5.5-1_armel.deb
+│           │   ├── ruby_2.5.5-1_powerpc.deb
+│           │   ├── ruby_2.5.5-1_ppc64.deb
+│           │   ├── ruffus_2.8.1-0_noarch.deb
+│           │   ├── ruffus_2.8.1-1_noarch.deb
+│           │   ├── rustc_1.32.0-0_amd64.deb
+│           │   ├── rustc_1.32.0-0_arm64.deb
+│           │   ├── rustc_1.32.0-0_armel.deb
+│           │   ├── rustc_1.33.0-0_amd64.deb
+│           │   ├── rustc_1.33.0-0_arm64.deb
+│           │   ├── rustc_1.33.0-0_armel.deb
+│           │   ├── rustc_1.33.0-1_amd64.deb
+│           │   ├── rustc_1.33.0-1_arm64.deb
+│           │   ├── rustc_1.33.0-1_armel.deb
+│           │   ├── rustc_1.34.0-0_amd64.deb
+│           │   ├── rustc_1.34.0-0_i586.deb
+│           │   ├── rustc_1.34.2-0_amd64.deb
+│           │   ├── rustc_1.34.2-0_arm64.deb
+│           │   ├── rustc_1.35.0-0_amd64.deb
+│           │   ├── rustc_1.35.0-0_arm64.deb
+│           │   ├── rustc_1.35.0-0_armel.deb
+│           │   ├── rustc_1.35.0-0_powerpc.deb
+│           │   ├── rxvt-unicode_9.22-3_amd64.deb
+│           │   ├── rxvt-unicode_9.22-3_arm64.deb
+│           │   ├── rxvt-unicode_9.22-3_armel.deb
+│           │   ├── rxvt-unicode_9.22-3_powerpc.deb
+│           │   └── rxvt-unicode_9.22-3_ppc64.deb
+│           ├── u
+│           │   ├── uasm_2.13+git20180328-0_amd64.deb
+│           │   ├── uasm_2.13+git20180328-0_arm64.deb
+│           │   ├── uasm_2.13+git20180328-0_armel.deb
+│           │   ├── uasm_2.13+git20180328-0_powerpc.deb
+│           │   ├── uasm_2.13+git20180328-0_ppc64.deb
+│           │   ├── uboot-tools_2019.01-0_amd64.deb
+│           │   ├── uboot-tools_2019.01-0_ppc64.deb
+│           │   ├── uboot-tools_2019.01-1_amd64.deb
+│           │   ├── uboot-tools_2019.01-1_arm64.deb
+│           │   ├── uboot-tools_2019.01-1_armel.deb
+│           │   ├── uboot-tools_2019.01-1_powerpc.deb
+│           │   ├── uboot-tools_2019.01-1_ppc64.deb
+│           │   ├── ubuntu-font-family_0.83-0_noarch.deb
+│           │   ├── uchardet_0.0.5-1_arm64.deb
+│           │   ├── ucommon_7.0.0-2_arm64.deb
+│           │   ├── udisks-2_2.8.1-0_amd64.deb
+│           │   ├── udisks-2_2.8.1-0_armel.deb
+│           │   ├── udisks-2_2.8.1-0_powerpc.deb
+│           │   ├── udisks-2_2.8.1-0_ppc64.deb
+│           │   ├── uefitool_20181230-1_arm64.deb
+│           │   ├── ufraw_0.22-5_arm64.deb
+│           │   ├── ufw_0.36-0_noarch.deb
+│           │   ├── ufw_0.36-1_noarch.deb
+│           │   ├── uget_2.2.1-1_amd64.deb
+│           │   ├── uget_2.2.1-1_arm64.deb
+│           │   ├── uget_2.2.1-1_armel.deb
+│           │   ├── uget_2.2.1-1_powerpc.deb
+│           │   ├── uget_2.2.1-1_ppc64.deb
+│           │   ├── uim_1.8.8-1_arm64.deb
+│           │   ├── ujson_1.35-2_amd64.deb
+│           │   ├── ujson_1.35-2_arm64.deb
+│           │   ├── ujson_1.35-2_armel.deb
+│           │   ├── ujson_1.35-2_powerpc.deb
+│           │   ├── ujson_1.35-2_ppc64.deb
+│           │   ├── umbrello_18.12.2-0_amd64.deb
+│           │   ├── umbrello_18.12.2-0_armel.deb
+│           │   ├── umbrello_18.12.3-1_amd64.deb
+│           │   ├── umbrello_18.12.3-1_arm64.deb
+│           │   ├── umbrello_18.12.3-1_armel.deb
+│           │   ├── umbrello_18.12.3-1_ppc64.deb
+│           │   ├── unar_1.10.1-2_amd64.deb
+│           │   ├── unbound_1.8.0-0_riscv64.deb
+│           │   ├── unbound_1.9.0-0_amd64.deb
+│           │   ├── unbound_1.9.0-0_powerpc.deb
+│           │   ├── unbound_1.9.0-0_ppc64.deb
+│           │   ├── unbound_1.9.0-1_amd64.deb
+│           │   ├── unbound_1.9.0-1_arm64.deb
+│           │   ├── unbound_1.9.0-1_armel.deb
+│           │   ├── unbound_1.9.0-1_powerpc.deb
+│           │   ├── unbound_1.9.0-1_ppc64.deb
+│           │   ├── unbound_1.9.0-2_amd64.deb
+│           │   ├── unbound_1.9.0-2_arm64.deb
+│           │   ├── unbound_1.9.0-2_armel.deb
+│           │   ├── unbound_1.9.0-2_i586.deb
+│           │   ├── unbound_1.9.0-2_powerpc.deb
+│           │   ├── unbound_1.9.0-2_ppc64.deb
+│           │   ├── unbound_1.9.0-2_riscv64.deb
+│           │   ├── uncrustify_0.68.1-0_amd64.deb
+│           │   ├── uncrustify_0.68.1-0_arm64.deb
+│           │   ├── uncrustify_0.68.1-0_armel.deb
+│           │   ├── uncrustify_0.68.1-0_powerpc.deb
+│           │   ├── uncrustify_0.68.1-0_ppc64.deb
+│           │   ├── uncrustify_0.68.1-1_amd64.deb
+│           │   ├── uncrustify_0.68.1-1_arm64.deb
+│           │   ├── uncrustify_0.68.1-1_armel.deb
+│           │   ├── uncrustify_0.68.1-1_powerpc.deb
+│           │   ├── uncrustify_0.68.1-1_ppc64.deb
+│           │   ├── unidecode_1.0.23-0_noarch.deb
+│           │   ├── unidecode_1.0.23-1_noarch.deb
+│           │   ├── unifont_11.0.03-0_noarch.deb
+│           │   ├── unifont_12.0.01-0_noarch.deb
+│           │   ├── units_2.18-0_amd64.deb
+│           │   ├── units_2.18-0_arm64.deb
+│           │   ├── units_2.18-0_armel.deb
+│           │   ├── units_2.18-0_powerpc.deb
+│           │   ├── units_2.18-0_ppc64.deb
+│           │   ├── unixodbc_2.3.7-0_i586.deb
+│           │   ├── unixodbc_2.3.7-0_riscv64.deb
+│           │   ├── unrar_5.6.5-0_riscv64.deb
+│           │   ├── unrar_5.7.1-0_amd64.deb
+│           │   ├── unrar_5.7.1-0_armel.deb
+│           │   ├── unrar_5.7.1-0_powerpc.deb
+│           │   ├── unrar_5.7.1-0_ppc64.deb
+│           │   ├── unrar_5.7.1-0_riscv64.deb
+│           │   ├── unrar_5.7.3-0_amd64.deb
+│           │   ├── unrar_5.7.3-0_arm64.deb
+│           │   ├── unrar_5.7.3-0_armel.deb
+│           │   ├── unrar_5.7.3-0_powerpc.deb
+│           │   ├── unrar_5.7.3-0_ppc64.deb
+│           │   ├── unrar_5.7.3-1_amd64.deb
+│           │   ├── unrar_5.7.3-1_arm64.deb
+│           │   ├── unrar_5.7.3-1_armel.deb
+│           │   ├── unrar_5.7.3-1_i586.deb
+│           │   ├── unrar_5.7.3-1_powerpc.deb
+│           │   ├── unrar_5.7.3-1_ppc64.deb
+│           │   ├── unrtf_0.21.10-0_amd64.deb
+│           │   ├── unrtf_0.21.10-0_arm64.deb
+│           │   ├── unrtf_0.21.10-0_armel.deb
+│           │   ├── unrtf_0.21.10-0_powerpc.deb
+│           │   ├── unrtf_0.21.10-0_ppc64.deb
+│           │   ├── unshield_1.4.3-0_amd64.deb
+│           │   ├── unshield_1.4.3-0_armel.deb
+│           │   ├── unshield_1.4.3-0_powerpc.deb
+│           │   ├── unshield_1.4.3-0_ppc64.deb
+│           │   ├── unshield_1.4.3-1_amd64.deb
+│           │   ├── unshield_1.4.3-1_arm64.deb
+│           │   ├── unshield_1.4.3-1_armel.deb
+│           │   ├── unshield_1.4.3-1_powerpc.deb
+│           │   ├── unshield_1.4.3-1_ppc64.deb
+│           │   ├── unzip_6.10c23-0_i586.deb
+│           │   ├── unzip_6.10c23-0_riscv64.deb
+│           │   ├── update-alternatives_1.19.0.5-0_riscv64.deb
+│           │   ├── update-alternatives_1.19.5-0_amd64.deb
+│           │   ├── update-alternatives_1.19.5-0_arm64.deb
+│           │   ├── update-alternatives_1.19.5-0_ppc64.deb
+│           │   ├── update-alternatives_1.19.5-1_i586.deb
+│           │   ├── update-alternatives_1.19.5-2_amd64.deb
+│           │   ├── update-alternatives_1.19.5-2_arm64.deb
+│           │   ├── update-alternatives_1.19.5-2_armel.deb
+│           │   ├── update-alternatives_1.19.5-2_i586.deb
+│           │   ├── update-alternatives_1.19.5-2_powerpc.deb
+│           │   ├── update-alternatives_1.19.5-2_ppc64.deb
+│           │   ├── upx_3.95-1_arm64.deb
+│           │   ├── uriparser_0.9.1-0_amd64.deb
+│           │   ├── uriparser_0.9.1-0_arm64.deb
+│           │   ├── uriparser_0.9.1-0_armel.deb
+│           │   ├── uriparser_0.9.1-0_powerpc.deb
+│           │   ├── uriparser_0.9.1-0_ppc64.deb
+│           │   ├── uritemplate_3.0.0-0_noarch.deb
+│           │   ├── uritemplate_3.0.0-1_noarch.deb
+│           │   ├── urllib3_1.24-0_noarch.deb
+│           │   ├── urllib3_1.24-1_noarch.deb
+│           │   ├── urllib3_1.24.3-0_noarch.deb
+│           │   ├── urw-fonts_20170804-0_noarch.deb
+│           │   ├── urwid_2.0.1-1_amd64.deb
+│           │   ├── urwid_2.0.1-1_arm64.deb
+│           │   ├── urwid_2.0.1-1_armel.deb
+│           │   ├── urwid_2.0.1-1_i586.deb
+│           │   ├── urwid_2.0.1-1_powerpc.deb
+│           │   ├── urwid_2.0.1-1_ppc64.deb
+│           │   ├── usbutils_010-0_i586.deb
+│           │   ├── usbutils_010-0_riscv64.deb
+│           │   ├── user-manager_5.15.0-0_amd64.deb
+│           │   ├── user-manager_5.15.2-0_amd64.deb
+│           │   ├── user-manager_5.15.2-0_armel.deb
+│           │   ├── user-manager_5.15.2-0_powerpc.deb
+│           │   ├── user-manager_5.15.2-0_ppc64.deb
+│           │   ├── user-manager_5.15.3-1_amd64.deb
+│           │   ├── user-manager_5.15.3-1_arm64.deb
+│           │   ├── user-manager_5.15.3-1_armel.deb
+│           │   ├── user-manager_5.15.3-1_powerpc.deb
+│           │   ├── user-manager_5.15.3-1_ppc64.deb
+│           │   ├── util-linux_2.32-0_riscv64.deb
+│           │   ├── util-linux_2.33.1-0_amd64.deb
+│           │   ├── util-linux_2.33.1-0_powerpc.deb
+│           │   ├── util-linux_2.33.1-0_ppc64.deb
+│           │   ├── util-linux_2.33.1-2_amd64.deb
+│           │   ├── util-linux_2.33.1-2_arm64.deb
+│           │   ├── util-linux_2.33.1-2_armel.deb
+│           │   ├── util-linux_2.33.1-2_i586.deb
+│           │   ├── util-linux_2.33.1-2_powerpc.deb
+│           │   ├── util-linux_2.33.1-2_ppc64.deb
+│           │   ├── util-macros_1.19.2-0_i586.deb
+│           │   ├── util-macros_1.19.2-0_riscv64.deb
+│           │   ├── uw-imap_2007f-5_riscv64.deb
+│           │   ├── uw-imap_2007f-6_amd64.deb
+│           │   ├── uw-imap_2007f-6_arm64.deb
+│           │   ├── uw-imap_2007f-6_armel.deb
+│           │   ├── uw-imap_2007f-6_i586.deb
+│           │   ├── uw-imap_2007f-6_powerpc.deb
+│           │   ├── uw-imap_2007f-6_ppc64.deb
+│           │   ├── uw-imap_2007f-7_amd64.deb
+│           │   ├── uw-imap_2007f-7_arm64.deb
+│           │   ├── uw-imap_2007f-7_armel.deb
+│           │   ├── uw-imap_2007f-7_powerpc.deb
+│           │   ├── uw-imap_2007f-7_ppc64.deb
+│           │   ├── uw-imap_2007f-9_amd64.deb
+│           │   ├── uw-imap_2007f-9_arm64.deb
+│           │   ├── uw-imap_2007f-9_armel.deb
+│           │   ├── uw-imap_2007f-9_powerpc.deb
+│           │   └── uw-imap_2007f-9_ppc64.deb
+│           ├── v
+│           │   ├── v2ray_4.15.0-0_amd64.deb
+│           │   ├── v2ray_4.15.0-0_arm64.deb
+│           │   ├── v2ray_4.15.0-0_armel.deb
+│           │   ├── v2ray_4.18.0-0_amd64.deb
+│           │   ├── v2ray_4.18.0-0_arm64.deb
+│           │   ├── v2ray_4.18.0-0_armel.deb
+│           │   ├── v2ray_4.9.0-0_amd64.deb
+│           │   ├── v2ray_4.9.0-0_arm64.deb
+│           │   ├── v2ray_4.9.0-0_armel.deb
+│           │   ├── v4l-utils_1.16.0-0_riscv64.deb
+│           │   ├── v4l-utils_1.16.3-0_amd64.deb
+│           │   ├── v4l-utils_1.16.3-0_armel.deb
+│           │   ├── v4l-utils_1.16.3-0_powerpc.deb
+│           │   ├── v4l-utils_1.16.3-0_ppc64.deb
+│           │   ├── v4l-utils_1.16.3-0_riscv64.deb
+│           │   ├── v4l-utils_1.16.3-1_amd64.deb
+│           │   ├── v4l-utils_1.16.3-2_amd64.deb
+│           │   ├── v4l-utils_1.16.3-2_arm64.deb
+│           │   ├── v4l-utils_1.16.3-2_armel.deb
+│           │   ├── v4l-utils_1.16.3-2_i586.deb
+│           │   ├── v4l-utils_1.16.3-2_powerpc.deb
+│           │   ├── v4l-utils_1.16.3-2_ppc64.deb
+│           │   ├── vala-panel-appmenu_0.7.1-0_amd64.deb
+│           │   ├── vala-panel-appmenu_0.7.1-0_arm64.deb
+│           │   ├── vala-panel-appmenu_0.7.1-0_armel.deb
+│           │   ├── vala-panel-appmenu_0.7.1-0_powerpc.deb
+│           │   ├── vala-panel-appmenu_0.7.1-0_ppc64.deb
+│           │   ├── vala_0.42.4-0_amd64.deb
+│           │   ├── vala_0.42.4-0_arm64.deb
+│           │   ├── vala_0.42.4-0_armel.deb
+│           │   ├── vala_0.42.4-0_powerpc.deb
+│           │   ├── vala_0.42.4-0_ppc64.deb
+│           │   ├── vala_0.42.4-0_riscv64.deb
+│           │   ├── vala_0.42.5-0_amd64.deb
+│           │   ├── vala_0.42.5-0_arm64.deb
+│           │   ├── vala_0.42.5-0_armel.deb
+│           │   ├── vala_0.42.5-0_i586.deb
+│           │   ├── vala_0.42.5-0_powerpc.deb
+│           │   ├── vala_0.42.5-0_ppc64.deb
+│           │   ├── vala_0.42.5-0_riscv64.deb
+│           │   ├── valgrind_3.14.0-0_amd64.deb
+│           │   ├── valgrind_3.14.0-0_arm64.deb
+│           │   ├── valgrind_3.14.0-0_armel.deb
+│           │   ├── valgrind_3.14.0-0_i586.deb
+│           │   ├── valgrind_3.14.0-0_powerpc.deb
+│           │   ├── valgrind_3.14.0-0_ppc64.deb
+│           │   ├── vamp-plugin-sdk_2.8.0-0_amd64.deb
+│           │   ├── vamp-plugin-sdk_2.8.0-0_powerpc.deb
+│           │   ├── vamp-plugin-sdk_2.8.0-0_ppc64.deb
+│           │   ├── vamp-plugin-sdk_2.8.0-1_amd64.deb
+│           │   ├── vamp-plugin-sdk_2.8.0-1_arm64.deb
+│           │   ├── vamp-plugin-sdk_2.8.0-1_powerpc.deb
+│           │   ├── vamp-plugin-sdk_2.8.0-1_ppc64.deb
+│           │   ├── vapoursynth_45.1-0_amd64.deb
+│           │   ├── vapoursynth_45.1-0_arm64.deb
+│           │   ├── vapoursynth_45.1-0_armel.deb
+│           │   ├── vapoursynth_45.1-0_powerpc.deb
+│           │   ├── vapoursynth_45.1-0_ppc64.deb
+│           │   ├── vapoursynth_45.1-1_amd64.deb
+│           │   ├── vapoursynth_45.1-1_arm64.deb
+│           │   ├── vapoursynth_45.1-1_armel.deb
+│           │   ├── vapoursynth_45.1-1_powerpc.deb
+│           │   ├── vapoursynth_45.1-1_ppc64.deb
+│           │   ├── vapoursynth_45.1-2_amd64.deb
+│           │   ├── vapoursynth_45.1-2_arm64.deb
+│           │   ├── vapoursynth_45.1-2_armel.deb
+│           │   ├── vapoursynth_45.1-2_powerpc.deb
+│           │   ├── vapoursynth_45.1-2_ppc64.deb
+│           │   ├── variety_0.7.1-0_noarch.deb
+│           │   ├── variety_0.7.1-1_noarch.deb
+│           │   ├── varnish_6.1.1-0_amd64.deb
+│           │   ├── varnish_6.1.1-0_powerpc.deb
+│           │   ├── varnish_6.1.1-0_ppc64.deb
+│           │   ├── vba-m_2.1.0-1_arm64.deb
+│           │   ├── vba-m_2.1.0-1_armel.deb
+│           │   ├── vba-m_2.1.0-2_arm64.deb
+│           │   ├── vba-m_2.1.0-2_armel.deb
+│           │   ├── vc_1.4.1-0_amd64.deb
+│           │   ├── vc_1.4.1-0_arm64.deb
+│           │   ├── vc_1.4.1-0_armel.deb
+│           │   ├── vc_1.4.1-0_powerpc.deb
+│           │   ├── vc_1.4.1-0_ppc64.deb
+│           │   ├── vde2_2.3.2-1_amd64.deb
+│           │   ├── vde2_2.3.2-1_arm64.deb
+│           │   ├── vde2_2.3.2-1_armel.deb
+│           │   ├── vde2_2.3.2-1_powerpc.deb
+│           │   ├── vde2_2.3.2-1_ppc64.deb
+│           │   ├── vdpauinfo_1.0-2_arm64.deb
+│           │   ├── veracrypt_1.23-0_amd64.deb
+│           │   ├── veracrypt_1.23-0_arm64.deb
+│           │   ├── veracrypt_1.23-0_armel.deb
+│           │   ├── veracrypt_1.23-0_powerpc.deb
+│           │   ├── veracrypt_1.23-0_ppc64.deb
+│           │   ├── veracrypt_1.23-1_amd64.deb
+│           │   ├── veracrypt_1.23-1_arm64.deb
+│           │   ├── veracrypt_1.23-1_armel.deb
+│           │   ├── veracrypt_1.23-1_powerpc.deb
+│           │   ├── veracrypt_1.23-1_ppc64.deb
+│           │   ├── verilator_4.010-0_amd64.deb
+│           │   ├── verilator_4.010-0_armel.deb
+│           │   ├── verilator_4.010-0_powerpc.deb
+│           │   ├── verilator_4.010-0_ppc64.deb
+│           │   ├── verilator_4.010-1_amd64.deb
+│           │   ├── verilator_4.010-1_arm64.deb
+│           │   ├── verilator_4.010-1_armel.deb
+│           │   ├── verilator_4.010-1_powerpc.deb
+│           │   ├── verilator_4.010-1_ppc64.deb
+│           │   ├── vice_3.3-0_amd64.deb
+│           │   ├── vice_3.3-0_powerpc.deb
+│           │   ├── vice_3.3-0_ppc64.deb
+│           │   ├── vice_3.3-1_amd64.deb
+│           │   ├── vice_3.3-1_arm64.deb
+│           │   ├── vice_3.3-1_armel.deb
+│           │   ├── vice_3.3-1_powerpc.deb
+│           │   ├── vice_3.3-1_ppc64.deb
+│           │   ├── viennacl_1.7.1-0_amd64.deb
+│           │   ├── viennacl_1.7.1-0_arm64.deb
+│           │   ├── viennacl_1.7.1-0_armel.deb
+│           │   ├── viennacl_1.7.1-0_powerpc.deb
+│           │   ├── viennacl_1.7.1-0_ppc64.deb
+│           │   ├── vigra_1.11.1-5_arm64.deb
+│           │   ├── vim-nox_8.1.0436-2_riscv64.deb
+│           │   ├── vim-nox_8.1.0925-0_amd64.deb
+│           │   ├── vim-nox_8.1.0925-0_arm64.deb
+│           │   ├── vim-nox_8.1.0925-0_armel.deb
+│           │   ├── vim-nox_8.1.0925-0_i586.deb
+│           │   ├── vim-nox_8.1.0925-0_powerpc.deb
+│           │   ├── vim-nox_8.1.0925-0_ppc64.deb
+│           │   ├── vim-nox_8.1.0925-0_riscv64.deb
+│           │   ├── vim-nox_8.1.1495-0_armel.deb
+│           │   ├── vim-nox_8.1.1495-0_powerpc.deb
+│           │   ├── vim-nox_8.1.1495-0_ppc64.deb
+│           │   ├── vim-runtime_8.1.0436-2_riscv64.deb
+│           │   ├── vim-runtime_8.1.0925-0_amd64.deb
+│           │   ├── vim-runtime_8.1.0925-0_arm64.deb
+│           │   ├── vim-runtime_8.1.0925-0_armel.deb
+│           │   ├── vim-runtime_8.1.0925-0_i586.deb
+│           │   ├── vim-runtime_8.1.0925-0_powerpc.deb
+│           │   ├── vim-runtime_8.1.0925-0_ppc64.deb
+│           │   ├── vim-runtime_8.1.0925-0_riscv64.deb
+│           │   ├── vim-runtime_8.1.1495-0_armel.deb
+│           │   ├── vim-runtime_8.1.1495-0_powerpc.deb
+│           │   ├── vim-runtime_8.1.1495-0_ppc64.deb
+│           │   ├── vim_8.1.0436-2_riscv64.deb
+│           │   ├── vim_8.1.0925-0_amd64.deb
+│           │   ├── vim_8.1.0925-0_arm64.deb
+│           │   ├── vim_8.1.0925-0_armel.deb
+│           │   ├── vim_8.1.0925-0_i586.deb
+│           │   ├── vim_8.1.0925-0_powerpc.deb
+│           │   ├── vim_8.1.0925-0_ppc64.deb
+│           │   ├── vim_8.1.0925-0_riscv64.deb
+│           │   ├── vim_8.1.1495-0_arm64.deb
+│           │   ├── vim_8.1.1495-0_armel.deb
+│           │   ├── vim_8.1.1495-0_powerpc.deb
+│           │   ├── vim_8.1.1495-0_ppc64.deb
+│           │   ├── virglrenderer_0.7.0-1_arm64.deb
+│           │   ├── virt-manager_2.0.0-0_amd64.deb
+│           │   ├── virt-manager_2.1.0-0_amd64.deb
+│           │   ├── virt-what_1.19-0_amd64.deb
+│           │   ├── virtualbox-guest_6.0.2-0_amd64.deb
+│           │   ├── virtualbox-guest_6.0.4-0_amd64.deb
+│           │   ├── virtualbox-guest_6.0.4-1_amd64.deb
+│           │   ├── virtualbox-guest_6.0.6-0_amd64.deb
+│           │   ├── virtualbox-guest_6.0.6-1_amd64.deb
+│           │   ├── virtualbox_6.0.2-0_amd64.deb
+│           │   ├── virtualbox_6.0.4-0_amd64.deb
+│           │   ├── virtualbox_6.0.4-1_amd64.deb
+│           │   ├── virtualbox_6.0.6-0_amd64.deb
+│           │   ├── virtualbox_6.0.6-1_amd64.deb
+│           │   ├── virtualenv_16.4.1-0_noarch.deb
+│           │   ├── virtualenv_16.4.1-1_noarch.deb
+│           │   ├── virtualgl_2.6.1-0_amd64.deb
+│           │   ├── virtualgl_2.6.1-0_powerpc.deb
+│           │   ├── virtualgl_2.6.1-0_ppc64.deb
+│           │   ├── vivaldi_2.6.1566.44-0_amd64.deb
+│           │   ├── vkd3d_1.1-0_amd64.deb
+│           │   ├── vkd3d_1.1-1_amd64.deb
+│           │   ├── vlc_3.0.5-0_amd64.deb
+│           │   ├── vlc_3.0.5-0_arm64.deb
+│           │   ├── vlc_3.0.5-0_armel.deb
+│           │   ├── vlc_3.0.5-0_powerpc.deb
+│           │   ├── vlc_3.0.5-0_ppc64.deb
+│           │   ├── vlc_3.0.6-0_amd64.deb
+│           │   ├── vlc_3.0.6-0_armel.deb
+│           │   ├── vlc_3.0.6-0_powerpc.deb
+│           │   ├── vlc_3.0.6-0_ppc64.deb
+│           │   ├── vlc_3.0.6-1_amd64.deb
+│           │   ├── vlc_3.0.6-1_arm64.deb
+│           │   ├── vlc_3.0.6-1_armel.deb
+│           │   ├── vlc_3.0.6-1_powerpc.deb
+│           │   ├── vlc_3.0.6-1_ppc64.deb
+│           │   ├── vlc_3.0.6-2_amd64.deb
+│           │   ├── vlc_3.0.6-3_amd64.deb
+│           │   ├── vlc_3.0.6-4_amd64.deb
+│           │   ├── vlc_3.0.6-4_arm64.deb
+│           │   ├── vlc_3.0.6-4_armel.deb
+│           │   ├── vlc_3.0.6-4_powerpc.deb
+│           │   ├── vlc_3.0.6-4_ppc64.deb
+│           │   ├── vlc_3.0.7.1-0_amd64.deb
+│           │   ├── vlc_3.0.7.1-0_arm64.deb
+│           │   ├── vlc_3.0.7.1-0_armel.deb
+│           │   ├── vlc_3.0.7.1-0_powerpc.deb
+│           │   ├── vlc_3.0.7.1-0_ppc64.deb
+│           │   ├── vmpk_0.7.0-1_amd64.deb
+│           │   ├── vmpk_0.7.0-1_arm64.deb
+│           │   ├── vmpk_0.7.0-1_armel.deb
+│           │   ├── vmpk_0.7.0-1_powerpc.deb
+│           │   ├── vmpk_0.7.0-1_ppc64.deb
+│           │   ├── vmpk_0.7.0-2_amd64.deb
+│           │   ├── vmpk_0.7.0-2_arm64.deb
+│           │   ├── vmpk_0.7.0-2_armel.deb
+│           │   ├── vmpk_0.7.0-2_powerpc.deb
+│           │   ├── vmpk_0.7.0-2_ppc64.deb
+│           │   ├── vmtouch_1.3.1-0_amd64.deb
+│           │   ├── vmtouch_1.3.1-0_armel.deb
+│           │   ├── vmtouch_1.3.1-0_powerpc.deb
+│           │   ├── vmtouch_1.3.1-0_ppc64.deb
+│           │   ├── vnstat_2.1-0_amd64.deb
+│           │   ├── vnstat_2.1-0_powerpc.deb
+│           │   ├── vnstat_2.1-0_ppc64.deb
+│           │   ├── volatility_2.6-1_noarch.deb
+│           │   ├── volume-key_0.3.12-0_amd64.deb
+│           │   ├── volume-key_0.3.12-0_armel.deb
+│           │   ├── volume-key_0.3.12-0_powerpc.deb
+│           │   ├── volume-key_0.3.12-0_ppc64.deb
+│           │   ├── vpnc_0.5.3r550-0_amd64.deb
+│           │   ├── vpnc_0.5.3r550-0_arm64.deb
+│           │   ├── vpnc_0.5.3r550-0_armel.deb
+│           │   ├── vpnc_0.5.3r550-0_powerpc.deb
+│           │   ├── vpnc_0.5.3r550-0_ppc64.deb
+│           │   ├── vscode_1.31.0-0_amd64.deb
+│           │   ├── vscode_1.31.1-0_amd64.deb
+│           │   ├── vscode_1.32.1-0_amd64.deb
+│           │   ├── vscode_1.34.0-0_amd64.deb
+│           │   ├── vsftpd_3.0.3-1_amd64.deb
+│           │   ├── vsftpd_3.0.3-1_arm64.deb
+│           │   ├── vsftpd_3.0.3-1_armel.deb
+│           │   ├── vsftpd_3.0.3-1_powerpc.deb
+│           │   ├── vsftpd_3.0.3-1_ppc64.deb
+│           │   ├── vsqlite++_0.3.13-3_arm64.deb
+│           │   ├── vte-gtk3_0.54.3-0_amd64.deb
+│           │   ├── vte-gtk3_0.54.3-0_armel.deb
+│           │   ├── vte-gtk3_0.54.3-0_powerpc.deb
+│           │   ├── vte-gtk3_0.54.3-0_ppc64.deb
+│           │   ├── vte-gtk3_0.54.3-1_amd64.deb
+│           │   ├── vte-gtk3_0.54.3-1_arm64.deb
+│           │   ├── vte-gtk3_0.54.3-1_armel.deb
+│           │   ├── vte-gtk3_0.54.3-1_powerpc.deb
+│           │   ├── vte-gtk3_0.54.3-1_ppc64.deb
+│           │   └── vulkan+32_1.1.70.1-0_amd64.deb
+│           ├── w
+│           │   ├── w3m_20180323-0_riscv64.deb
+│           │   ├── w3m_20180323-1_amd64.deb
+│           │   ├── w3m_20180323-1_arm64.deb
+│           │   ├── w3m_20180323-1_armel.deb
+│           │   ├── w3m_20180323-1_i586.deb
+│           │   ├── w3m_20180323-1_powerpc.deb
+│           │   ├── w3m_20180323-1_ppc64.deb
+│           │   ├── w3m_20180323-1_riscv64.deb
+│           │   ├── warzone2100_3.2.3-3_amd64.deb
+│           │   ├── warzone2100_3.2.3-3_armel.deb
+│           │   ├── warzone2100_3.2.3-3_powerpc.deb
+│           │   ├── warzone2100_3.2.3-4_amd64.deb
+│           │   ├── warzone2100_3.2.3-4_arm64.deb
+│           │   ├── warzone2100_3.2.3-4_armel.deb
+│           │   ├── warzone2100_3.2.3-4_powerpc.deb
+│           │   ├── watchman_4.9.0-1_amd64.deb
+│           │   ├── watchman_4.9.0-1_armel.deb
+│           │   ├── watchman_4.9.0-1_powerpc.deb
+│           │   ├── watchman_4.9.0-1_ppc64.deb
+│           │   ├── watchman_4.9.0-2_amd64.deb
+│           │   ├── watchman_4.9.0-2_arm64.deb
+│           │   ├── watchman_4.9.0-2_armel.deb
+│           │   ├── watchman_4.9.0-2_powerpc.deb
+│           │   ├── watchman_4.9.0-2_ppc64.deb
+│           │   ├── wavpack_5.1.0-4_amd64.deb
+│           │   ├── wavpack_5.1.0-4_arm64.deb
+│           │   ├── wavpack_5.1.0-4_armel.deb
+│           │   ├── wavpack_5.1.0-4_powerpc.deb
+│           │   ├── wavpack_5.1.0-4_ppc64.deb
+│           │   ├── wavpack_5.1.0-5_arm64.deb
+│           │   ├── wavpack_5.1.0-5_armel.deb
+│           │   ├── wavpack_5.1.0-5_powerpc.deb
+│           │   ├── wavpack_5.1.0-5_ppc64.deb
+│           │   ├── wayland-protocols_1.17-0_noarch.deb
+│           │   ├── wayland_1.16.0-2_i586.deb
+│           │   ├── wayland_1.16.0-2_riscv64.deb
+│           │   ├── wcslib_6.2-0_amd64.deb
+│           │   ├── wcslib_6.2-0_arm64.deb
+│           │   ├── wcslib_6.2-0_armel.deb
+│           │   ├── wcslib_6.2-0_powerpc.deb
+│           │   ├── wcslib_6.2-0_ppc64.deb
+│           │   ├── wcwidth_0.1.7-2_noarch.deb
+│           │   ├── webencodings_0.5-2_noarch.deb
+│           │   ├── webkit2gtk_2.22.5-0_amd64.deb
+│           │   ├── webkit2gtk_2.22.5-0_armel.deb
+│           │   ├── webkit2gtk_2.22.5-0_ppc64.deb
+│           │   ├── webkit2gtk_2.22.7-0_amd64.deb
+│           │   ├── webkit2gtk_2.22.7-0_armel.deb
+│           │   ├── webkit2gtk_2.22.7-0_powerpc.deb
+│           │   ├── webkit2gtk_2.22.7-0_ppc64.deb
+│           │   ├── webkit2gtk_2.22.7-1_amd64.deb
+│           │   ├── webkit2gtk_2.22.7-1_arm64.deb
+│           │   ├── webkit2gtk_2.22.7-2_amd64.deb
+│           │   ├── webkit2gtk_2.22.7-2_arm64.deb
+│           │   ├── webkit2gtk_2.22.7-2_armel.deb
+│           │   ├── webkit2gtk_2.22.7-2_powerpc.deb
+│           │   ├── webkit2gtk_2.22.7-2_ppc64.deb
+│           │   ├── webkitgtk_2.4.11-5_arm64.deb
+│           │   ├── webrtc-audio-processing_0.3-1_arm64.deb
+│           │   ├── websocketpp_0.8.1-2_noarch.deb
+│           │   ├── weechat_2.3-0_amd64.deb
+│           │   ├── weechat_2.3-0_arm64.deb
+│           │   ├── weechat_2.3-0_armel.deb
+│           │   ├── weechat_2.3-0_powerpc.deb
+│           │   ├── weechat_2.3-0_ppc64.deb
+│           │   ├── weechat_2.4-0_amd64.deb
+│           │   ├── weechat_2.4-0_arm64.deb
+│           │   ├── weechat_2.4-0_armel.deb
+│           │   ├── weechat_2.4-0_powerpc.deb
+│           │   ├── weechat_2.4-0_ppc64.deb
+│           │   ├── weechat_2.4-1_amd64.deb
+│           │   ├── weechat_2.4-1_arm64.deb
+│           │   ├── weechat_2.4-1_armel.deb
+│           │   ├── weechat_2.4-1_powerpc.deb
+│           │   ├── weechat_2.4-1_ppc64.deb
+│           │   ├── werkzeug_0.14.1-1_noarch.deb
+│           │   ├── wesnoth_1.14.4-1_amd64.deb
+│           │   ├── wesnoth_1.14.4-1_armel.deb
+│           │   ├── wesnoth_1.14.4-1_powerpc.deb
+│           │   ├── wesnoth_1.14.4-2_amd64.deb
+│           │   ├── wesnoth_1.14.4-2_arm64.deb
+│           │   ├── wesnoth_1.14.4-2_armel.deb
+│           │   ├── wesnoth_1.14.4-2_powerpc.deb
+│           │   ├── wget_1.19.5-1_amd64.deb
+│           │   ├── wget_1.19.5-1_arm64.deb
+│           │   ├── wget_1.19.5-1_armel.deb
+│           │   ├── wget_1.19.5-1_powerpc.deb
+│           │   ├── wget_1.19.5-1_ppc64.deb
+│           │   ├── wget_1.19.5-1_riscv64.deb
+│           │   ├── wget_1.20.1-1_amd64.deb
+│           │   ├── wget_1.20.1-1_arm64.deb
+│           │   ├── wget_1.20.1-1_armel.deb
+│           │   ├── wget_1.20.1-1_powerpc.deb
+│           │   ├── wget_1.20.1-1_ppc64.deb
+│           │   ├── wget_1.20.1-1_riscv64.deb
+│           │   ├── wget_1.20.1-2_amd64.deb
+│           │   ├── wget_1.20.1-2_arm64.deb
+│           │   ├── wget_1.20.1-2_armel.deb
+│           │   ├── wget_1.20.1-2_powerpc.deb
+│           │   ├── wget_1.20.1-2_ppc64.deb
+│           │   ├── wget_1.20.3-1_amd64.deb
+│           │   ├── wget_1.20.3-1_arm64.deb
+│           │   ├── wget_1.20.3-1_armel.deb
+│           │   ├── wget_1.20.3-1_i586.deb
+│           │   ├── wget_1.20.3-1_powerpc.deb
+│           │   ├── wget_1.20.3-1_ppc64.deb
+│           │   ├── wget_1.20.3-1_riscv64.deb
+│           │   ├── wheel_0.32.1-0_noarch.deb
+│           │   ├── wheel_0.33.1-0_noarch.deb
+│           │   ├── wheel_0.33.1-2_noarch.deb
+│           │   ├── which_2.21-1_i586.deb
+│           │   ├── which_2.21-1_riscv64.deb
+│           │   ├── whipper_0.7.2-0_noarch.deb
+│           │   ├── whipper_0.7.3-0_noarch.deb
+│           │   ├── whitedb_0.7.3-5_amd64.deb
+│           │   ├── whitedb_0.7.3-5_arm64.deb
+│           │   ├── whitedb_0.7.3-5_armel.deb
+│           │   ├── whitedb_0.7.3-5_powerpc.deb
+│           │   ├── whitedb_0.7.3-5_ppc64.deb
+│           │   ├── wikipedia_1.4.0-3_noarch.deb
+│           │   ├── wildmidi_0.4.3-0_amd64.deb
+│           │   ├── wildmidi_0.4.3-0_armel.deb
+│           │   ├── wildmidi_0.4.3-0_powerpc.deb
+│           │   ├── wildmidi_0.4.3-0_ppc64.deb
+│           │   ├── wimlib_1.12.0-0_amd64.deb
+│           │   ├── wimlib_1.12.0-0_arm64.deb
+│           │   ├── wimlib_1.12.0-0_armel.deb
+│           │   ├── wimlib_1.12.0-0_powerpc.deb
+│           │   ├── wimlib_1.12.0-0_ppc64.deb
+│           │   ├── wimlib_1.13.0-0_amd64.deb
+│           │   ├── wimlib_1.13.0-0_arm64.deb
+│           │   ├── wimlib_1.13.0-0_armel.deb
+│           │   ├── wimlib_1.13.0-0_powerpc.deb
+│           │   ├── wimlib_1.13.0-0_ppc64.deb
+│           │   ├── wimlib_1.13.0-1_amd64.deb
+│           │   ├── wimlib_1.13.0-1_arm64.deb
+│           │   ├── wimlib_1.13.0-1_armel.deb
+│           │   ├── wimlib_1.13.0-1_powerpc.deb
+│           │   ├── wimlib_1.13.0-1_ppc64.deb
+│           │   ├── windowmaker_0.95.8-2_i586.deb
+│           │   ├── wine_4.0~rc6-0_amd64.deb
+│           │   ├── wine_4.1-0_amd64.deb
+│           │   ├── wine_4.2-0_amd64.deb
+│           │   ├── wine_4.3-0_amd64.deb
+│           │   ├── wine_4.4-0_amd64.deb
+│           │   ├── wine_4.5-0_amd64.deb
+│           │   ├── wine_4.5-1_amd64.deb
+│           │   ├── wine_4.9-0_amd64.deb
+│           │   ├── wine_4.9-1_amd64.deb
+│           │   ├── winetricks-zh_20181203.2-0_amd64.deb
+│           │   ├── winetricks_20181203-0_noarch.deb
+│           │   ├── wireguard-dkms_0.0.20190123-0_noarch.deb
+│           │   ├── wireguard-dkms_0.0.20190227-0_noarch.deb
+│           │   ├── wireguard-dkms_0.0.20190601-0_noarch.deb
+│           │   ├── wireguard-tools_0.0.20190123-0_amd64.deb
+│           │   ├── wireguard-tools_0.0.20190123-0_arm64.deb
+│           │   ├── wireguard-tools_0.0.20190123-0_armel.deb
+│           │   ├── wireguard-tools_0.0.20190123-0_powerpc.deb
+│           │   ├── wireguard-tools_0.0.20190123-0_ppc64.deb
+│           │   ├── wireguard-tools_0.0.20190227-0_amd64.deb
+│           │   ├── wireguard-tools_0.0.20190227-0_arm64.deb
+│           │   ├── wireguard-tools_0.0.20190227-0_armel.deb
+│           │   ├── wireguard-tools_0.0.20190227-0_powerpc.deb
+│           │   ├── wireguard-tools_0.0.20190227-0_ppc64.deb
+│           │   ├── wireguard-tools_0.0.20190601-0_amd64.deb
+│           │   ├── wireguard-tools_0.0.20190601-0_arm64.deb
+│           │   ├── wireguard-tools_0.0.20190601-0_armel.deb
+│           │   ├── wireguard-tools_0.0.20190601-0_powerpc.deb
+│           │   ├── wireguard-tools_0.0.20190601-0_ppc64.deb
+│           │   ├── wireguard_0.0.20190123-0_noarch.deb
+│           │   ├── wireguard_0.0.20190227-0_noarch.deb
+│           │   ├── wireguard_0.0.20190601-0_noarch.deb
+│           │   ├── wireless-regdb_2018.10.24-0_noarch.deb
+│           │   ├── wireless-regdb_2019.03.01-0_noarch.deb
+│           │   ├── wireless-tools_30.pre9-1_i586.deb
+│           │   ├── wireshark_2.6.6-0_amd64.deb
+│           │   ├── wireshark_2.6.6-0_arm64.deb
+│           │   ├── wireshark_2.6.6-0_armel.deb
+│           │   ├── wireshark_2.6.6-0_powerpc.deb
+│           │   ├── wireshark_2.6.6-0_ppc64.deb
+│           │   ├── wireshark_3.0.0-0_amd64.deb
+│           │   ├── wireshark_3.0.0-0_arm64.deb
+│           │   ├── wireshark_3.0.0-0_armel.deb
+│           │   ├── wireshark_3.0.0-0_powerpc.deb
+│           │   ├── wireshark_3.0.0-0_ppc64.deb
+│           │   ├── wireshark_3.0.0-1_amd64.deb
+│           │   ├── wireshark_3.0.0-1_arm64.deb
+│           │   ├── wireshark_3.0.0-1_armel.deb
+│           │   ├── wireshark_3.0.0-1_powerpc.deb
+│           │   ├── wireshark_3.0.0-1_ppc64.deb
+│           │   ├── wkhtmltopdf_0.12.5-2_arm64.deb
+│           │   ├── wlroots_0.2-0_amd64.deb
+│           │   ├── wlroots_0.2-0_arm64.deb
+│           │   ├── wlroots_0.3-0_amd64.deb
+│           │   ├── wlroots_0.3-0_powerpc.deb
+│           │   ├── wlroots_0.3-0_ppc64.deb
+│           │   ├── wlroots_0.5.0-0_amd64.deb
+│           │   ├── wlroots_0.5.0-0_arm64.deb
+│           │   ├── wlroots_0.5.0-0_powerpc.deb
+│           │   ├── wlroots_0.5.0-0_ppc64.deb
+│           │   ├── wlroots_0.5.0-1_amd64.deb
+│           │   ├── wlroots_0.5.0-1_arm64.deb
+│           │   ├── wlroots_0.5.0-1_powerpc.deb
+│           │   ├── wlroots_0.5.0-1_ppc64.deb
+│           │   ├── woff2_1.0.2-1_arm64.deb
+│           │   ├── wpa-supplicant_2.6-5_amd64.deb
+│           │   ├── wpa-supplicant_2.6-5_riscv64.deb
+│           │   ├── wpa-supplicant_2.7-0_amd64.deb
+│           │   ├── wpa-supplicant_2.7-0_powerpc.deb
+│           │   ├── wpa-supplicant_2.7-0_ppc64.deb
+│           │   ├── wpa-supplicant_2.7-2_amd64.deb
+│           │   ├── wpa-supplicant_2.7-2_arm64.deb
+│           │   ├── wpa-supplicant_2.7-2_armel.deb
+│           │   ├── wpa-supplicant_2.7-2_i586.deb
+│           │   ├── wpa-supplicant_2.7-2_powerpc.deb
+│           │   ├── wpa-supplicant_2.7-2_ppc64.deb
+│           │   ├── wpa-supplicant_2.7-3_amd64.deb
+│           │   ├── wpa-supplicant_2.7-3_arm64.deb
+│           │   ├── wpa-supplicant_2.7-3_armel.deb
+│           │   ├── wpa-supplicant_2.7-3_i586.deb
+│           │   ├── wpa-supplicant_2.7-3_powerpc.deb
+│           │   ├── wpa-supplicant_2.7-3_ppc64.deb
+│           │   ├── wpa-supplicant_2.7-3_riscv64.deb
+│           │   ├── wrapt_1.11.1-0_amd64.deb
+│           │   ├── wrapt_1.11.1-0_powerpc.deb
+│           │   ├── wrapt_1.11.1-0_ppc64.deb
+│           │   ├── wrapt_1.11.1-1_amd64.deb
+│           │   ├── wrapt_1.11.1-1_arm64.deb
+│           │   ├── wrapt_1.11.1-1_armel.deb
+│           │   ├── wrapt_1.11.1-1_powerpc.deb
+│           │   ├── wrapt_1.11.1-1_ppc64.deb
+│           │   ├── wrk_4.1.0-1_amd64.deb
+│           │   ├── wrk_4.1.0-1_armel.deb
+│           │   ├── wrk_4.1.0-2_amd64.deb
+│           │   ├── wrk_4.1.0-2_arm64.deb
+│           │   ├── wrk_4.1.0-2_armel.deb
+│           │   ├── wsproto_0.12.0-0_noarch.deb
+│           │   ├── wsproto_0.13.0-0_noarch.deb
+│           │   ├── wsproto_0.13.0-1_noarch.deb
+│           │   ├── wstools_0.4.8-1_noarch.deb
+│           │   ├── wtf_20180925-0_noarch.deb
+│           │   ├── wtf_20190224-0_noarch.deb
+│           │   ├── wtf_20190308-0_noarch.deb
+│           │   ├── wtforms_2.2.1-1_noarch.deb
+│           │   ├── wxbase_3.0.4-1_amd64.deb
+│           │   ├── wxbase_3.0.4-1_armel.deb
+│           │   ├── wxbase_3.0.4-1_powerpc.deb
+│           │   ├── wxbase_3.0.4-1_ppc64.deb
+│           │   ├── wxbase_3.0.4-2_amd64.deb
+│           │   ├── wxbase_3.0.4-2_arm64.deb
+│           │   ├── wxbase_3.0.4-2_armel.deb
+│           │   ├── wxbase_3.0.4-2_powerpc.deb
+│           │   ├── wxbase_3.0.4-2_ppc64.deb
+│           │   ├── wxgtk2_3.0.4-1_amd64.deb
+│           │   ├── wxgtk2_3.0.4-1_armel.deb
+│           │   ├── wxgtk2_3.0.4-1_powerpc.deb
+│           │   ├── wxgtk2_3.0.4-1_ppc64.deb
+│           │   ├── wxgtk2_3.0.4-2_amd64.deb
+│           │   ├── wxgtk2_3.0.4-2_arm64.deb
+│           │   ├── wxgtk2_3.0.4-2_armel.deb
+│           │   ├── wxgtk2_3.0.4-2_powerpc.deb
+│           │   ├── wxgtk2_3.0.4-2_ppc64.deb
+│           │   ├── wxgtk3_3.0.4-1_amd64.deb
+│           │   ├── wxgtk3_3.0.4-1_armel.deb
+│           │   ├── wxgtk3_3.0.4-1_powerpc.deb
+│           │   ├── wxgtk3_3.0.4-1_ppc64.deb
+│           │   ├── wxgtk3_3.0.4-2_amd64.deb
+│           │   ├── wxgtk3_3.0.4-2_arm64.deb
+│           │   ├── wxgtk3_3.0.4-2_armel.deb
+│           │   ├── wxgtk3_3.0.4-2_powerpc.deb
+│           │   ├── wxgtk3_3.0.4-2_ppc64.deb
+│           │   ├── wxgtk_2.8.12.1-8_armel.deb
+│           │   ├── wxgtk_2.8.12.1-8_ppc64.deb
+│           │   ├── wxgtk_2.8.12.1-9_arm64.deb
+│           │   ├── wxgtk_2.8.12.1-9_armel.deb
+│           │   ├── wxgtk_2.8.12.1-9_ppc64.deb
+│           │   ├── wxlua_252-1_arm64.deb
+│           │   ├── wxmaxima_18.02.0-0_armel.deb
+│           │   ├── wxmaxima_19.02.2-0_amd64.deb
+│           │   ├── wxmaxima_19.02.2-0_armel.deb
+│           │   ├── wxmaxima_19.02.2-1_amd64.deb
+│           │   ├── wxmaxima_19.02.2-1_arm64.deb
+│           │   ├── wxmaxima_19.02.2-1_armel.deb
+│           │   ├── wxpython_3.0.2.0-7_arm64.deb
+│           │   ├── wxpython_3.0.2.0-8_amd64.deb
+│           │   ├── wxpython_3.0.2.0-8_arm64.deb
+│           │   └── wxpython_3.0.2.0-8_armel.deb
+│           └── x
+│               ├── x11-app_7.7.20180328-0_i586.deb
+│               ├── x11-app_7.7.20180328-0_riscv64.deb
+│               ├── x11-base_2-0_arm64.deb
+│               ├── x11-font_7.7.20151109-3_i586.deb
+│               ├── x11-font_7.7.20151109-3_riscv64.deb
+│               ├── x11-lib_7.7.20180825-1_i586.deb
+│               ├── x11-lib_7.7.20180825-1_riscv64.deb
+│               ├── x11-proto_2018.4-0_arm64.deb
+│               ├── x11-proto_2018.4-0_armel.deb
+│               ├── x11-proto_2018.4-0_i586.deb
+│               ├── x11-proto_2018.4-0_riscv64.deb
+│               ├── x11vnc_0.9.15-1_amd64.deb
+│               ├── x11vnc_0.9.15-1_arm64.deb
+│               ├── x11vnc_0.9.15-1_armel.deb
+│               ├── x11vnc_0.9.15-1_powerpc.deb
+│               ├── x11vnc_0.9.15-1_ppc64.deb
+│               ├── x11vnc_0.9.16-0_amd64.deb
+│               ├── x11vnc_0.9.16-0_arm64.deb
+│               ├── x11vnc_0.9.16-0_armel.deb
+│               ├── x11vnc_0.9.16-0_powerpc.deb
+│               ├── x11vnc_0.9.16-0_ppc64.deb
+│               ├── x11vnc_0.9.16-1_amd64.deb
+│               ├── x11vnc_0.9.16-1_arm64.deb
+│               ├── x11vnc_0.9.16-1_armel.deb
+│               ├── x11vnc_0.9.16-1_powerpc.deb
+│               ├── x11vnc_0.9.16-1_ppc64.deb
+│               ├── x265_2.7-4_arm64.deb
+│               ├── xa_2.3.9-0_amd64.deb
+│               ├── xa_2.3.9-0_armel.deb
+│               ├── xa_2.3.9-0_powerpc.deb
+│               ├── xa_2.3.9-0_ppc64.deb
+│               ├── xa_2.3.9-1_amd64.deb
+│               ├── xa_2.3.9-1_arm64.deb
+│               ├── xa_2.3.9-1_armel.deb
+│               ├── xa_2.3.9-1_powerpc.deb
+│               ├── xa_2.3.9-1_ppc64.deb
+│               ├── xalan-c_1.11-1_armel.deb
+│               ├── xalan-c_1.11-1_ppc64.deb
+│               ├── xalan-c_1.11-2_armel.deb
+│               ├── xalan-c_1.11-2_ppc64.deb
+│               ├── xapian-core_1.4.9-0_amd64.deb
+│               ├── xapian-core_1.4.9-0_armel.deb
+│               ├── xapian-core_1.4.9-0_powerpc.deb
+│               ├── xapian-core_1.4.9-0_ppc64.deb
+│               ├── xapian-core_1.4.9-2_amd64.deb
+│               ├── xapian-core_1.4.9-2_arm64.deb
+│               ├── xapian-core_1.4.9-2_armel.deb
+│               ├── xapian-core_1.4.9-2_powerpc.deb
+│               ├── xapian-core_1.4.9-2_ppc64.deb
+│               ├── xapps_1.4.2-0_amd64.deb
+│               ├── xapps_1.4.2-0_arm64.deb
+│               ├── xapps_1.4.2-0_armel.deb
+│               ├── xapps_1.4.2-0_powerpc.deb
+│               ├── xapps_1.4.2-0_ppc64.deb
+│               ├── xapps_1.4.2-1_amd64.deb
+│               ├── xapps_1.4.2-1_arm64.deb
+│               ├── xapps_1.4.2-1_armel.deb
+│               ├── xapps_1.4.2-1_powerpc.deb
+│               ├── xapps_1.4.2-1_ppc64.deb
+│               ├── xarchiver_0.5.4.14-0_amd64.deb
+│               ├── xarchiver_0.5.4.14-0_armel.deb
+│               ├── xarchiver_0.5.4.14-0_powerpc.deb
+│               ├── xarchiver_0.5.4.14-0_ppc64.deb
+│               ├── xattr_0.9.6-2_amd64.deb
+│               ├── xattr_0.9.6-2_arm64.deb
+│               ├── xattr_0.9.6-2_armel.deb
+│               ├── xattr_0.9.6-2_powerpc.deb
+│               ├── xattr_0.9.6-2_ppc64.deb
+│               ├── xcb-imdkit_20171205-0_amd64.deb
+│               ├── xcb-imdkit_20171205-0_arm64.deb
+│               ├── xcb-imdkit_20171205-0_armel.deb
+│               ├── xcb-imdkit_20171205-0_powerpc.deb
+│               ├── xcb-imdkit_20171205-0_ppc64.deb
+│               ├── xcb-proto_1.13-0_i586.deb
+│               ├── xcb-proto_1.13-0_riscv64.deb
+│               ├── xcb-util-image_0.4.0-0_i586.deb
+│               ├── xcb-util-image_0.4.0-0_riscv64.deb
+│               ├── xcb-util-keysyms_0.4.0-0_i586.deb
+│               ├── xcb-util-renderutil_0.3.9-2_i586.deb
+│               ├── xcb-util-wm_0.4.1-1_i586.deb
+│               ├── xcb-util_0.4.0-0_i586.deb
+│               ├── xcb-util_0.4.0-0_riscv64.deb
+│               ├── xcffib_0.7.0-0_noarch.deb
+│               ├── xcffib_0.7.0-1_noarch.deb
+│               ├── xclock_1.0.7-0_i586.deb
+│               ├── xdg-desktop-portal-gtk_1.2.0-0_amd64.deb
+│               ├── xdg-desktop-portal-gtk_1.2.0-0_arm64.deb
+│               ├── xdg-desktop-portal-gtk_1.2.0-0_armel.deb
+│               ├── xdg-desktop-portal-gtk_1.2.0-0_powerpc.deb
+│               ├── xdg-desktop-portal-gtk_1.2.0-0_ppc64.deb
+│               ├── xdg-desktop-portal-kde_5.15.0-0_amd64.deb
+│               ├── xdg-desktop-portal-kde_5.15.2-0_amd64.deb
+│               ├── xdg-desktop-portal-kde_5.15.2-0_armel.deb
+│               ├── xdg-desktop-portal-kde_5.15.2-0_powerpc.deb
+│               ├── xdg-desktop-portal-kde_5.15.2-0_ppc64.deb
+│               ├── xdg-desktop-portal-kde_5.15.3-1_amd64.deb
+│               ├── xdg-desktop-portal-kde_5.15.3-1_arm64.deb
+│               ├── xdg-desktop-portal-kde_5.15.3-1_armel.deb
+│               ├── xdg-desktop-portal-kde_5.15.3-1_powerpc.deb
+│               ├── xdg-desktop-portal-kde_5.15.3-1_ppc64.deb
+│               ├── xdg-desktop-portal_1.2.0-0_amd64.deb
+│               ├── xdg-desktop-portal_1.2.0-0_arm64.deb
+│               ├── xdg-desktop-portal_1.2.0-0_armel.deb
+│               ├── xdg-desktop-portal_1.2.0-0_powerpc.deb
+│               ├── xdg-desktop-portal_1.2.0-0_ppc64.deb
+│               ├── xdg-user-dirs-gtk_0.10-2_amd64.deb
+│               ├── xed_2.0.2-0_amd64.deb
+│               ├── xed_2.0.2-0_armel.deb
+│               ├── xed_2.0.2-0_powerpc.deb
+│               ├── xed_2.0.2-0_ppc64.deb
+│               ├── xerces-c_3.2.2-2_arm64.deb
+│               ├── xf86-input-acecad_1.5.0-6_arm64.deb
+│               ├── xf86-input-acecad_1.5.0-6_armel.deb
+│               ├── xf86-input-acecad_1.5.0-6_i586.deb
+│               ├── xf86-input-acecad_1.5.0-6_powerpc.deb
+│               ├── xf86-input-acecad_1.5.0-6_ppc64.deb
+│               ├── xf86-input-elographics_1.4.1-6_arm64.deb
+│               ├── xf86-input-elographics_1.4.1-6_armel.deb
+│               ├── xf86-input-elographics_1.4.1-6_i586.deb
+│               ├── xf86-input-elographics_1.4.1-6_powerpc.deb
+│               ├── xf86-input-elographics_1.4.1-6_ppc64.deb
+│               ├── xf86-input-evdev_2.10.6-1_arm64.deb
+│               ├── xf86-input-evdev_2.10.6-1_armel.deb
+│               ├── xf86-input-evdev_2.10.6-1_i586.deb
+│               ├── xf86-input-evdev_2.10.6-1_powerpc.deb
+│               ├── xf86-input-evdev_2.10.6-1_ppc64.deb
+│               ├── xf86-input-joystick_1.6.3-1_arm64.deb
+│               ├── xf86-input-joystick_1.6.3-1_armel.deb
+│               ├── xf86-input-joystick_1.6.3-1_i586.deb
+│               ├── xf86-input-joystick_1.6.3-1_powerpc.deb
+│               ├── xf86-input-joystick_1.6.3-1_ppc64.deb
+│               ├── xf86-input-keyboard_1.9.0-1_arm64.deb
+│               ├── xf86-input-keyboard_1.9.0-1_armel.deb
+│               ├── xf86-input-keyboard_1.9.0-1_i586.deb
+│               ├── xf86-input-keyboard_1.9.0-1_powerpc.deb
+│               ├── xf86-input-keyboard_1.9.0-1_ppc64.deb
+│               ├── xf86-input-libinput_0.28.0-2_armel.deb
+│               ├── xf86-input-libinput_0.28.0-2_powerpc.deb
+│               ├── xf86-input-libinput_0.28.0-2_ppc64.deb
+│               ├── xf86-input-libinput_0.28.2-0_amd64.deb
+│               ├── xf86-input-libinput_0.28.2-0_arm64.deb
+│               ├── xf86-input-libinput_0.28.2-0_armel.deb
+│               ├── xf86-input-libinput_0.28.2-0_powerpc.deb
+│               ├── xf86-input-libinput_0.28.2-0_ppc64.deb
+│               ├── xf86-input-libinput_0.28.2-1_amd64.deb
+│               ├── xf86-input-libinput_0.28.2-1_arm64.deb
+│               ├── xf86-input-libinput_0.28.2-1_armel.deb
+│               ├── xf86-input-libinput_0.28.2-1_i586.deb
+│               ├── xf86-input-libinput_0.28.2-1_powerpc.deb
+│               ├── xf86-input-libinput_0.28.2-1_ppc64.deb
+│               ├── xf86-input-mouse_1.9.3-1_arm64.deb
+│               ├── xf86-input-mouse_1.9.3-1_armel.deb
+│               ├── xf86-input-mouse_1.9.3-1_i586.deb
+│               ├── xf86-input-mouse_1.9.3-1_powerpc.deb
+│               ├── xf86-input-mouse_1.9.3-1_ppc64.deb
+│               ├── xf86-input-synaptics_1.9.1-1_arm64.deb
+│               ├── xf86-input-synaptics_1.9.1-1_armel.deb
+│               ├── xf86-input-synaptics_1.9.1-1_i586.deb
+│               ├── xf86-input-synaptics_1.9.1-1_powerpc.deb
+│               ├── xf86-input-synaptics_1.9.1-1_ppc64.deb
+│               ├── xf86-input-wacom_0.36.0-1_arm64.deb
+│               ├── xf86-input-wacom_0.36.0-1_armel.deb
+│               ├── xf86-input-wacom_0.36.0-1_i586.deb
+│               ├── xf86-input-wacom_0.36.0-1_powerpc.deb
+│               ├── xf86-input-wacom_0.36.0-1_ppc64.deb
+│               ├── xf86-video-amdgpu_18.1.0-0_amd64.deb
+│               ├── xf86-video-amdgpu_18.1.0-0_arm64.deb
+│               ├── xf86-video-amdgpu_18.1.0-0_armel.deb
+│               ├── xf86-video-amdgpu_18.1.0-0_i586.deb
+│               ├── xf86-video-amdgpu_18.1.0-0_powerpc.deb
+│               ├── xf86-video-amdgpu_18.1.0-0_ppc64.deb
+│               ├── xf86-video-ati_18.1.0-0_amd64.deb
+│               ├── xf86-video-ati_18.1.0-0_arm64.deb
+│               ├── xf86-video-ati_18.1.0-0_armel.deb
+│               ├── xf86-video-ati_18.1.0-0_i586.deb
+│               ├── xf86-video-ati_18.1.0-0_powerpc.deb
+│               ├── xf86-video-ati_18.1.0-0_ppc64.deb
+│               ├── xf86-video-dummy_0.3.8-1_powerpc.deb
+│               ├── xf86-video-dummy_0.3.8-1_ppc64.deb
+│               ├── xf86-video-fbdev_0.5.0-1_arm64.deb
+│               ├── xf86-video-fbdev_0.5.0-1_armel.deb
+│               ├── xf86-video-fbdev_0.5.0-1_i586.deb
+│               ├── xf86-video-fbdev_0.5.0-1_powerpc.deb
+│               ├── xf86-video-fbdev_0.5.0-1_ppc64.deb
+│               ├── xf86-video-intel_20181022-0_amd64.deb
+│               ├── xf86-video-mach64_6.9.6-0_i586.deb
+│               ├── xf86-video-nouveau_1.0.15-1_armel.deb
+│               ├── xf86-video-nouveau_1.0.15-1_powerpc.deb
+│               ├── xf86-video-nouveau_1.0.15-1_ppc64.deb
+│               ├── xf86-video-nouveau_1.0.16-0_amd64.deb
+│               ├── xf86-video-nouveau_1.0.16-0_arm64.deb
+│               ├── xf86-video-nouveau_1.0.16-0_armel.deb
+│               ├── xf86-video-nouveau_1.0.16-0_powerpc.deb
+│               ├── xf86-video-nouveau_1.0.16-0_ppc64.deb
+│               ├── xf86-video-nouveau_1.0.16-1_i586.deb
+│               ├── xf86-video-qxl_0.1.5-2_arm64.deb
+│               ├── xf86-video-qxl_0.1.5-2_armel.deb
+│               ├── xf86-video-qxl_0.1.5-2_powerpc.deb
+│               ├── xf86-video-qxl_0.1.5-2_ppc64.deb
+│               ├── xf86-video-vesa_2.4.0-1_arm64.deb
+│               ├── xf86-video-vesa_2.4.0-1_armel.deb
+│               ├── xf86-video-vesa_2.4.0-1_i586.deb
+│               ├── xf86-video-vesa_2.4.0-1_powerpc.deb
+│               ├── xf86-video-vesa_2.4.0-1_ppc64.deb
+│               ├── xf86-video-vmware_13.3.0-1_arm64.deb
+│               ├── xf86-video-vmware_13.3.0-1_armel.deb
+│               ├── xf86-video-vmware_13.3.0-1_powerpc.deb
+│               ├── xf86-video-vmware_13.3.0-1_ppc64.deb
+│               ├── xfce4-battery-plugin_1.1.2-0_amd64.deb
+│               ├── xfce4-battery-plugin_1.1.2-0_arm64.deb
+│               ├── xfce4-battery-plugin_1.1.2-0_armel.deb
+│               ├── xfce4-battery-plugin_1.1.2-0_powerpc.deb
+│               ├── xfce4-battery-plugin_1.1.2-0_ppc64.deb
+│               ├── xfce4-clipman-plugin_1.4.3-0_amd64.deb
+│               ├── xfce4-clipman-plugin_1.4.3-0_arm64.deb
+│               ├── xfce4-clipman-plugin_1.4.3-0_armel.deb
+│               ├── xfce4-clipman-plugin_1.4.3-0_powerpc.deb
+│               ├── xfce4-clipman-plugin_1.4.3-0_ppc64.deb
+│               ├── xfce4-dict_0.8.2-0_amd64.deb
+│               ├── xfce4-dict_0.8.2-0_arm64.deb
+│               ├── xfce4-dict_0.8.2-0_armel.deb
+│               ├── xfce4-dict_0.8.2-0_powerpc.deb
+│               ├── xfce4-dict_0.8.2-0_ppc64.deb
+│               ├── xfce4-mpc-plugin_0.5.1-0_amd64.deb
+│               ├── xfce4-mpc-plugin_0.5.1-0_arm64.deb
+│               ├── xfce4-mpc-plugin_0.5.1-0_armel.deb
+│               ├── xfce4-mpc-plugin_0.5.1-0_powerpc.deb
+│               ├── xfce4-mpc-plugin_0.5.1-0_ppc64.deb
+│               ├── xfce4-notifyd_0.4.3-0_amd64.deb
+│               ├── xfce4-notifyd_0.4.3-0_arm64.deb
+│               ├── xfce4-notifyd_0.4.3-0_armel.deb
+│               ├── xfce4-notifyd_0.4.3-0_powerpc.deb
+│               ├── xfce4-notifyd_0.4.3-0_ppc64.deb
+│               ├── xfce4-systemload-plugin_1.2.2-0_amd64.deb
+│               ├── xfce4-systemload-plugin_1.2.2-0_arm64.deb
+│               ├── xfce4-systemload-plugin_1.2.2-0_armel.deb
+│               ├── xfce4-systemload-plugin_1.2.2-0_powerpc.deb
+│               ├── xfce4-systemload-plugin_1.2.2-0_ppc64.deb
+│               ├── xfce4-taskmanager_1.2.2-0_amd64.deb
+│               ├── xfce4-taskmanager_1.2.2-0_arm64.deb
+│               ├── xfce4-taskmanager_1.2.2-0_armel.deb
+│               ├── xfce4-taskmanager_1.2.2-0_powerpc.deb
+│               ├── xfce4-taskmanager_1.2.2-0_ppc64.deb
+│               ├── xfdesktop_4.12.4-2_amd64.deb
+│               ├── xfdesktop_4.12.4-2_arm64.deb
+│               ├── xfdesktop_4.12.4-2_armel.deb
+│               ├── xfdesktop_4.12.4-2_powerpc.deb
+│               ├── xfdesktop_4.12.4-2_ppc64.deb
+│               ├── xfsprogs_4.18.0-0_riscv64.deb
+│               ├── xfsprogs_4.19.0-0_amd64.deb
+│               ├── xfsprogs_4.19.0-0_arm64.deb
+│               ├── xfsprogs_4.19.0-0_armel.deb
+│               ├── xfsprogs_4.19.0-0_powerpc.deb
+│               ├── xfsprogs_4.19.0-0_ppc64.deb
+│               ├── xfsprogs_4.19.0-0_riscv64.deb
+│               ├── xfsprogs_4.19.0-1_amd64.deb
+│               ├── xfsprogs_4.19.0-1_arm64.deb
+│               ├── xfsprogs_4.19.0-1_armel.deb
+│               ├── xfsprogs_4.19.0-1_i586.deb
+│               ├── xfsprogs_4.19.0-1_powerpc.deb
+│               ├── xfsprogs_4.19.0-1_ppc64.deb
+│               ├── xine-lib_1.2.9-1_arm64.deb
+│               ├── xine-lib_1.2.9-1_armel.deb
+│               ├── xine-lib_1.2.9-1_ppc64.deb
+│               ├── xinit_1.4.0-0_i586.deb
+│               ├── xjadeo_0.8.9-0_amd64.deb
+│               ├── xjadeo_0.8.9-0_armel.deb
+│               ├── xjadeo_0.8.9-0_powerpc.deb
+│               ├── xjadeo_0.8.9-0_ppc64.deb
+│               ├── xl2tpd_1.3.12-1_amd64.deb
+│               ├── xl2tpd_1.3.13-0_amd64.deb
+│               ├── xl2tpd_1.3.13-0_armel.deb
+│               ├── xl2tpd_1.3.13-0_powerpc.deb
+│               ├── xl2tpd_1.3.13-0_ppc64.deb
+│               ├── xlrd_1.2.0-0_noarch.deb
+│               ├── xlrd_1.2.0-1_noarch.deb
+│               ├── xlwt_1.3.0-1_noarch.deb
+│               ├── xmlrpc-c_1.51.0-1_amd64.deb
+│               ├── xmlrpc-c_1.51.0-1_arm64.deb
+│               ├── xmlrpc-c_1.51.0-1_armel.deb
+│               ├── xmlrpc-c_1.51.0-1_powerpc.deb
+│               ├── xmlrpc-c_1.51.0-1_ppc64.deb
+│               ├── xmlrpc-c_1.51.0-2_amd64.deb
+│               ├── xmlrpc-c_1.51.0-2_arm64.deb
+│               ├── xmlrpc-c_1.51.0-2_armel.deb
+│               ├── xmlrpc-c_1.51.0-2_powerpc.deb
+│               ├── xmlrpc-c_1.51.0-2_ppc64.deb
+│               ├── xmlsec_1.2.27-0_amd64.deb
+│               ├── xmlsec_1.2.27-0_armel.deb
+│               ├── xmlsec_1.2.27-0_powerpc.deb
+│               ├── xmlsec_1.2.27-0_ppc64.deb
+│               ├── xmlsec_1.2.27-1_amd64.deb
+│               ├── xmlsec_1.2.27-1_arm64.deb
+│               ├── xmlsec_1.2.27-1_armel.deb
+│               ├── xmlsec_1.2.27-1_powerpc.deb
+│               ├── xmlsec_1.2.27-1_ppc64.deb
+│               ├── xmlto_0.0.28-1_i586.deb
+│               ├── xmlto_0.0.28-1_riscv64.deb
+│               ├── xmltoman_0.4-2_i586.deb
+│               ├── xmltoman_0.4-2_riscv64.deb
+│               ├── xorg-server_1.20.3-1_amd64.deb
+│               ├── xorg-server_1.20.3-1_arm64.deb
+│               ├── xorg-server_1.20.3-1_armel.deb
+│               ├── xorg-server_1.20.3-1_i586.deb
+│               ├── xorg-server_1.20.3-1_powerpc.deb
+│               ├── xorg-server_1.20.3-1_ppc64.deb
+│               ├── xplanet_1.3.1-1_arm64.deb
+│               ├── xpra_2.4.3-0_amd64.deb
+│               ├── xpra_2.4.3-0_powerpc.deb
+│               ├── xpra_2.4.3-0_ppc64.deb
+│               ├── xrdp_0.9.9-0_amd64.deb
+│               ├── xrdp_0.9.9-0_armel.deb
+│               ├── xrdp_0.9.9-0_powerpc.deb
+│               ├── xrdp_0.9.9-0_ppc64.deb
+│               ├── xrdp_0.9.9-1_amd64.deb
+│               ├── xrdp_0.9.9-1_arm64.deb
+│               ├── xrdp_0.9.9-1_armel.deb
+│               ├── xrdp_0.9.9-1_powerpc.deb
+│               ├── xrdp_0.9.9-1_ppc64.deb
+│               ├── xreader_2.0.2-0_amd64.deb
+│               ├── xreader_2.0.2-0_armel.deb
+│               ├── xreader_2.0.2-0_powerpc.deb
+│               ├── xreader_2.0.2-0_ppc64.deb
+│               ├── xreader_2.0.2-1_amd64.deb
+│               ├── xreader_2.0.2-1_arm64.deb
+│               ├── xreader_2.0.2-1_armel.deb
+│               ├── xreader_2.0.2-1_powerpc.deb
+│               ├── xreader_2.0.2-1_ppc64.deb
+│               ├── xscreensaver_5.42-0_amd64.deb
+│               ├── xscreensaver_5.42-0_powerpc.deb
+│               ├── xscreensaver_5.42-0_ppc64.deb
+│               ├── xsd_4.0.0-4_arm64.deb
+│               ├── xterm_337-0_amd64.deb
+│               ├── xterm_337-0_arm64.deb
+│               ├── xterm_337-0_armel.deb
+│               ├── xterm_337-0_powerpc.deb
+│               ├── xterm_337-0_ppc64.deb
+│               ├── xterm_337-0_riscv64.deb
+│               ├── xterm_344-0_amd64.deb
+│               ├── xterm_344-0_arm64.deb
+│               ├── xterm_344-0_armel.deb
+│               ├── xterm_344-0_i586.deb
+│               ├── xterm_344-0_powerpc.deb
+│               ├── xterm_344-0_ppc64.deb
+│               ├── xviewer_2.0.2-0_powerpc.deb
+│               ├── xviewer_2.0.2-0_ppc64.deb
+│               ├── xviewer_2.0.2-1_amd64.deb
+│               ├── xviewer_2.0.2-1_arm64.deb
+│               ├── xviewer_2.0.2-1_armel.deb
+│               ├── xviewer_2.0.2-1_powerpc.deb
+│               ├── xviewer_2.0.2-1_ppc64.deb
+│               ├── xz_5.2.4-0_i586.deb
+│               └── xz_5.2.4-0_riscv64.deb
+├── disc-36.md5
+└── disc-36.tree
+
+11 directories, 2568 files
