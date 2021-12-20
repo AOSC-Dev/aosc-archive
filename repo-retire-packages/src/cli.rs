@@ -13,7 +13,14 @@ pub fn build_cli() -> App<'static, 'static> {
                         .takes_value(true)
                         .min_values(1)
                         .required(false)
-                        .help("Inhibit the specified systemd services"),
+                        .help("Wait and inhibit the specified systemd services"),
+                )
+                .arg(
+                    Arg::with_name("out-of-tree")
+                        .short("f")
+                        .takes_value(false)
+                        .long("out-of-tree")
+                        .help("Also clean up the out-of-tree packages"),
                 )
                 .arg(
                     Arg::with_name("config")

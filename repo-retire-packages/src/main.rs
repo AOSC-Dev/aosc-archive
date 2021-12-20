@@ -1,4 +1,4 @@
-use anyhow::Result;
+use anyhow::{Result, bail};
 use bytesize::ByteSize;
 use log::{error, info};
 use serde::Deserialize;
@@ -37,7 +37,7 @@ async fn load_config<P: AsRef<Path>>(path: P) -> Result<Config> {
     Ok(toml::from_slice(&buffer)?)
 }
 
-async fn determine_retired_packages(pool: &PgPool) -> Result<Vec<PackageMeta>> {
+async fn determine_retired_packages(pool: &PgPool, oot: bool) -> Result<Vec<PackageMeta>> {
     let packages = query_as!(
         PackageMeta,
         r#"SELECT package, sha256, size, filename FROM 
@@ -47,15 +47,34 @@ AS sq WHERE pos > 1"#
     .fetch_all(pool)
     .await?;
 
+    if oot {
+        let mut oot_packages = query_as!(
+            PackageMeta,
+        r#"SELECT DISTINCT pp.package, pp.sha256, pp.size, pp.filename FROM 
+pv_packages pp LEFT JOIN packages p ON pp.package = p.name WHERE 
+tree IS NULL AND pp.package NOT LIKE '%-dbg' AND pp.package NOT SIMILAR TO '(linux-kernel-|linux\+kernel\+|u-boot)%'"#).fetch_all(pool).await?;
+        oot_packages.extend(packages);
+        return Ok(oot_packages);
+    }
+
     Ok(packages)
 }
 
-async fn retire_action<P: AsRef<Path>>(config_file: P, dry_run: bool, output: P) -> Result<()> {
+async fn retire_action<P: AsRef<Path>>(
+    config_file: P,
+    dry_run: bool,
+    output: P,
+    oot: bool,
+) -> Result<()> {
     let config = load_config(config_file).await?;
     info!("Connecting to database ...");
     let pool = PgPool::connect(&config.config.db_pgconn).await?;
     info!("Determining what packages to retire ...");
-    let packages = determine_retired_packages(&pool).await?;
+    if !config.config.abbs_sync && oot {
+        error!("Invalid configuration: abbs_sync should be enabled in order to correctly retire packages!");
+        bail!("Refusing to continue to avoid damaging package pool")
+    }
+    let packages = determine_retired_packages(&pool, oot).await?;
     let total_size = packages.iter().fold(0, |t, x| t + x.size);
     let total_count = packages.len();
 
@@ -73,6 +92,11 @@ async fn retire_action<P: AsRef<Path>>(config_file: P, dry_run: bool, output: P)
         for p in packages.iter() {
             info!("{}: {}", p.package, p.filename);
         }
+        info!(
+            "[DRY-RUN] {} packages would be retired, {} total",
+            total_count,
+            ByteSize::b(total_size as u64).to_string()
+        );
         return Ok(());
     }
 
@@ -118,6 +142,7 @@ async fn main() -> Result<()> {
                 args.value_of("config").unwrap(),
                 args.is_present("dry-run"),
                 args.value_of("output").unwrap(),
+                args.is_present("out-of-tree"),
             )
             .await?;
         }
