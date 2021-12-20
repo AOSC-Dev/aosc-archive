@@ -1,5 +1,6 @@
 use anyhow::{bail, Context, Result};
 use bytesize::ByteSize;
+use dbus_tokio::connection;
 use log::{error, info};
 use serde::Deserialize;
 use sqlx::{query_as, PgPool};
@@ -8,6 +9,7 @@ use std::{path::Path, sync::atomic::Ordering};
 use tokio::io::{AsyncReadExt, AsyncWriteExt};
 
 mod cli;
+mod dbus;
 
 #[derive(Debug, Deserialize)]
 struct Config {
@@ -183,6 +185,21 @@ async fn main() -> Result<()> {
     env_logger::init();
     match args.subcommand() {
         ("retire", Some(args)) => {
+            let inhibit = args.values_of("inhibit");
+            let (resource, conn) = connection::new_system_sync()?;
+            let _handle = tokio::spawn(async {
+                let err = resource.await;
+                error!("Lost connection to D-Bus: {}", err);
+            });
+            // handle inhibition
+            let mut inhibited = None;
+            if let Some(inhibit) = inhibit {
+                inhibited = Some(
+                    dbus::inhibit_services(conn.as_ref(), &inhibit.collect::<Vec<_>>())
+                        .await
+                        .unwrap(),
+                );
+            }
             retire_action(
                 args.value_of("config").unwrap(),
                 args.is_present("dry-run"),
@@ -190,6 +207,10 @@ async fn main() -> Result<()> {
                 args.is_present("out-of-tree"),
             )
             .await?;
+            // restore services
+            if let Some(inhibit) = inhibited {
+                dbus::restore_services(conn.as_ref(), &inhibit).await?;
+            }
         }
         ("binning", Some(args)) => {
             todo!()

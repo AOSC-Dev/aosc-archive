@@ -18,3 +18,5 @@ serde = { version = "1", features = ["derive"] }
 bytesize = "^1"
 walkdir = "2"
 byte-unit = "4"
+dbus = "0.9"
+dbus-tokio = "0.7"
