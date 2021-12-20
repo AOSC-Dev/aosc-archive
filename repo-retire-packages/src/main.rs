@@ -1,9 +1,10 @@
-use anyhow::{Result, bail};
+use anyhow::{bail, Context, Result};
 use bytesize::ByteSize;
 use log::{error, info};
 use serde::Deserialize;
 use sqlx::{query_as, PgPool};
-use std::path::Path;
+use std::sync::atomic::AtomicUsize;
+use std::{path::Path, sync::atomic::Ordering};
 use tokio::io::{AsyncReadExt, AsyncWriteExt};
 
 mod cli;
@@ -101,7 +102,7 @@ async fn retire_action<P: AsRef<Path>>(
     }
 
     info!("Moving retired packages ...");
-    let mut count = 1usize;
+    let count = AtomicUsize::new(1);
     let output_path = output.as_ref();
     tokio::fs::create_dir_all(output_path).await?;
     // generate the manifest
@@ -112,19 +113,63 @@ async fn retire_action<P: AsRef<Path>>(
     let mut f = tokio::fs::File::create(output_path.join("backup_label")).await?;
     f.write_all(manifest.as_bytes()).await?;
     // move files
+    let mut tasks = Vec::new();
+    let original_path = Path::new(&config.config.path);
     for p in packages.iter() {
-        info!("[{}/{}] Moving {} ... ", count, total_count, p.filename);
-        let path = Path::new(&p.filename);
-        if let Some(parent) = path.parent() {
-            let target_dir = output_path.join(parent);
-            let original_path = Path::new(&config.config.path).join(path);
-            tokio::fs::create_dir_all(target_dir).await?;
-            tokio::fs::copy(&original_path, output_path.join(path)).await?;
-            tokio::fs::remove_file(&original_path).await?;
-        } else {
-            error!("No parent directory: {}", p.filename);
+        tasks.push(backup_package(
+            &count,
+            total_count,
+            &p.filename,
+            output_path,
+            original_path,
+        ));
+    }
+    info!("Moving files ...");
+    let mut errored = false;
+    for r in futures::future::join_all(tasks).await {
+        if let Err(e) = r {
+            errored = true;
+            error!("Error occurred while moving files: {}", e);
         }
-        count += 1;
+    }
+    if errored {
+        bail!("Errors detected, bailing out ...")
+    }
+
+    Ok(())
+}
+
+async fn backup_package(
+    count: &AtomicUsize,
+    total_count: usize,
+    filename: &str,
+    output_path: &Path,
+    original_path: &Path,
+) -> Result<()> {
+    info!(
+        "[{}/{}] Moving {} ... ",
+        count.fetch_add(1, Ordering::SeqCst),
+        total_count,
+        filename
+    );
+    let path = Path::new(filename);
+    if let Some(parent) = path.parent() {
+        let target_dir = output_path.join(parent);
+        let original_path = original_path.join(path);
+        tokio::fs::create_dir_all(&target_dir)
+            .await
+            .context(format!(
+                "when creating target directory {}",
+                target_dir.display()
+            ))?;
+        tokio::fs::copy(&original_path, output_path.join(path))
+            .await
+            .context(format!("when copying {}", original_path.display()))?;
+        tokio::fs::remove_file(&original_path)
+            .await
+            .context(format!("when deleting {}", original_path.display()))?;
+    } else {
+        error!("No parent directory: {}", filename);
     }
 
     Ok(())
