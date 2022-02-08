@@ -184,7 +184,7 @@ async fn main() -> Result<()> {
 
     env_logger::init();
     match args.subcommand() {
-        ("retire", Some(args)) => {
+        Some(("retire", args)) => {
             let inhibit = args.values_of("inhibit");
             let (resource, conn) = connection::new_system_sync()?;
             let _handle = tokio::spawn(async {
@@ -212,11 +212,10 @@ async fn main() -> Result<()> {
                 dbus::restore_services(conn.as_ref(), &inhibit).await?;
             }
         }
-        ("binning", Some(args)) => {
+        Some(("binning", _args)) => {
             todo!()
         }
         _ => {
-            println!("{}", args.usage());
             std::process::exit(1);
         }
     }
