@@ -115,6 +115,24 @@ async fn retire_action<P: AsRef<Path>>(
     let mut f = tokio::fs::File::create(output_path.join("backup_label")).await?;
     f.write_all(manifest.as_bytes()).await?;
     // move files
+    for package_chunk in packages.chunks(40) {
+        let errored =
+            chunked_copy_files(&config, package_chunk, &count, total_count, output_path).await;
+        if errored {
+            bail!("Errors detected, bailing out ...")
+        }
+    }
+
+    Ok(())
+}
+
+async fn chunked_copy_files(
+    config: &Config,
+    packages: &[PackageMeta],
+    count: &AtomicUsize,
+    total_count: usize,
+    output_path: &Path,
+) -> bool {
     let mut tasks = Vec::new();
     let original_path = Path::new(&config.config.path);
     for p in packages.iter() {
@@ -134,11 +152,8 @@ async fn retire_action<P: AsRef<Path>>(
             error!("Error occurred while moving files: {:?}", e);
         }
     }
-    if errored {
-        bail!("Errors detected, bailing out ...")
-    }
 
-    Ok(())
+    errored
 }
 
 async fn backup_package(
@@ -160,10 +175,7 @@ async fn backup_package(
         let original_path = original_path.join(path);
         tokio::fs::create_dir_all(&target_dir)
             .await
-            .with_context(|| format!(
-                "when creating target directory {}",
-                target_dir.display()
-            ))?;
+            .with_context(|| format!("when creating target directory {}", target_dir.display()))?;
         tokio::fs::copy(&original_path, output_path.join(path))
             .await
             .with_context(|| format!("when copying {}", original_path.display()))?;
