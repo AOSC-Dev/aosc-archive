@@ -131,7 +131,7 @@ async fn retire_action<P: AsRef<Path>>(
     for r in futures::future::join_all(tasks).await {
         if let Err(e) = r {
             errored = true;
-            error!("Error occurred while moving files: {}", e);
+            error!("Error occurred while moving files: {:?}", e);
         }
     }
     if errored {
@@ -160,16 +160,17 @@ async fn backup_package(
         let original_path = original_path.join(path);
         tokio::fs::create_dir_all(&target_dir)
             .await
-            .context(format!(
+            .with_context(|| format!(
                 "when creating target directory {}",
                 target_dir.display()
             ))?;
         tokio::fs::copy(&original_path, output_path.join(path))
             .await
-            .context(format!("when copying {}", original_path.display()))?;
+            .with_context(|| format!("when copying {}", original_path.display()))?;
         tokio::fs::remove_file(&original_path)
             .await
-            .context(format!("when deleting {}", original_path.display()))?;
+            .with_context(|| format!("when deleting {}", original_path.display()))?;
+        info!("Successfully moved {}", filename);
     } else {
         error!("No parent directory: {}", filename);
     }
