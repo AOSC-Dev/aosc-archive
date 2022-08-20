@@ -11,7 +11,7 @@ env_logger = "0.9"
 clap = "^3"
 anyhow = "^1"
 tokio = { version = "^1", features = ["rt", "rt-multi-thread", "time", "macros", "fs"] }
-sqlx = { version = "0.5", features = ["runtime-tokio-native-tls", "macros", "postgres", "chrono"] }
+sqlx = { version = "0.6", features = ["runtime-tokio-native-tls", "macros", "postgres", "chrono"] }
 futures = "0.3"
 toml = "0.5"
 serde = { version = "1", features = ["derive"] }
