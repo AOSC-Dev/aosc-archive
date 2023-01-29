@@ -5,9 +5,9 @@ use serde::Deserialize;
 use sqlx::PgPool;
 use std::sync::atomic::AtomicUsize;
 use std::{path::Path, sync::atomic::Ordering};
-use tokio::io::{AsyncReadExt, AsyncWriteExt};
+use tokio::io::AsyncReadExt;
 
-use crate::db::{determine_retired_packages, PackageMeta};
+use crate::db::{determine_retired_packages, save_new_packages, PackageMeta};
 
 #[derive(Debug, Deserialize)]
 struct Config {
@@ -89,11 +89,9 @@ pub async fn retire_action<P: AsRef<Path>>(
 
 async fn generate_manifest(packages: &Vec<PackageMeta>, output_path: &Path) -> Result<()> {
     info!("Generating manifest ...");
-    let manifest = packages.iter().fold(String::new(), |t, x| {
-        t + &x.sha256 + " " + &x.filename + "\n"
-    });
-    let mut f = tokio::fs::File::create(output_path.join("backup_label")).await?;
-    f.write_all(manifest.as_bytes()).await?;
+    let db_path = output_path.join("backup_label.db");
+    let packages = packages.clone();
+    tokio::task::spawn_blocking(move || save_new_packages(db_path, &packages)).await??;
 
     Ok(())
 }

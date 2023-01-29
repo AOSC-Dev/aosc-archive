@@ -1,5 +1,10 @@
+use std::path::Path;
+
 use anyhow::Result;
+use rusqlite::{params, Connection};
 use sqlx::{query_as, PgPool};
+
+const SQLITE_INIT_SCRIPT: &str = include_str!("../init.sql");
 
 #[derive(Debug, Clone)]
 pub struct PackageMeta {
@@ -31,4 +36,18 @@ tree IS NULL AND pp.package NOT LIKE '%-dbg' AND pp.package NOT SIMILAR TO '(lin
     }
 
     Ok(packages)
+}
+
+pub fn save_new_packages<P: AsRef<Path>>(db_path: P, packages: &[PackageMeta]) -> Result<()> {
+    let mut conn = Connection::open(db_path)?;
+    conn.execute_batch(SQLITE_INIT_SCRIPT)?;
+    let tx = conn.transaction()?;
+
+    for p in packages {
+        tx.execute("INSERT INTO packages (package, sha256, size, filename, version) VALUES (?1, ?2, ?3, ?4, ?5)", params![p.package, p.sha256, p.size, p.filename, p.version])?;
+    }
+
+    tx.commit()?;
+
+    Ok(())
 }
