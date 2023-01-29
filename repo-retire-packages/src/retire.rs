@@ -103,13 +103,7 @@ pub async fn retire_action<P: AsRef<Path>>(
     let count = AtomicUsize::new(1);
     let output_path = output.as_ref();
     tokio::fs::create_dir_all(output_path).await?;
-    // generate the manifest
-    info!("Generating manifest ...");
-    let manifest = packages.iter().fold(String::new(), |t, x| {
-        t + &x.sha256 + " " + &x.filename + "\n"
-    });
-    let mut f = tokio::fs::File::create(output_path.join("backup_label")).await?;
-    f.write_all(manifest.as_bytes()).await?;
+    generate_manifest(&packages, output_path).await?;
     // move files
     for package_chunk in packages.chunks(40) {
         let errored =
@@ -118,6 +112,17 @@ pub async fn retire_action<P: AsRef<Path>>(
             bail!("Errors detected, bailing out ...")
         }
     }
+
+    Ok(())
+}
+
+async fn generate_manifest(packages: &Vec<PackageMeta>, output_path: &Path) -> Result<()> {
+    info!("Generating manifest ...");
+    let manifest = packages.iter().fold(String::new(), |t, x| {
+        t + &x.sha256 + " " + &x.filename + "\n"
+    });
+    let mut f = tokio::fs::File::create(output_path.join("backup_label")).await?;
+    f.write_all(manifest.as_bytes()).await?;
 
     Ok(())
 }
