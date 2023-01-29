@@ -51,7 +51,7 @@ pub async fn retire_action<P: AsRef<Path>>(
     info!(
         "{} packages to retire, {} total",
         total_count,
-        ByteSize::b(total_size as u64).to_string()
+        ByteSize::b(total_size as u64)
     );
 
     if dry_run {
@@ -65,7 +65,7 @@ pub async fn retire_action<P: AsRef<Path>>(
         info!(
             "[DRY-RUN] {} packages would be retired, {} total",
             total_count,
-            ByteSize::b(total_size as u64).to_string()
+            ByteSize::b(total_size as u64)
         );
         return Ok(());
     }
