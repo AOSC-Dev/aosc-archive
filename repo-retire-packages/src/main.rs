@@ -1,36 +1,34 @@
 use anyhow::Result;
 
 mod cli;
+mod db;
 mod dbus;
 mod retire;
-mod db;
 
+use clap::Parser;
 use retire::retire_action;
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    let app = cli::build_cli();
-    let args = app.get_matches();
-
+    let args = cli::Args::parse();
     env_logger::init();
-    match args.subcommand() {
-        Some(("retire", args)) => {
-            let inhibit = args.get_many::<String>("inhibit");
-            let conn = zbus::Connection::system().await.unwrap();
+
+    match args {
+        cli::Args::Retire(args) => {
             // handle inhibition
             let mut inhibited = None;
-            if let Some(inhibit) = inhibit {
-                inhibited = Some(
-                    dbus::inhibit_services(&conn, &inhibit.collect::<Vec<_>>())
-                        .await
-                        .unwrap(),
-                );
+            let conn = zbus::Connection::system().await.unwrap();
+
+            if !args.inhibit.is_empty() {
+                inhibited = Some(dbus::inhibit_services(&conn, &args.inhibit).await.unwrap());
             }
+
             retire_action(
-                args.get_one::<String>("config").unwrap(),
-                args.contains_id("dry-run"),
-                args.get_one::<String>("output").unwrap(),
-                args.contains_id("out-of-tree"),
+                args.config,
+                args.dry_run,
+                args.output,
+                args.out_of_tree,
+                args.database,
             )
             .await?;
             // restore services
@@ -38,12 +36,7 @@ async fn main() -> Result<()> {
                 dbus::restore_services(&inhibit).await?;
             }
         }
-        Some(("binning", _args)) => {
-            todo!()
-        }
-        _ => {
-            std::process::exit(1);
-        }
+        cli::Args::Binning(_) => todo!(),
     }
 
     Ok(())

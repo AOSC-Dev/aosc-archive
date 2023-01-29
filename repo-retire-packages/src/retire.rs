@@ -35,6 +35,7 @@ pub async fn retire_action<P: AsRef<Path>>(
     dry_run: bool,
     output: P,
     oot: bool,
+    db_path: P,
 ) -> Result<()> {
     let config = load_config(config_file).await?;
     info!("Connecting to database ...");
@@ -74,7 +75,7 @@ pub async fn retire_action<P: AsRef<Path>>(
     let count = AtomicUsize::new(1);
     let output_path = output.as_ref();
     tokio::fs::create_dir_all(output_path).await?;
-    generate_manifest(&packages, output_path).await?;
+    generate_manifest(&packages, db_path.as_ref()).await?;
     // move files
     for package_chunk in packages.chunks(40) {
         let errored =
@@ -87,9 +88,9 @@ pub async fn retire_action<P: AsRef<Path>>(
     Ok(())
 }
 
-async fn generate_manifest(packages: &Vec<PackageMeta>, output_path: &Path) -> Result<()> {
+async fn generate_manifest(packages: &Vec<PackageMeta>, db_path: &Path) -> Result<()> {
     info!("Generating manifest ...");
-    let db_path = output_path.join("backup_label.db");
+    let db_path = db_path.to_owned();
     let packages = packages.clone();
     tokio::task::spawn_blocking(move || save_new_packages(db_path, &packages)).await??;
 

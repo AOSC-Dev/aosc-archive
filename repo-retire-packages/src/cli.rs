@@ -1,67 +1,50 @@
-use clap::{Arg, ArgAction, Command};
+use clap::Parser;
 
-pub fn build_cli() -> Command {
-    Command::new("repo-retire")
-        .arg_required_else_help(true)
-        .version(env!("CARGO_PKG_VERSION"))
-        .subcommand(
-            Command::new("retire")
-                .about("Retire the packages")
-                .arg(
-                    Arg::new("inhibit")
-                        .short('t')
-                        .long("inhibit")
-                        .num_args(1..)
-                        .required(false)
-                        .help("Wait and inhibit the specified systemd services"),
-                )
-                .arg(
-                    Arg::new("out-of-tree")
-                        .short('f')
-                        .action(ArgAction::SetTrue)
-                        .long("out-of-tree")
-                        .help("Also clean up the out-of-tree packages"),
-                )
-                .arg(
-                    Arg::new("config")
-                        .short('c')
-                        .required(true)
-                        .help("Path to the p-vector config file"),
-                )
-                .arg(
-                    Arg::new("output")
-                        .short('o')
-                        .required(true)
-                        .help("Path to the output directory"),
-                )
-                .arg(
-                    Arg::new("dry-run")
-                        .short('d')
-                        .action(ArgAction::SetTrue)
-                        .long("dry-run")
-                        .help("Just print what would be done"),
-                ),
-        )
-        .subcommand(
-            Command::new("binning")
-                .about("Slice the directory into fixed-sized chunks")
-                .arg(
-                    Arg::new("input")
-                        .short('i')
-                        .required(true)
-                        .help("Path to the input directory"),
-                )
-                .arg(
-                    Arg::new("output")
-                        .short('o')
-                        .required(true)
-                        .help("Path to the output directory"),
-                )
-                .arg(
-                    Arg::new("size")
-                        .short('s')
-                        .required(true)
-                        .help("Size of each bin"),
-                ),
-        )
+#[derive(Parser)]
+pub struct RetireArgs {
+    /// Wait and inhibit the specified systemd services
+    #[arg(short = 't', long)]
+    pub inhibit: Vec<String>,
+
+    /// Also clean up the out-of-tree packages
+    #[arg(short = 'f', long, default_value_t = false)]
+    pub out_of_tree: bool,
+
+    /// Path to the p-vector config file
+    #[arg(short = 'c', long)]
+    pub config: String,
+
+    /// Path to the output directory
+    #[arg(short = 'o', long)]
+    pub output: String,
+
+    /// Just print what would be done
+    #[arg(short = 'd', long = "dry-run", default_value_t = false)]
+    pub dry_run: bool,
+
+    /// Save the data to the SQLite database at this path
+    #[arg(short = 'b', long)]
+    pub database: String,
+}
+
+#[derive(Parser)]
+pub struct BinningArgs {
+    /// Path to the input directory
+    #[arg(short = 'i', long)]
+    input: String,
+    /// Path to the output directory
+    #[arg(short = 'o', long)]
+    output: String,
+    /// Size of each bin
+    #[arg(short = 's', long)]
+    size: String,
+}
+
+#[derive(Parser)]
+#[command(author, version, about)]
+pub enum Args {
+    /// Retire the packages
+    Retire(RetireArgs),
+    /// Slice the directory into fixed-sized chunks
+    Binning(BinningArgs),
 }
