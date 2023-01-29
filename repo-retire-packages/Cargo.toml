@@ -7,13 +7,13 @@ edition = "2018"
 [dependencies]
 # logging facilities
 log = "0.4"
-env_logger = "0.9"
-clap = "^3"
+env_logger = "0.10"
+clap = "^4"
 anyhow = "^1"
 tokio = { version = "^1", features = ["rt", "rt-multi-thread", "time", "macros", "fs"] }
 sqlx = { version = "0.6", features = ["runtime-tokio-native-tls", "macros", "postgres", "chrono"] }
 futures = "0.3"
-toml = "0.5"
+toml = "0.7"
 serde = { version = "1", features = ["derive"] }
 bytesize = "^1"
 walkdir = "2"

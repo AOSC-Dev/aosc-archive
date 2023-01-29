@@ -1,70 +1,65 @@
-use clap::{App, AppSettings, Arg};
+use clap::{Arg, ArgAction, Command};
 
-pub fn build_cli() -> App<'static> {
-    App::new("repo-retire")
-        .setting(AppSettings::ArgRequiredElseHelp)
+pub fn build_cli() -> Command {
+    Command::new("repo-retire")
+        .arg_required_else_help(true)
         .version(env!("CARGO_PKG_VERSION"))
         .subcommand(
-            App::new("retire")
+            Command::new("retire")
                 .about("Retire the packages")
                 .arg(
                     Arg::new("inhibit")
                         .short('t')
                         .long("inhibit")
-                        .takes_value(true)
-                        .min_values(1)
+                        .num_args(1..)
                         .required(false)
                         .help("Wait and inhibit the specified systemd services"),
                 )
                 .arg(
                     Arg::new("out-of-tree")
                         .short('f')
-                        .takes_value(false)
+                        .action(ArgAction::SetTrue)
                         .long("out-of-tree")
                         .help("Also clean up the out-of-tree packages"),
                 )
                 .arg(
                     Arg::new("config")
                         .short('c')
-                        .takes_value(true)
                         .required(true)
                         .help("Path to the p-vector config file"),
                 )
                 .arg(
                     Arg::new("output")
                         .short('o')
-                        .takes_value(true)
                         .required(true)
                         .help("Path to the output directory"),
                 )
                 .arg(
                     Arg::new("dry-run")
                         .short('d')
+                        .action(ArgAction::SetTrue)
                         .long("dry-run")
                         .help("Just print what would be done"),
                 ),
         )
         .subcommand(
-            App::new("binning")
+            Command::new("binning")
                 .about("Slice the directory into fixed-sized chunks")
                 .arg(
                     Arg::new("input")
                         .short('i')
-                        .takes_value(true)
                         .required(true)
                         .help("Path to the input directory"),
                 )
                 .arg(
                     Arg::new("output")
                         .short('o')
-                        .takes_value(true)
                         .required(true)
                         .help("Path to the output directory"),
                 )
                 .arg(
                     Arg::new("size")
                         .short('s')
-                        .takes_value(true)
                         .required(true)
                         .help("Size of each bin"),
                 ),
