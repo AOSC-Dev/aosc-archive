@@ -1,6 +1,4 @@
 use anyhow::Result;
-use dbus_tokio::connection;
-use log::error;
 
 mod cli;
 mod dbus;
@@ -17,16 +15,12 @@ async fn main() -> Result<()> {
     match args.subcommand() {
         Some(("retire", args)) => {
             let inhibit = args.get_many::<String>("inhibit");
-            let (resource, conn) = connection::new_system_sync()?;
-            let _handle = tokio::spawn(async {
-                let err = resource.await;
-                error!("Lost connection to D-Bus: {}", err);
-            });
+            let conn = zbus::Connection::system().await.unwrap();
             // handle inhibition
             let mut inhibited = None;
             if let Some(inhibit) = inhibit {
                 inhibited = Some(
-                    dbus::inhibit_services(conn.as_ref(), &inhibit.collect::<Vec<_>>())
+                    dbus::inhibit_services(&conn, &inhibit.collect::<Vec<_>>())
                         .await
                         .unwrap(),
                 );
@@ -40,7 +34,7 @@ async fn main() -> Result<()> {
             .await?;
             // restore services
             if let Some(inhibit) = inhibited {
-                dbus::restore_services(conn.as_ref(), &inhibit).await?;
+                dbus::restore_services(&inhibit).await?;
             }
         }
         Some(("binning", _args)) => {
