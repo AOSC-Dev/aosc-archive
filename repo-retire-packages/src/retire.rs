@@ -174,10 +174,15 @@ async fn backup_package(
     if let Some(parent) = path.parent() {
         let target_dir = output_path.join(parent);
         let original_path = original_path.join(path);
+        let dest_path = output_path.join(path);
+        if tokio::fs::metadata(&dest_path).await.is_ok() {
+            info!("Skipping, already copied: {}", filename);
+            return Ok(());
+        }
         tokio::fs::create_dir_all(&target_dir)
             .await
             .with_context(|| format!("when creating target directory {}", target_dir.display()))?;
-        tokio::fs::copy(&original_path, output_path.join(path))
+        tokio::fs::copy(&original_path, &dest_path)
             .await
             .with_context(|| format!("when copying {}", original_path.display()))?;
         tokio::fs::remove_file(&original_path)
