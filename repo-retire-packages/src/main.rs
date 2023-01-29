@@ -3,6 +3,7 @@ use anyhow::Result;
 mod cli;
 mod dbus;
 mod retire;
+mod db;
 
 use retire::retire_action;
 

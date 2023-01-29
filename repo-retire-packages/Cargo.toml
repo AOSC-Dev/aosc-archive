@@ -19,3 +19,5 @@ bytesize = "^1"
 walkdir = "^2"
 byte-unit = "^4"
 zbus = "^3"
+# for archive database
+rusqlite = "0.28"

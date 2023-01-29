@@ -2,10 +2,12 @@ use anyhow::{bail, Context, Result};
 use bytesize::ByteSize;
 use log::{error, info};
 use serde::Deserialize;
-use sqlx::{query_as, PgPool};
+use sqlx::PgPool;
 use std::sync::atomic::AtomicUsize;
 use std::{path::Path, sync::atomic::Ordering};
 use tokio::io::{AsyncReadExt, AsyncWriteExt};
+
+use crate::db::{determine_retired_packages, PackageMeta};
 
 #[derive(Debug, Deserialize)]
 struct Config {
@@ -19,14 +21,6 @@ struct GeneralConfig {
     pub abbs_sync: bool,
 }
 
-#[derive(Debug, Clone)]
-struct PackageMeta {
-    package: String,
-    sha256: String,
-    size: i64,
-    filename: String,
-}
-
 async fn load_config<P: AsRef<Path>>(path: P) -> Result<Config> {
     let mut f = tokio::fs::File::open(path).await?;
     let mut buffer = String::new();
@@ -34,29 +28,6 @@ async fn load_config<P: AsRef<Path>>(path: P) -> Result<Config> {
     f.read_to_string(&mut buffer).await?;
 
     Ok(toml::from_str(&buffer)?)
-}
-
-async fn determine_retired_packages(pool: &PgPool, oot: bool) -> Result<Vec<PackageMeta>> {
-    let packages = query_as!(
-        PackageMeta,
-        r#"SELECT package, sha256, size, filename FROM 
-(SELECT *, rank() OVER (PARTITION BY package, repo ORDER BY _vercomp DESC) AS pos FROM pv_packages) 
-AS sq WHERE pos > 1"#
-    )
-    .fetch_all(pool)
-    .await?;
-
-    if oot {
-        let mut oot_packages = query_as!(
-            PackageMeta,
-        r#"SELECT DISTINCT pp.package, pp.sha256, pp.size, pp.filename FROM 
-pv_packages pp LEFT JOIN packages p ON pp.package = p.name WHERE 
-tree IS NULL AND pp.package NOT LIKE '%-dbg' AND pp.package NOT SIMILAR TO '(linux-kernel-|linux\+kernel\+|u-boot)%'"#).fetch_all(pool).await?;
-        oot_packages.extend(packages);
-        return Ok(oot_packages);
-    }
-
-    Ok(packages)
 }
 
 pub async fn retire_action<P: AsRef<Path>>(
