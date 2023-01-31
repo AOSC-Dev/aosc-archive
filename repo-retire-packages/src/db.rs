@@ -13,12 +13,13 @@ pub struct PackageMeta {
     pub size: i64,
     pub filename: String,
     pub version: String,
+    pub architecture: String,
 }
 
 pub async fn determine_retired_packages(pool: &PgPool, oot: bool) -> Result<Vec<PackageMeta>> {
     let packages = query_as!(
         PackageMeta,
-        r#"SELECT package, sha256, size, filename, version FROM 
+        r#"SELECT package, sha256, size, filename, version, architecture FROM 
 (SELECT *, rank() OVER (PARTITION BY package, repo ORDER BY _vercomp DESC) AS pos FROM pv_packages) 
 AS sq WHERE pos > 1"#
     )
@@ -28,7 +29,7 @@ AS sq WHERE pos > 1"#
     if oot {
         let mut oot_packages = query_as!(
             PackageMeta,
-        r#"SELECT DISTINCT pp.package, pp.sha256, pp.size, pp.filename, pp.version FROM 
+        r#"SELECT DISTINCT pp.package, pp.sha256, pp.size, pp.filename, pp.version, architecture FROM 
 pv_packages pp LEFT JOIN packages p ON pp.package = p.name WHERE 
 tree IS NULL AND pp.package NOT LIKE '%-dbg' AND pp.package NOT SIMILAR TO '(linux-kernel-|linux\+kernel\+|u-boot)%'"#).fetch_all(pool).await?;
         oot_packages.extend(packages);
@@ -44,7 +45,7 @@ pub fn save_new_packages<P: AsRef<Path>>(db_path: P, packages: &[PackageMeta]) -
     let tx = conn.transaction()?;
 
     for p in packages {
-        tx.execute("INSERT INTO packages (package, sha256, size, filename, version) VALUES (?1, ?2, ?3, ?4, ?5)", params![p.package, p.sha256, p.size, p.filename, p.version])?;
+        tx.execute("INSERT INTO packages (package, sha256, size, filename, version, architecture) VALUES (?1, ?2, ?3, ?4, ?5, ?6)", params![p.package, p.sha256, p.size, p.filename, p.version, p.architecture])?;
     }
 
     tx.commit()?;
