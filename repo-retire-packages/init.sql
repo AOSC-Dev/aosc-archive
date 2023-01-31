@@ -5,7 +5,8 @@ CREATE TABLE IF NOT EXISTS `packages` (
     architecture TEXT NOT NULL,
     filename TEXT NOT NULL UNIQUE,
     version TEXT NOT NULL,
+    repo TEXT NOT NULL,
     retire_date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
-CREATE UNIQUE INDEX IF NOT EXISTS `package_version` ON `packages` (package, version, architecture);
+CREATE UNIQUE INDEX IF NOT EXISTS `package_version` ON `packages` (package, version, architecture, repo);
