@@ -11,16 +11,16 @@ env_logger = "0.10"
 clap = { version = "^4", features = ["derive"] }
 anyhow = "^1"
 tokio = { version = "^1", features = ["rt", "rt-multi-thread", "time", "macros", "fs"] }
-sqlx = { version = "0.6", features = ["runtime-tokio-native-tls", "macros", "postgres", "chrono"] }
+sqlx = { version = "0.7", features = ["runtime-tokio-native-tls", "macros", "postgres", "chrono"] }
 futures = "0.3"
-toml = "0.7"
+toml = "0.8"
 serde = { version = "1", features = ["derive"] }
 bytesize = "^1"
 walkdir = "^2"
 byte-unit = "^4"
 zbus = "^3"
 # for archive database
-rusqlite = "0.28"
+rusqlite = "0.29"
 
 [features]
 default = []

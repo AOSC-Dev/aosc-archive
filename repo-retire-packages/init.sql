@@ -9,4 +9,4 @@ CREATE TABLE IF NOT EXISTS `packages` (
     retire_date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
-CREATE UNIQUE INDEX IF NOT EXISTS `package_version` ON `packages` (package, version, architecture, repo);
+CREATE UNIQUE INDEX IF NOT EXISTS `package_version` ON `packages` (package, version, architecture, repo, sha256);
