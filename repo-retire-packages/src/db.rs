@@ -1,6 +1,7 @@
 use std::path::Path;
 
 use anyhow::{Context, Result};
+use log::debug;
 use rusqlite::{params, Connection};
 use sqlx::{query_as, PgPool};
 
@@ -46,6 +47,7 @@ pub fn save_new_packages<P: AsRef<Path>>(db_path: P, packages: &[PackageMeta]) -
     let tx = conn.transaction()?;
 
     for p in packages {
+        debug!("INSERT INTO packages (package, sha256, size, filename, version, architecture, repo) VALUES ({}, {}, {}, {}, {}, {}, {})", p.package, p.sha256, p.size, p.filename, p.version, p.architecture, p.repo);
         tx.execute("INSERT INTO packages (package, sha256, size, filename, version, architecture, repo) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)", params![p.package, p.sha256, p.size, p.filename, p.version, p.architecture, p.repo]).context(format!("when processing {}", p.filename))?;
     }
 
