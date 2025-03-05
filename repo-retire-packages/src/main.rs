@@ -29,6 +29,7 @@ async fn main() -> Result<()> {
                 args.output,
                 args.out_of_tree,
                 args.database,
+                args.abbs_dir,
             )
             .await?;
             // restore services
