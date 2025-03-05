@@ -33,7 +33,8 @@ AS sq WHERE pos > 1"#
             PackageMeta,
         r#"SELECT DISTINCT pp.package, pp.sha256, pp.size, pp.filename, pp.version, pp.architecture, pp.repo FROM 
 pv_packages pp LEFT JOIN packages p ON pp.package = p.name WHERE 
-tree IS NULL AND pp.package NOT LIKE '%-dbg' AND pp.package NOT SIMILAR TO '(linux-kernel-|linux\+kernel\+|u-boot)%'"#).fetch_all(pool).await?;
+tree IS NULL AND pp.package NOT LIKE '%-dbg' AND pp.package NOT SIMILAR TO '(linux-kernel-|linux\+kernel\+|u-boot)%'
+AND pp.repo LIKE '%/stable'"#).fetch_all(pool).await?;
         oot_packages.extend(packages);
         return Ok(oot_packages);
     }
