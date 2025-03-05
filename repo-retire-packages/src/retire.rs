@@ -36,6 +36,7 @@ pub async fn retire_action<P: AsRef<Path>>(
     output: P,
     oot: bool,
     db_path: P,
+    abbs_path: P,
 ) -> Result<()> {
     let config = load_config(config_file).await?;
     info!("Connecting to database ...");

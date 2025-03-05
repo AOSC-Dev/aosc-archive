@@ -2,6 +2,10 @@ use clap::Parser;
 
 #[derive(Parser)]
 pub struct RetireArgs {
+    /// Path to the aosc-os-abbs tree
+    #[arg(short = 'p', long, required = true)]
+    pub abbs_dir: String,
+
     /// Wait and inhibit the specified systemd services
     #[arg(short = 't', long)]
     pub inhibit: Vec<String>,
