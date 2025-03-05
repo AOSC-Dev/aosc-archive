@@ -1,5 +1,6 @@
 use anyhow::Result;
 
+mod abbs;
 mod cli;
 mod db;
 mod dbus;

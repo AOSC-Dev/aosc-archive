@@ -7,6 +7,7 @@ use std::sync::atomic::AtomicUsize;
 use std::{path::Path, sync::atomic::Ordering};
 use tokio::io::AsyncReadExt;
 
+use crate::abbs::update_abbs_database;
 use crate::db::{determine_retired_packages, save_new_packages, PackageMeta};
 
 #[derive(Debug, Deserialize)]
@@ -41,6 +42,11 @@ pub async fn retire_action<P: AsRef<Path>>(
     let config = load_config(config_file).await?;
     info!("Connecting to database ...");
     let pool = PgPool::connect(&config.config.db_pgconn).await?;
+    if oot {
+        info!("Out-of-tree retirement enabled.");
+        info!("Updating the in-tree package database ...");
+        update_abbs_database(&pool, &abbs_path).await?;
+    }
     info!("Determining what packages to retire ...");
     if !config.config.abbs_sync && oot {
         error!("Invalid configuration: abbs_sync should be enabled in order to correctly retire packages!");
