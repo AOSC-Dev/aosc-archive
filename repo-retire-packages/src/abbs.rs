@@ -40,7 +40,7 @@ impl PackageEntry {
                 let field = &mut match k {
                     "PKGNAME" => &mut pkg.name,
                     "PKGSEC" => &mut pkg.pkg_section,
-                    "PKGDES" => &mut pkg.description, // = v.trim().trim_matches(|c| quotes(c)).to_string(),
+                    "PKGDES" => &mut pkg.description,
                     _ => continue,
                 };
                 field.push_str(v.trim().trim_matches(quotes));

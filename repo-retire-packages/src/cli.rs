@@ -14,6 +14,10 @@ pub struct RetireArgs {
     #[arg(short = 'f', long, default_value_t = false)]
     pub out_of_tree: bool,
 
+    /// Also clean up outdated kernel packages
+    #[arg(short = 'k', long, default_value_t = false)]
+    pub with_kernel: bool,
+
     /// Path to the p-vector config file
     #[arg(short = 'c', long)]
     pub config: String,
