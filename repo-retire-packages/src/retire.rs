@@ -68,7 +68,7 @@ pub async fn retire_action<P: AsRef<Path>>(
     info!(
         "{} packages to retire, {} total",
         total_count,
-        ByteSize::b(total_size as u64)
+        ByteSize::b(total_size as u64).to_string_as(true)
     );
 
     if dry_run {
