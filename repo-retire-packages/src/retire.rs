@@ -8,7 +8,9 @@ use std::{path::Path, sync::atomic::Ordering};
 use tokio::io::AsyncReadExt;
 
 use crate::abbs::update_abbs_database;
-use crate::db::{determine_retired_packages, save_new_packages, PackageMeta};
+use crate::db::{
+    determine_retired_kernel_packages, determine_retired_packages, save_new_packages, PackageMeta,
+};
 
 #[derive(Debug, Deserialize)]
 struct Config {
@@ -36,6 +38,7 @@ pub async fn retire_action<P: AsRef<Path>>(
     dry_run: bool,
     output: P,
     oot: bool,
+    kernel: bool,
     db_path: P,
     abbs_path: P,
 ) -> Result<()> {
@@ -52,7 +55,13 @@ pub async fn retire_action<P: AsRef<Path>>(
         error!("Invalid configuration: abbs_sync should be enabled in order to correctly retire packages!");
         bail!("Refusing to continue to avoid damaging package pool")
     }
-    let packages = determine_retired_packages(&pool, oot).await?;
+    let mut packages = determine_retired_packages(&pool, oot).await?;
+
+    if kernel {
+        let outdated_kernel_packages = determine_retired_kernel_packages(&pool).await?;
+        packages.extend(outdated_kernel_packages);
+    }
+
     let total_size = packages.iter().fold(0, |t, x| t + x.size);
     let total_count = packages.len();
 

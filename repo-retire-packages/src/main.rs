@@ -29,6 +29,7 @@ async fn main() -> Result<()> {
                 args.dry_run,
                 args.output,
                 args.out_of_tree,
+                args.with_kernel,
                 args.database,
                 args.abbs_dir,
             )
