@@ -1,0 +1,349 @@
+#!/bin/bash
+
+# Simple logging facilities.
+err() {
+	echo -e "$@" >&2
+}
+
+info() {
+	echo -e "-- $@" >&2
+}
+
+# This script can't be run by a normal user - they must have sudo access to
+# access the database (repo-retire-packages must be run as a user that has
+# permission to read-write the packages database, using PostgreSQL's peer
+# authentication).
+if [ "x${EUID}" != "x$(id -u repo)" ] ; then
+	err "This script must be run as the 'repo' user."
+	err "If you do not have sudo access, you should contact someone who does."
+	exit 1
+fi
+
+# Check if any of the stdin, stdout and stderr is not a terminal.
+# Refuse to run if any of that happens.
+if ! [ -t 0 ] || ! [ -t 1 ] || ! [ -t 2 ] ; then
+	err "This script is meant to be run by a human."
+	exit 1
+fi
+
+# Action to perform.
+ACTION=
+# Whether to retire out of date kernel packages as well.
+OPT_K=0
+# Whether to retire out of tree packages as well.
+OPT_O=0
+# ABBS tree to be used to determine out-of-tree packages.
+ABBS_DIR=${ABBS_DIR:-$HOME/aosc-os-abbs}
+# Prefix of the output directory.
+PREFIX=/lookaside/public/archives
+# Directory to store the log files.
+LOGDIR="$PREFIX"/retire-logs
+# Command line arguments for repo-retire-packages.
+RETIRE_OPTS=("retire")
+# To allow multiple runs in the same day.
+REVISION=
+# Avoid using the other user's $HOME as PWD. This happens when a user invokes
+# this script directly with sudo.
+cd "$HOME"
+# Make sure these services/triggers are inactive.
+SERVICES_TO_CHK=(
+	"repo-scan-mirror.service"
+	"repo-scan-mirror.timer"
+	"repo-scan-mirror.path"
+	"repo-push.path"
+	"repo-push.service"
+	"repo-clean-up.timer"
+	"repo-clean-up.service"
+)
+
+usage() {
+	cat << EOF
+Usage: $0 [OPTIONS] ACTION
+
+Retire packages as cth451's disk space runs out
+
+Actions:
+	dryrun	Perform a dry-run instead of performing the retirement.
+	retire	Do the real thing.
+
+Options:
+	-k, --kernel
+		Also retire outdated kernel packages
+	-o, --out-of-tree
+		Also retire out-of-tree packages
+	-d, --abbs-dir ABBS_DIR
+		Specify which ABBS tree to use
+	-r, --revision REV
+		Specify the revision (appended to the date)
+	-h, --help
+		Display this help message
+
+Notes:
+- You MUST perform a dry-run in order to proceed.
+- Always check dry-run results.
+EOF
+}
+
+# Arguments parsing using getopt(1). Here's what's happening:
+# - The string after `-o' and `--long' are `optstring's. `-o' specifys short
+#   options like -X, -Y, -Z. `--long' specifys long options like --option-x,
+#   --option-y and --option-z.
+# - Each character in the optstring specified after `-o' represent a short
+#   option, unless there are colons (`:') after the character. If there's no
+#   colons after the character, then the option does not have an argument.
+#   If there's one colon after the character, then there will be an argument
+#   for the option. Two means the argument is optional.
+# - Each substring splitted by a comma (`,') represents a long option. The
+#   colon is used to indicate the presence of an argument for the option,
+#   same as it for the short options.
+# - Arguments provided by this script then passed to getopt(1) with defined
+#   optstrings, gets parsed into a 'canonicalized' form, which then
+#   overrides the "$@", and can be parsed in a while loop.
+# See getopt(1) from util-linux for details.
+# Also: /usr/share/doc/util-linux/getopt-example.bash
+OPTS=$(getopt -o "d:hkor:" --long "abbs-dir:,help,kernel,out-of-tree,revision:" -n "$0" -- "$@")
+if [ "$?" != "0" ] ; then
+	usage
+	exit 1
+fi
+# Set "$@" to the "canonicalized" form parsed by getopt(1).
+eval set -- "$OPTS"
+unset OPTS
+# It is eaiser to parse the canonicalized form returned by getopt(1).
+while true; do
+	case "$1" in
+		-k|--kernel)
+			OPT_K=1
+			shift
+			continue
+			;;
+		-o|--out-of-tree)
+			OPT_O=1
+			shift
+			continue
+			;;
+		-d|--abbs-dir)
+			ABBS_DIR="$2"
+			shift 2
+			continue
+			;;
+		-h|--help)
+			usage
+			exit 0
+			;;
+		-r|--revision)
+			REVISION=".$2"
+			shift 2
+			continue
+			;;
+		# `--' is guranteed to exist and it terminates the options.
+		# Positional options comes after this.
+		--)
+			shift
+			break
+			;;
+		*)
+			err "$0: Unexpected option: $1"
+			exit 1
+			;;
+	esac
+done
+
+if [ -z "$1" ] ; then
+	err "$0: Action required"
+	usage
+	exit 1
+fi
+
+# Get current date automatically so users don't need to specify manually.
+# Also concatenate with the given revision string.
+DATE=$(date "+%Y%m%d")
+DATE="$DATE$REVISION"
+# Full date is used in the logs.
+FULLDATE="$(date)"
+# Log the user who invoked this script.
+INVOKED_BY="${SUDO_USER}"
+
+# Process positional arguments.
+case "$1" in
+	d|dry|dryrun)
+		ACTION=dryrun
+		LOG="$LOGDIR"/archive-"$DATE"-dryrun.log
+		;;
+	r|ret|retire)
+		LOG="$LOGDIR"/archive-"$DATE"-retire.log
+		ACTION=retire
+		;;
+	*)
+		err "$0: Invalid action \`$1'"
+		usage
+		exit 1
+		;;
+esac
+
+# Output directory of the repo-retire-packages.
+OUTDIR="$PREFIX/archive-$DATE"
+# Path to the dumped retired packages database.
+DBFILE="$OUTDIR"/labels-"$DATE".db
+mkdir -p "$LOGDIR"
+info "Output directory: $OUTDIR"
+info "Output SQLite Database: $DBFILE"
+info "Log file: $LOG"
+
+# The log also serves the purpose of a stamp. We use it to determine if
+# a dry-run has been performed.
+if [ "x$ACTION" = "xretire" ] && ! [ -f "$LOG" ] ; then
+	err "A dry-run has't been performed yet. Please perform a dry-run first."
+	exit 1
+fi
+# Do not allow multiple runs in the same day, unless they really wanted to.
+if [ "x$ACTION" = "xretire" ] && [ -d "$OUTDIR" ] ; then
+	err "It looks like you have already performed an retirement."
+	err "If you still want to perform another retirement, please use -r option to specify a revision."
+	exit 1
+fi
+if [ "x$ACTION" = "xdryrun" ] && [ -f "$LOG" ] ; then
+	err "It looks like you have already performed a dry-run."
+	err "You can perform a retirement now, or use -r option to specify a revision."
+	exit 1
+fi
+
+# Check if any of the pre-defined services are running, and any of the
+# triggers are active.
+# Prompt the user to wait for the service to finish, and invoke systemctl
+# to temporarily deactivate the triggers.
+RUNNING_SRVS=()
+RUNNING_TRIGGERS=()
+SRVERR=0
+info "Checking for running services ..."
+for srv in "${SERVICES_TO_CHK[@]}" ; do
+	if systemctl is-active -q "$srv" ; then
+		SRVERR=1
+		if [ "${srv%%.service}" != "$srv" ] ; then
+			RUNNING_SRVS+=("$srv")
+		else
+			RUNNING_TRIGGERS+=("$srv")
+		fi
+	fi
+done
+if [ "${#RUNNING_SRVS[@]}" -gt 0 ] ; then
+	err "\nThere are repo related services that are still running/active."
+	err "Please wait them to finish before performing any actions:"
+	for srv in "${RUNNING_SRVS[@]}" ; do
+		err "- $srv"
+	done
+fi
+if [ "${#RUNNING_TRIGGERS[@]}" -gt 0 ] ; then
+	err "\nThere are repo related triggers that are still active."
+	err "Please disable them before proceeding:"
+	for srv in "${RUNNING_TRIGGERS[@]}" ; do
+		err "- $srv"
+	done
+	err "You can run the following command to disable them:"
+	err "  sudo systemctl stop ${RUNNING_TRIGGERS[*]}"
+fi
+(( $SRVERR )) && exit 1
+
+# Form the command line options for repo-retire-packages.
+export RUST_LOG=info
+RETIRE_OPTS+=("--config" "/etc/p-vector/aosc-os.toml")
+RETIRE_OPTS+=("--abbs-dir" "$ABBS_DIR")
+RETIRE_OPTS+=("--output" "$OUTDIR/")
+RETIRE_OPTS+=("--database" "$DBFILE")
+if [ "x$OPT_O" = "x1" ] ; then
+	info "Out-of-tree retirement enabled"
+	RETIRE_OPTS+=("-f")
+fi
+if [ "x$OPT_K" = "x1" ] ; then
+	info "Outdated kernel packages retirement enabled"
+	RETIRE_OPTS+=("-k")
+fi
+# Initialize the ABBS tree if it does not exist.
+if [ ! -e "$ABBS_DIR" ] ; then
+	info "Cloning ABBS tree ..."
+	git clone https://github.com/AOSC-Dev/aosc-os-abbs "$ABBS_DIR"
+fi
+
+# Make sure git does not complain about the "safe directory" thing, i.e.
+# the permission of the ABBS tree is correct.
+info "Checking operability of the ABBS tree ..."
+pushd "$ABBS_DIR"
+git status > /dev/null
+if [ "$?" != "0" ] ; then
+	err "Can not perform updates to the ABBS repository at $ABBS_DIR."
+	err "Please check the permissions."
+	exit 1
+fi
+popd
+
+if [ "x$ACTION" = "xdryrun" ] ; then
+	info "Performing dry-run ..."
+	RETIRE_OPTS+=("-d")
+	cat > "$LOG" << EOF
+#----------------------------------------------------------------------------
+# Begin Package Retirement (Dry-Run) $DATE
+# Date: $FULLDATE
+# Output: $OUTDIR
+# Database File: $DBFILE
+# Invoked By: ${INVOKED_BY:-repo}
+#----------------------------------------------------------------------------
+EOF
+	repo-retire-packages "${RETIRE_OPTS[@]}" &>> "$LOG"
+	if [ "$?" != "0" ] ; then
+		err "Failed to run repo-retire-packages."
+		err "Arguments:"
+		err "repo-retire-packages ${RETIRE_OPTS[@]}"
+		err "See log file "$LOG" for details."
+		exit 1
+	fi
+	info "Done performing dry-run."
+	info "Please examine the log file before proceeding:"
+	echo "- $LOG"
+	cat >> "$LOG" << EOF
+#----------------------------------------------------------------------------
+# End Package Retirement (Dry-Run) $DATE
+# Date: $FULLDATE
+# Output: $OUTDIR
+# Database File: $DBFILE
+# Invoked By: ${INVOKED_BY:-repo}
+#----------------------------------------------------------------------------
+EOF
+elif [ "x$ACTION" = "xretire" ] ; then
+	info "Performing retirement ..."
+	cat > "$LOG" << EOF
+#----------------------------------------------------------------------------
+# Begin Package Retirement $DATE
+# Date: $FULLDATE
+# Output: $OUTDIR
+# Database File: $DBFILE
+# Invoked By: ${INVOKED_BY:-repo}
+#----------------------------------------------------------------------------
+EOF
+	repo-retire-packages "${RETIRE_OPTS[@]}" |& tee -a "$LOG"
+	if [ "$?" != "0" ] ; then
+		err "Failed to run repo-retire-packages."
+		err "Arguments:"
+		err "repo-retire-packages ${RETIRE_OPTS[@]}"
+		exit 1
+	fi
+	cat > "$LOG" << EOF
+#----------------------------------------------------------------------------
+# End Package Retirement $DATE
+# Date: $FULLDATE
+# Output: $OUTDIR
+# Database File: $DBFILE
+# Invoked By: ${INVOKED_BY:-repo}
+#----------------------------------------------------------------------------
+# Removing unused -dbg packages ...
+# ---------------------------------------------------------------------------
+EOF
+	info "Clearing up unused -dbg packages ..."
+	for i in `maint-dbg-pkgs-wo-base`; do
+		mv -v /mirror/debs/$i /lookaside/public/archives/archive-${1}/$(dirname $i) \
+			|& tee -a "$LOG"
+	done
+	info "-- Done."
+else
+	err "Internal error occurred - exiting"
+	exit 1
+fi
