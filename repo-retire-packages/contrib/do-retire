@@ -42,6 +42,8 @@ LOGDIR="$PREFIX"/retire-logs
 RETIRE_OPTS=("retire")
 # To allow multiple runs in the same day.
 REVISION=
+# Do not allow silent fails across pipes.
+set -o pipefail
 # Avoid using the other user's $HOME as PWD. This happens when a user invokes
 # this script directly with sudo.
 cd "$HOME"
@@ -192,7 +194,8 @@ info "Log file: $LOG"
 
 # The log also serves the purpose of a stamp. We use it to determine if
 # a dry-run has been performed.
-if [ "x$ACTION" = "xretire" ] && ! [ -f "$LOG" ] ; then
+# Check if the dry-run log exists, not the retire log.
+if [ "x$ACTION" = "xretire" ] && ! [ -f "${LOG/-retire/-dryrun}" ] ; then
 	err "A dry-run has't been performed yet. Please perform a dry-run first."
 	exit 1
 fi
@@ -245,7 +248,7 @@ fi
 (( $SRVERR )) && exit 1
 
 # Form the command line options for repo-retire-packages.
-export RUST_LOG=info
+export RUST_LOG=${RUST_LOG:-info}
 RETIRE_OPTS+=("--config" "/etc/p-vector/aosc-os.toml")
 RETIRE_OPTS+=("--abbs-dir" "$ABBS_DIR")
 RETIRE_OPTS+=("--output" "$OUTDIR/")
@@ -320,7 +323,7 @@ elif [ "x$ACTION" = "xretire" ] ; then
 #----------------------------------------------------------------------------
 EOF
 	repo-retire-packages "${RETIRE_OPTS[@]}" |& tee -a "$LOG"
-	if [ "$?" != "0" ] ; then
+	if [ "${PIPESTATUS[0]}" != "0" ] ; then
 		err "Failed to run repo-retire-packages."
 		err "Arguments:"
 		err "repo-retire-packages ${RETIRE_OPTS[@]}"
@@ -342,6 +345,10 @@ EOF
 		mv -v /mirror/debs/$i /lookaside/public/archives/archive-${1}/$(dirname $i) \
 			|& tee -a "$LOG"
 	done
+	if [ "${PIPESTATUS[0]}" != "0" ] ; then
+		err "Failed to run maint-dbg-pkgs-wo-base."
+		exit 1
+	fi
 	info "-- Done."
 else
 	err "Internal error occurred - exiting"
